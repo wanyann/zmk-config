@@ -1,7 +1,7 @@
 if SHIELD_BLUE-VELVET_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Blue-velvet"
+    default "EH velvet"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
