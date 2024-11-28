@@ -1,0 +1,5 @@
+config SHIELD_VELVET2_LEFT
+    def_bool $(shields_list_contains,Velvet2_left)
+
+config SHIELD_VELVET2_RIGHT
+    def_bool $(shields_list_contains,Velvet2_right)

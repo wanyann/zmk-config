@@ -1,14 +1,14 @@
-if SHIELD_BLUE-VELVET_LEFT
+if SHIELD_VELVET2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "EH Velvet v2"
+    default "EH Velvet2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_BLUE-VELVET_LEFT || SHIELD_BLUE-VELVET_RIGHT
+if SHIELD_VELVET2_LEFT || SHIELD_VELVET2_RIGHT
 
 config ZMK_SPLIT
     default y
