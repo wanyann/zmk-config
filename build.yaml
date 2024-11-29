@@ -13,10 +13,6 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: Velvet2_left
-  - board: nice_nano_v2
-    shield: Velvet2_right
   - board: nrfmicro_13
     shield: Velvet3_left
   - board: nrfmicro_13
