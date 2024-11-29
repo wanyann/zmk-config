@@ -13,7 +13,7 @@
 #nrfmicro_13
 ---
 include:
-  - board:  seeeduino_xiao_ble
+  - board: nrfmicro_13
     shield: Velvet3_left
-  - board: seeeduino_xiao_ble
+  - board: nrfmicro_13
     shield: Velvet3_right
