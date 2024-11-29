@@ -13,7 +13,7 @@
 #nrfmicro_13
 ---
 include:
-  - board:  nice_nano
+  - board:  nnrf52840dk_nrf52840
     shield: Velvet3_left
-  - board: nice_nano
+  - board: nrf52840dk_nrf52840
     shield: Velvet3_right
