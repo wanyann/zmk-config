@@ -13,7 +13,7 @@
 #nrfmicro_13
 ---
 include:
-  - board:  nrf52840dk_nrf52840
+  - board:  nrfmicro_11
     shield: Velvet3_left
-  - board: nrf52840dk_nrf52840
+  - board: nrfmicro_11
     shield: Velvet3_right
