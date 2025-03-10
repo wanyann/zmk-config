@@ -15,5 +15,5 @@
 include:
   - board: nrfmicro_13
     shield: Velvet3_left
-  - board: nrfmicro_13
-    shield: Velvet3_right
+#  - board: nrfmicro_13
+#    shield: Velvet3_right
