@@ -7,12 +7,6 @@
         compatible = "zmk,keymap";
 
         Base {
-            // -------------------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |                    |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |                    |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |  MUTE  |  |        |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
-
             bindings = <
 &kp ESC    &kp Q  &kp W      &kp E     &kp R      &kp T                        &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S      &kp D     &kp F      &kp G                        &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp BSLH
@@ -24,12 +18,6 @@
         };
 
         Navigation {
-            // ------------------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP | RGT |     |  F12 |
-            // | SHFT | F1  | F2  | F3  | F4  | F5  |  boot  |  |        |  F6 | F7  | F8  | F9  | F10 |  F11 |
-            //                    | GUI |     | SPC |                    | ENT |     | ALT |
-
             bindings = <
 &studio_unlock  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                        &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &none
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none     &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &none
@@ -41,12 +29,6 @@
         };
 
         Symbols {
-            // ------------------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |                    |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |        |  |  boot  |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |                    | ENT |     | ALT |
-
             bindings = <
 &none  &none     &kp LS(LT)    &kp EQUAL  &kp LS(GT)    &kp GRAVE                     &kp LS(CARET)  &kp LS(DQT)   &kp LS(UNDER)  &kp SQT       &none         &none
 &none  &kp BSLH  &kp LS(LPAR)  &kp MINUS  &kp LS(RPAR)  &kp LS(PLUS)                  &kp LS(PRCNT)  &kp LS(LBRC)  &kp SEMI       &kp LS(RBRC)  &kp LS(EXCL)  &none
