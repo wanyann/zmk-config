@@ -35,6 +35,26 @@
             bindings = <&lg_en>;
             key-positions = <31 32>;
         };
+
+        ToNav {
+            bindings = <&to 4>;
+            key-positions = <14 15>;
+        };
+
+        OSLSym {
+            bindings = <&sl 7>;
+            key-positions = <20 19>;
+        };
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <3 4>;
+        };
+
+        Quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <31 33>;
+        };
     };
 
     macros {
@@ -58,10 +78,10 @@
 
         Base {
             bindings = <
-&none  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp BSLH
-&none  &mt Z LC(Z)     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                    &kp N  &kp M      &kp COMMA  &kp DOT   &kp LALT  &kp RSHFT
-                       &kp GRAVE       &kp LGUI              &to 0        &lt 4 SPACE              &sl 6    &kp RET  &mo 2  &kp RCTRL  &kp LBKT   &kp RBKT
+&none  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                       &kp Y            &kp U  &kp I      &kp O     &kp P      &none
+&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                       &kp H            &kp J  &kp K      &kp L     &kp SEMI   &none
+&none  &mt Z LC(Z)     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                           &kp N            &kp M  &kp COMMA  &kp DOT   &kp SLASH  &none
+                       &kp GRAVE       &kp LGUI              &to 0        &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
