@@ -3,6 +3,56 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        CtrlEnt {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <2 3>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <4 2>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 16>;
+        };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <25 27>;
+        };
+
+        Ru {
+            bindings = <&lg_ru>;
+            key-positions = <28 27>;
+        };
+
+        En {
+            bindings = <&lg_en>;
+            key-positions = <31 32>;
+        };
+    };
+
+    macros {
+        lg_ru: ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(NUMBER_3)) &to 1>;
+            label = "RU";
+        };
+
+        lg_en: lg_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(NUMBER_4)) &to 0>;
+            label = "LG_EN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
