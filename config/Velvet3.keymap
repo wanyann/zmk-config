@@ -23,7 +23,7 @@
 
         Esc {
             bindings = <&kp ESC>;
-            key-positions = <25 27>;
+            key-positions = <26 28>;
         };
 
         Ru {
@@ -89,10 +89,10 @@
 
         Diktor {
             bindings = <
-&studio_unlock  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                        &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &none
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none     &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &none
-&none           &none         &kp HOME      &kp INS       &kp END       &kp DEL                       &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &none
-                              &none         &none         &none         &none         &none    &none  &mo 3     &none         &none          &none
+&studio_unlock  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                   &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &none
+&none           &none   &none     &none    &none    &none                    &none     &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &none
+&none           &none   &kp HOME  &kp INS  &kp END  &kp DEL                  &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &none
+                        &none     &none    &none    &none    &none    &none  &mo 3     &none         &none          &none
             >;
 
             label = "Diktor";
