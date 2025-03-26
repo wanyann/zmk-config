@@ -8,16 +8,16 @@
 
         Base {
             bindings = <
-&kp ESC    &kp Q  &kp W      &kp E     &kp R      &kp T                        &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S      &kp D     &kp F      &kp G                        &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X      &kp C     &kp V      &kp B                        &kp N  &kp M      &kp COMMA  &kp DOT   &kp LALT  &kp RSHFT
-                  &kp GRAVE  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RCTRL  &kp LBKT   &kp RBKT
+&none  &kp Q        &mt LC(W) W  &kp E        &mt LC(R) R  &mt LC(T) T                                &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&none  &kp A        &kp S        &kp D        &kp F        &mt LC(F) G                                &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp BSLH
+&none  &mt Z LC(Z)  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                    &kp N  &kp M      &kp COMMA  &kp DOT   &kp LALT  &kp RSHFT
+                    &kp GRAVE    &kp LGUI     &to 0        &lt 4 SPACE              &sl 6    &kp RET  &mo 2  &kp RCTRL  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
         };
 
-        Navigation {
+        Diktor {
             bindings = <
 &studio_unlock  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                        &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &none
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none     &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &none
@@ -25,10 +25,10 @@
                               &none         &none         &none         &none         &none    &none  &mo 3     &none         &none          &none
             >;
 
-            label = "Navigation";
+            label = "Diktor";
         };
 
-        Symbols {
+        Mods {
             bindings = <
 &none  &none     &kp LS(LT)    &kp EQUAL  &kp LS(GT)    &kp GRAVE                     &kp LS(CARET)  &kp LS(DQT)   &kp LS(UNDER)  &kp SQT       &none         &none
 &none  &kp BSLH  &kp LS(LPAR)  &kp MINUS  &kp LS(RPAR)  &kp LS(PLUS)                  &kp LS(PRCNT)  &kp LS(LBRC)  &kp SEMI       &kp LS(RBRC)  &kp LS(EXCL)  &none
@@ -36,10 +36,10 @@
                  &none         &none      &none         &mo 3         &none    &none  &none          &none         &none          &none
             >;
 
-            label = "Symbols";
+            label = "Mods";
         };
 
-        Adjust {
+        Mouse {
             bindings = <
 &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &none  &none         &none             &none            &none  &none
 &none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &none  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &none  &none
@@ -47,10 +47,10 @@
                     &none   &none    &none    &none    &none    &none  &none  &none         &none             &none
             >;
 
-            label = "Adjust";
+            label = "Mouse";
         };
 
-        User0 {
+        Navigation {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -58,10 +58,10 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User0";
+            label = "Navigation";
         };
 
-        User1 {
+        Numbers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -72,7 +72,7 @@
             label = "User1";
         };
 
-        User2 {
+        App {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -83,7 +83,7 @@
             label = "User2";
         };
 
-        User3 {
+        Sym {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -91,7 +91,88 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "User3";
+            label = "Sym";
+        };
+
+        Fn {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        OS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        MouseMods {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_16 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
