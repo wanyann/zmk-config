@@ -123,10 +123,10 @@
 
         Mouse {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &none  &none         &none             &none            &none  &none
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &none  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &none  &none
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &none  &kp K_PREV    &kp C_PLAY_PAUSE  &kp K_NEXT       &none  &none
-                    &none   &none    &none    &none    &none    &none  &none  &none         &none             &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Mouse";
@@ -134,10 +134,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &trans  &kp LSHFT  &kp LCTRL  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                    &trans  &trans    &trans    &trans     &trans  &trans
-                &trans  &trans     &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &kp LA(TAB)                 &kp LS(LA(LC(LG(TAB))))          &trans            &kp LS(LC(LA(LG(F1))))  &trans                    &kp GRAVE  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &kp LC(LEFT_BRACKET)        &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL               &trans                    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &mt LC(Z) LS(LEFT_BRACKET)  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(V))     &trans                    &trans     &trans    &trans    &trans     &trans  &trans
+                                    &trans                           &trans            &trans                  &trans  &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             label = "Navigation";
