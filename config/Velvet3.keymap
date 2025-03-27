@@ -41,9 +41,10 @@
             key-positions = <14 15>;
         };
 
-        OSLSym {
+        OSLEnSym {
             bindings = <&sl 7>;
             key-positions = <20 19>;
+            layers = <0>;
         };
 
         Question {
@@ -54,6 +55,12 @@
         Quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 33>;
+        };
+
+        OSLRuSym {
+            bindings = <&sl 10>;
+            key-positions = <19 20>;
+            layers = <1>;
         };
     };
 
@@ -153,15 +160,15 @@
             label = "User2";
         };
 
-        Sym {
+        EnSym {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp A   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Sym";
+            label = "EnSym";
         };
 
         Fn {
@@ -182,10 +189,10 @@
             >;
         };
 
-        layer_10 {
+        RuSym {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp B   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
