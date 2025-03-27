@@ -119,6 +119,20 @@
             bindings = <&kp LS(LC(NUMBER_4)) &to 0>;
             label = "LG_EN";
         };
+
+        lm: kc_less {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&mo MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "KC_LESS";
+        };
     };
 
     keymap {
