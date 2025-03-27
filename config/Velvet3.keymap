@@ -52,20 +52,56 @@
             layers = <0 4>;
         };
 
-        Question {
+        QuestionEn {
             bindings = <&kp QUESTION>;
             key-positions = <3 4>;
+            layers = <0>;
         };
 
-        Quote {
+        QuoteEn {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 33>;
+            layers = <0>;
         };
 
         OSLRuSym {
             bindings = <&sl 10>;
             key-positions = <19 20>;
             layers = <1 4>;
+        };
+
+        QuestionRu {
+            bindings = <&kp LS(N7)>;
+            key-positions = <3 4>;
+            layers = <1>;
+        };
+
+        QuoteRu {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <31 33>;
+            layers = <0>;
+        };
+
+        Dash {
+            bindings = <&kp MINUS>;
+            key-positions = <19 21>;
+        };
+
+        YRu {
+            bindings = <&kp Q>;
+            key-positions = <21 20>;
+            layers = <1>;
+        };
+
+        ShRu {
+            bindings = <&kp I>;
+            key-positions = <32 33>;
+            layers = <1>;
+        };
+
+        SchaRu {
+            bindings = <&kp O>;
+            key-positions = <8 9>;
         };
     };
 
