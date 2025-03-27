@@ -57,6 +57,14 @@
         };
     };
 
+    &mt {
+        flavor = balanced;
+    };
+
+    &lt {
+        flavor = balanced;
+    };
+
     macros {
         lg_ru: ru {
             compatible = "zmk,behavior-macro";
