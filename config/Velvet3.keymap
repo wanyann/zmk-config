@@ -162,10 +162,10 @@
 
         Mods {
             bindings = <
-&none  &none     &kp LS(LT)    &kp EQUAL  &kp LS(GT)    &kp GRAVE                     &kp LS(CARET)  &kp LS(DQT)   &kp LS(UNDER)  &kp SQT       &none         &none
-&none  &kp BSLH  &kp LS(LPAR)  &kp MINUS  &kp LS(RPAR)  &kp LS(PLUS)                  &kp LS(PRCNT)  &kp LS(LBRC)  &kp SEMI       &kp LS(RBRC)  &kp LS(EXCL)  &none
-&none  &none     &kp LS(STAR)  &kp SEMI   &kp FSLH      &kp LS(DLLR)                  &kp LS(AT)     &kp LS(PIPE)  &kp LS(TILDE)  &kp LS(AMPS)  &none         &none
-                 &none         &none      &to 0         &mo 3         &none    &none  &none          &none         &none          &none
+&none  &kp Q       &kp W       &kp E            &kp R        &kp T                  &kp LS(CARET)  &kp LS(DQT)   &kp LS(UNDER)  &kp SQT       &none         &none
+&none  &mt LGUI A  &mt LALT S  &mt LS(LCTRL) D  &mt LCTRL F  &kp G                  &kp LS(PRCNT)  &kp LS(LBRC)  &kp SEMI       &kp LS(RBRC)  &kp LS(EXCL)  &none
+&none  &kp Z       &kp X       &kp C            &kp V        &kp B                  &kp LS(AT)     &kp LS(PIPE)  &kp LS(TILDE)  &kp LS(AMPS)  &none         &none
+                   &none       &none            &to 0        &mo 3  &none    &none  &none          &none         &none          &none
             >;
 
             label = "Mods";
