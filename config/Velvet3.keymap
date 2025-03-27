@@ -65,13 +65,11 @@
     };
 
     &mt {
-        flavor =
-        balanced;
+        flavor = "balanced";
     };
 
     &lt {
-        flavor =
-        balanced;
+        flavor = "balanced";
     };
 
     macros {
