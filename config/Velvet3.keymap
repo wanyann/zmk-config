@@ -65,11 +65,13 @@
     };
 
     &mt {
-        flavor = balanced;
+        flavor =
+        balanced;
     };
 
     &lt {
-        flavor = balanced;
+        flavor =
+        balanced;
     };
 
     macros {
@@ -104,10 +106,10 @@
 
         Diktor {
             bindings = <
-&studio_unlock  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                   &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &none
-&none           &none   &none     &none    &none    &none                    &none     &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &none
-&none           &none   &kp HOME  &kp INS  &kp END  &kp DEL                  &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &none
-                        &none     &none    &none    &none    &none    &none  &mo 3     &none         &none          &none
+&trans  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
+&trans  &mt LGUI E   &mt LALT LG(B)          &mt LS(LCTRL) T         &mt LCTRL J          &mt LC(F) F                                &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
+&trans  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) B                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
+                     &trans                  &trans                  &trans               &trans                   &trans    &trans  &trans    &trans        &trans         &trans
             >;
 
             label = "Diktor";
