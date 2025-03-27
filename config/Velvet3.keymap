@@ -81,14 +81,12 @@
         };
     };
 
-    behaviors {
-        &mt {
-            flavor = "balanced";
-        };
+    &mt {
+        flavor = "balanced";
+    };
 
-        &lt {
-            flavor = "balanced";
-        };
+    &lt {
+        flavor = "balanced";
     };
 
     keymap {
