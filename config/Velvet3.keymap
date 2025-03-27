@@ -1,15 +1,11 @@
+#include <dt-bindings/zmk/behaviors.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/behaviors.h>
 
-&mt {
-    flavor = "balanced";
-};
+&mt { flavor = "balanced"; };
 
-&lt {
-    flavor = "balanced";
-};
+&lt { flavor = "balanced"; };
 
 / {
     combos {
@@ -138,10 +134,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &trans  &kp LSHFT  &kp LCTRL  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                    &trans  &trans    &trans    &trans     &trans  &trans
+                &trans  &trans     &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             label = "Navigation";
