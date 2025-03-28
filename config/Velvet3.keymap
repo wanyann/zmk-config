@@ -41,11 +41,6 @@
             key-positions = <31 32>;
         };
 
-        ToNav {
-            bindings = <&to 4>;
-            key-positions = <14 15>;
-        };
-
         OSLEnSym {
             bindings = <&sl 7>;
             key-positions = <20 19>;
@@ -107,6 +102,21 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <16 19>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <13 14>;
+        };
+
+        osl_fn {
+            bindings = <&sl 8>;
+            key-positions = <26 27>;
+        };
+
+        osl_os {
+            bindings = <&sl 9>;
+            key-positions = <25 26>;
         };
     };
 
