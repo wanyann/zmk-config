@@ -7,9 +7,11 @@
 
 &lt { flavor = "balanced"; };
 
-&caps_word {
-    continue-list = <MINUS SEMICOLON UNDERSCORE SINGLE_QUOTE LEFT_BRACKET RIGHT_BRACKET COMMA DOT GRAVE>;
-};
+&caps_word { continue-list = <MINUS SEMICOLON UNDERSCORE SINGLE_QUOTE LEFT_BRACKET RIGHT_BRACKET COMMA DOT GRAVE BACKSPACE DELETE>; };
+
+&sl { release-after-ms = <5000>; };
+
+&sk { release-after-ms = <5000>; };
 
 / {
     combos {
@@ -409,6 +411,14 @@
 
             label = "RU_DOLLAR";
         };
+
+        cancel: cancel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &cancel &lg_en>;
+            label = "CANCEL";
+            tap-ms = <5>;
+        };
     };
 
     keymap {
@@ -419,7 +429,7 @@
 &studio_unlock  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                       &kp Y            &kp U  &kp I      &kp O     &kp P                &none
 &bt BT_SEL 0    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                       &kp H            &kp J  &kp K      &kp L     &kp SEMI             &none
 &bt BT_SEL 1    &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                           &kp N            &kp M  &kp COMMA  &kp DOT   &mt LC(SLASH) SLASH  &bt BT_CLR_ALL
-                                &kp GRAVE       &kp LGUI              &to 0        &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
+                                &kp GRAVE       &kp LGUI              &cancel      &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
@@ -441,7 +451,7 @@
 &trans  &kp Q       &kp W       &kp E            &kp R        &kp T                     &kp Y   &kp U        &kp I      &kp O      &kp P                   &trans
 &trans  &mt LGUI A  &mt LALT S  &mt LS(LCTRL) D  &mt LCTRL F  &kp G                     &kp H   &mt LCTRL J  &kp K      &kp LS(L)  &mt LS(RALT) SEMICOLON  &trans
 &trans  &kp Z       &kp X       &kp C            &kp V        &kp B                     &kp N   &kp M        &kp COMMA  &kp DOT    &kp SLASH               &trans
-                    &trans      &trans           &to 0        &trans  &trans    &trans  &trans  &trans       &trans     &trans
+                    &trans      &trans           &trans       &trans  &trans    &trans  &trans  &trans       &trans     &trans
             >;
 
             label = "Mods";
@@ -485,7 +495,7 @@
 &kp LS(LA(LC(LEFT_BRACKET)))   &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                  &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))          &trans
 &kp LS(LA(LC(N)))              &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))                  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))  &trans
 &kp LS(LA(LC(RIGHT_BRACKET)))  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(V)))  &kp LS(LA(LC(B)))                  &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))      &trans
-                                                  &trans             &trans             &to 0              &none              &sl 6    &none  &none              &none              &trans                 &trans
+                                                  &trans             &trans             &trans             &none              &sl 6    &none  &none              &none              &trans                 &trans
             >;
 
             label = "User2";
