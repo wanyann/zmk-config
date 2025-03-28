@@ -103,6 +103,11 @@
             bindings = <&kp O>;
             key-positions = <8 9>;
         };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -233,6 +238,163 @@
 
             label = "RU_CODE";
         };
+
+        ru_and: ru_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp AMPERSAND>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_AND";
+        };
+
+        ru_single_quote: ru_single_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_SINGLE_QUOTE";
+        };
+
+        ru_left_bracket: ru_left_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp LEFT_BRACKET>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_LEFT_BRACKET";
+            tap-ms = <0>;
+        };
+
+        ru_right_bracket: ru_rt_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_RT_BRACKET";
+        };
+
+        ru_left_brace: ru_left_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp LEFT_BRACE>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_LEFT_BRACE";
+        };
+
+        ru_right_brace: ru_right_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp LEFT_BRACE>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_RIGHT_BRACE";
+        };
+
+        ru_semicolon: ru_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp SEMICOLON>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_SEMICOLON";
+        };
+
+        ru_hash: ru_hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp HASH>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_HASH";
+        };
+
+        ru_pipe: ru_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp HASH>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_PIPE";
+        };
+
+        ru_less: ru_less {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp LESS_THAN>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_LESS";
+        };
+
+        ru_greater: ru_greater {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp GREATER_THAN>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_GREATER";
+        };
+
+        ru_dollar: ru_dollar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_en>,
+                <&macro_wait_time 10>,
+                <&kp GREATER_THAN>,
+                <&macro_wait_time 10>,
+                <&lg_ru>;
+
+            label = "RU_DOLLAR";
+        };
     };
 
     keymap {
@@ -346,10 +508,10 @@
 
         RuSym {
             bindings = <
-&trans  &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &trans      &trans  &trans  &trans  &trans  &trans
-                   &trans                &trans     &trans       &trans     &trans    &trans  &trans      &trans  &trans  &trans
+&trans  &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans    &trans
+&trans  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe  &trans
+&trans  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans    &trans
+                   &trans                &trans     &trans       &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
         };
 
