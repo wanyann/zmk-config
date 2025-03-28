@@ -216,10 +216,10 @@
 
         EnSym {
             bindings = <
-&trans  &trans     &kp AT                &kp UNDER     &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &trans         &kp RIGHT_BRACKET  &trans    &trans
-&trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp PLUS                     &none             &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
-&trans  &trans     &kp ASTRK             &kp CARET     &kp PERCENT            &trans                       &kp AMPERSAND     &kp EXCL          &kp DOLLAR     &kp HASH           &trans    &trans
-                   &trans                &trans        &trans                 &trans     &trans    &trans  &trans            &trans            &trans         &trans
+&trans  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans    &trans
+&trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &none             &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
+&trans  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &trans                       &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans    &trans
+                   &trans                &trans     &trans                 &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
 
             label = "EnSym";
