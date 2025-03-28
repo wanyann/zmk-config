@@ -120,7 +120,7 @@
             label = "LG_EN";
         };
 
-        lmt: kc_less {
+        mlt: kc_less {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings =
@@ -133,6 +133,34 @@
                 <&to 1>;
 
             label = "KC_LESS";
+        };
+
+        en_code_block: en_code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp GRAVE &kp GRAVE &kp GRAVE>,
+                <&macro_wait_time 10>,
+                <&kp RETURN &kp RET>,
+                <&macro_wait_time 10>,
+                <&kp GRAVE &kp GRAVE &kp GRAVE>,
+                <&macro_wait_time 10>,
+                <&kp UP_ARROW>;
+
+            label = "EN_CODE_BLOCK";
+        };
+
+        en_number: en_number {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&lg_ru>,
+                <&macro_wait_time 10>,
+                <&kp LS(N5)>,
+                <&macro_wait_time 10>,
+                <&lg_en>;
+
+            label = "EN_NUMBER";
         };
     };
 
@@ -153,7 +181,7 @@
         Diktor {
             bindings = <
 &trans  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp P      &kp D        &kp R    &kp L          &kp X            &trans
-&trans  &lmt LGUI E  &lmt LALT B             &lmt LS(LCTRL) T        &lmt LCTRL J         &mt LC(F) F                                &kp K      &mt LCTRL Y  &lt 5 N  &kp C          &mt RALT H       &trans
+&trans  &mlt LGUI E  &mlt LALT B             &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                                &kp K      &mt LCTRL Y  &lt 5 N  &kp C          &mt RALT H       &trans
 &trans  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) B                    &kp COMMA  &kp V        &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
                      &trans                  &trans                  &trans               &trans                   &trans    &trans  &trans     &trans       &trans   &trans
             >;
@@ -218,10 +246,10 @@
 
         EnSym {
             bindings = <
-&trans  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans    &trans
-&trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &none             &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
-&trans  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &trans                       &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans    &trans
-                   &trans                &trans     &trans                 &trans     &trans    &trans  &trans            &trans            &trans         &trans
+&trans  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                         &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans    &trans
+&trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                          &en_number        &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
+&trans  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code_block                    &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans    &trans
+                   &trans                &trans     &trans                 &trans          &trans    &trans  &trans            &trans            &trans         &trans
             >;
 
             label = "EnSym";
