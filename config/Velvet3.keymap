@@ -7,6 +7,10 @@
 
 &lt { flavor = "balanced"; };
 
+&caps_word {
+    continue-list = <DASH SEMICOLON UNDERSCORE SINGLE_QUOTE LEFT_BRACKET RIGHT_BRACKET LESS_THAN GREATER_THAN>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
