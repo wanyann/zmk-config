@@ -109,14 +109,14 @@
         lg_ru: ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_3)) &to 1>;
+            bindings = <&kp LS(LG(NUMBER_3)) &to 1>;
             label = "RU";
         };
 
         lg_en: lg_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_4)) &to 0>;
+            bindings = <&kp LS(LG(NUMBER_4)) &to 0>;
             label = "LG_EN";
         };
 
