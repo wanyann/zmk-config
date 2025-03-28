@@ -412,12 +412,12 @@
             label = "RU_DOLLAR";
         };
 
-        to0: cancel {
+        to_0: to_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &lg_en>;
-            label = "CANCEL";
-            tap-ms = <5>;
+            label = "TO_0";
+            tap-ms = <0>;
         };
     };
 
@@ -429,7 +429,7 @@
 &studio_unlock  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                       &kp Y            &kp U  &kp I      &kp O     &kp P                &none
 &bt BT_SEL 0    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                       &kp H            &kp J  &kp K      &kp L     &kp SEMI             &none
 &bt BT_SEL 1    &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                           &kp N            &kp M  &kp COMMA  &kp DOT   &mt LC(SLASH) SLASH  &bt BT_CLR_ALL
-                                &kp GRAVE       &kp LGUI              &to0         &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
+                                &kp GRAVE       &kp LGUI              &to_0        &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
