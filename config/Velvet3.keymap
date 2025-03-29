@@ -53,13 +53,13 @@
             layers = <0 4>;
         };
 
-        combo_question_ru {
+        combo_question_en {
             bindings = <&kp QUESTION>;
             key-positions = <3 4>;
             layers = <0>;
         };
 
-        combo_question_en {
+        combo_quote_en {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 33>;
             layers = <0>;
