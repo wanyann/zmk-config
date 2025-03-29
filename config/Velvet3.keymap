@@ -426,10 +426,10 @@
 
         Base {
             bindings = <
-&studio_unlock  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                       &kp Y            &kp U  &kp I      &kp O     &kp P                &none
-&bt BT_SEL 0    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                       &kp H            &kp J  &kp K      &kp L     &kp SEMI             &none
-&none           &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                           &kp N            &kp M  &kp COMMA  &kp DOT   &mt LC(SLASH) SLASH  &none
-                                &kp GRAVE       &kp LGUI              &to_0        &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
+&none  &kp Q           &mt LC(W) W     &kp E                 &mt LC(R) R  &mt LC(T) T                                       &kp Y            &kp U  &kp I      &kp O     &kp P                &none
+&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LC(LEFT_SHIFT) D  &mt LCTRL F  &mt LC(F) G                                       &kp H            &kp J  &kp K      &kp L     &kp SEMI             &none
+&none  &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C           &mt LC(V) V  &mt LS(LA(LC(LG(V)))) B                           &kp N            &kp M  &kp COMMA  &kp DOT   &mt LC(SLASH) SLASH  &none
+                       &kp GRAVE       &kp LGUI              &to_0        &lt 4 SPACE              &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
@@ -523,10 +523,10 @@
 
         OS {
             bindings = <
-&trans  &trans        &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LEFT)  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans         &trans            &trans                &trans                &trans    &trans  &trans  &trans  &trans  &trans
+&studio_unlock  &trans        &trans          &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0    &kp LC(LEFT)  &kp LC(RIGHT)   &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1    &trans        &trans          &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans  &trans
+                              &bt BT_CLR_ALL  &trans            &trans                &trans                &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
