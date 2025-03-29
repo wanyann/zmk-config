@@ -17,110 +17,110 @@
     combos {
         compatible = "zmk,combos";
 
-        CtrlEnt {
+        combo_ctrl_ent {
             bindings = <&kp LC(ENTER)>;
             key-positions = <2 3>;
         };
 
-        Enter {
+        combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <4 2>;
         };
 
-        Tab {
+        combo_tab {
             bindings = <&kp TAB>;
             key-positions = <14 16>;
         };
 
-        Esc {
+        combo_esc {
             bindings = <&kp ESC>;
             key-positions = <26 28>;
         };
 
-        Ru {
+        combo_ru {
             bindings = <&lg_ru>;
             key-positions = <28 27>;
         };
 
-        En {
+        combo_en {
             bindings = <&lg_en>;
             key-positions = <31 32>;
         };
 
-        OSLEnSym {
+        combo_osl_sym_en {
             bindings = <&sl 7>;
             key-positions = <20 19>;
             layers = <0 4>;
         };
 
-        QuestionEn {
+        combo_question_ru {
             bindings = <&kp QUESTION>;
             key-positions = <3 4>;
             layers = <0>;
         };
 
-        QuoteEn {
+        combo_question_en {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 33>;
             layers = <0>;
         };
 
-        OSLRuSym {
+        combo_osl_sym_ru {
             bindings = <&sl 10>;
             key-positions = <19 20>;
             layers = <1 4>;
         };
 
-        QuestionRu {
+        combo_question_ru {
             bindings = <&kp LS(N7)>;
             key-positions = <3 4>;
             layers = <1>;
         };
 
-        QuoteRu {
+        combo_quote_ru {
             bindings = <&kp LS(NUMBER_2)>;
             key-positions = <31 33>;
             layers = <0>;
         };
 
-        Dash {
+        combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <19 21>;
         };
 
-        YRu {
+        combo_yi_ru {
             bindings = <&kp Q>;
             key-positions = <21 20>;
             layers = <1>;
         };
 
-        ShRu {
+        combo_she_ru {
             bindings = <&kp I>;
             key-positions = <32 33>;
             layers = <1>;
         };
 
-        SchaRu {
+        combo_scha_ru {
             bindings = <&kp O>;
             key-positions = <8 9>;
         };
 
-        underscore {
+        combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <16 19>;
         };
 
-        caps_word {
+        combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <13 14>;
         };
 
-        osl_fn {
+        combo_osl_fn {
             bindings = <&sl 8>;
             key-positions = <26 27>;
         };
 
-        osl_os {
+        combo_osl_os {
             bindings = <&sl 9>;
             key-positions = <25 26>;
         };
