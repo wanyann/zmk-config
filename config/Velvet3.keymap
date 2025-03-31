@@ -434,10 +434,14 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2 &lg_en>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
+                <&macro_tap>,
+                <&lg_en>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2 &lg_ru>;
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
+                <&macro_tap>,
+                <&lg_ru>;
 
             label = "MOD_LAYER";
         };
