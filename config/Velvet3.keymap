@@ -171,11 +171,13 @@
             bindings =
                 <&macro_tap>,
                 <&os_en>,
+                <&macro_wait_time 50>,
                 <&macro_press>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
+                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&os_ru>;
 
