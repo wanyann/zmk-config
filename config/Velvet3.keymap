@@ -22,7 +22,7 @@
 
         combo_ctrl_ent {
             bindings = <&kp LC(ENTER)>;
-            key-positions = <4 3>;
+            key-positions = <4 2>;
             require-prior-idle-ms = <100>;
         };
 
@@ -86,7 +86,7 @@
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
-            key-positions = <4 2>;
+            key-positions = <4 3>;
             require-prior-idle-ms = <100>;
             layers = <1>;
         };
@@ -122,6 +122,7 @@
             bindings = <&kp O>;
             key-positions = <8 9>;
             require-prior-idle-ms = <100>;
+            layers = <1>;
         };
 
         combo_underscore {
