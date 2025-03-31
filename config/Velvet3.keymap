@@ -165,6 +165,31 @@
             label = "LG_EN";
         };
 
+        mod_layer: mod_layer {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
+                <&macro_tap>,
+                <&lg_en>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
+                <&macro_tap>,
+                <&lg_ru>;
+
+            label = "MOD_LAYER";
+        };
+
+        cw_off: capsword_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LOCKING_CAPS>;
+            label = "CAPSWORD_OFF";
+            tap-ms = <0>;
+        };
+
         en_code: en_code_block {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -419,31 +444,6 @@
                 <&lg_ru>;
 
             label = "RU_DOLLAR";
-        };
-
-        cw_off: capsword_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LOCKING_CAPS>;
-            label = "CAPSWORD_OFF";
-            tap-ms = <0>;
-        };
-
-        mod_layer: mod_layer {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
-                <&macro_tap>,
-                <&lg_en>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 2>,
-                <&macro_tap>,
-                <&lg_ru>;
-
-            label = "MOD_LAYER";
         };
     };
 
