@@ -22,22 +22,22 @@
 
         combo_ctrl_ent {
             bindings = <&kp LC(ENTER)>;
-            key-positions = <2 3>;
+            key-positions = <4 3>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <4 2>;
+            key-positions = <2 3>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <14 16>;
+            key-positions = <14 15>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <26 28>;
+            key-positions = <26 27>;
         };
 
         combo_ru {
@@ -76,7 +76,7 @@
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
-            key-positions = <3 4>;
+            key-positions = <4 2>;
             layers = <1>;
         };
 
@@ -120,7 +120,7 @@
 
         combo_osl_fn {
             bindings = <&sl 8>;
-            key-positions = <26 27>;
+            key-positions = <26 28>;
         };
 
         combo_osl_os {
