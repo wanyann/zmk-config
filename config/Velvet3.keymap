@@ -11,7 +11,10 @@
 
 &sl { release-after-ms = <5000>; };
 
-&sk { release-after-ms = <5000>; };
+&sk {
+    release-after-ms = <5000>;
+    quick-release;
+};
 
 / {
     combos {
