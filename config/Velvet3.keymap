@@ -80,7 +80,7 @@
         combo_quote_ru {
             bindings = <&kp LS(NUMBER_2)>;
             key-positions = <31 33>;
-            layers = <0>;
+            layers = <1>;
         };
 
         combo_minus {
