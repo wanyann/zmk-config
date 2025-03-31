@@ -459,6 +459,13 @@
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "OS_EN";
         };
+
+        macro_ctrl_L: macro_ctrl_L {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lg_en &kp LC(L) &lg_ru>;
+            label = "MACRO_CTRL_L";
+        };
     };
 
     behaviors {
@@ -487,6 +494,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
+        };
+
+        ctrl_L: ctrl_L {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_L";
+            bindings = <&kp L>, <&macro_ctrl_L>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
