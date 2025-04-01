@@ -156,21 +156,25 @@
         combo_flash_left {
             bindings = <&bootloader>;
             key-positions = <12 24 0>;
+            require-prior-idle-ms = <1000>;
         };
 
         combo_flash_right {
             bindings = <&bootloader>;
             key-positions = <11 23 35>;
+            require-prior-idle-ms = <1000>;
         };
 
         combo_left_reset {
             bindings = <&sys_reset>;
             key-positions = <36 37>;
+            require-prior-idle-ms = <1000>;
         };
 
         combo_right_reset {
             bindings = <&sys_reset>;
             key-positions = <44 45>;
+            require-prior-idle-ms = <1000>;
         };
     };
 
@@ -187,6 +191,20 @@
             #binding-cells = <0>;
             bindings = <&to 0 &os_en>;
             label = "LG_EN";
+        };
+
+        os_ru: os_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(NUMBER_3))>;
+            label = "OS_RU";
+        };
+
+        os_en: os_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            label = "OS_EN";
         };
 
         mod_layer: mod_layer {
@@ -208,6 +226,29 @@
             bindings = <&kp LOCKING_CAPS>;
             label = "CAPSWORD_OFF";
             tap-ms = <0>;
+        };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 30>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_wait_time 30>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_TAB";
+        };
+
+        select_row: select_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp LS(HOME)>;
+            label = "SELECT_ROW";
         };
 
         en_code: en_code_block {
@@ -466,49 +507,6 @@
             label = "RU_DOLLAR";
         };
 
-        os_ru: os_ru {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_3))>;
-            label = "OS_RU";
-        };
-
-        os_en: os_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_4))>;
-            label = "OS_EN";
-        };
-
-        macro_ctrl_L: macro_ctrl_L {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&lg_en &kp LC(L) &lg_ru>;
-            label = "MACRO_CTRL_L";
-        };
-
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 30>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_wait_time 30>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "ALT_TAB";
-        };
-
-        select_row: select_row {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp END &kp LS(HOME)>;
-            label = "SELECT_ROW";
-        };
     };
 
     behaviors {
