@@ -184,6 +184,7 @@
             #binding-cells = <0>;
             bindings = <&to 1 &os_ru>;
             label = "LG_RU";
+            tap-ms = <30>;
         };
 
         lg_en: lg_en {
@@ -191,6 +192,7 @@
             #binding-cells = <0>;
             bindings = <&to 0 &os_en>;
             label = "LG_EN";
+            tap-ms = <30>;
         };
 
         os_ru: os_ru {
@@ -244,6 +246,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALT_TAB";
+            tap-ms = <30>;
         };
 
         select_row: select_row {
