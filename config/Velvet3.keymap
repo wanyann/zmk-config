@@ -284,13 +284,7 @@
         ru_at: ru_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&lg_en>,
-                <&macro_wait_time 10>,
-                <&kp AT>,
-                <&macro_wait_time 10>,
-                <&lg_ru>;
+            bindings = <&lg_en &kp AT>, <&macro_pause_for_release>, <&lg_ru>;
 
             label = "RU_AT";
         };
