@@ -466,6 +466,27 @@
             bindings = <&lg_en &kp LC(L) &lg_ru>;
             label = "MACRO_CTRL_L";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_TAB";
+        };
+
+        select_row: select_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp LS(HOME)>;
+            label = "SELECT_ROW";
+        };
     };
 
     behaviors {
@@ -524,9 +545,9 @@
 
         Mods {
             bindings = <
-&trans  &kp Q       &kp W       &kp E            &kp R        &kp T                     &kp Y   &kp U        &kp I      &kp O          &kp P                   &trans
-&trans  &mt LGUI A  &mt LALT S  &mt LS(LCTRL) D  &mt LCTRL F  &kp G                     &kp H   &mt LCTRL J  &kp K      &macro_ctrl_L  &mt LS(RALT) SEMICOLON  &trans
-&trans  &kp Z       &kp X       &kp C            &kp V        &kp B                     &kp N   &kp M        &kp COMMA  &kp DOT        &kp SLASH               &trans
+&trans  &kp Q       &kp W       &kp E            &kp R        &kp T                     &kp Y   &kp U        &kp I      &kp O    &kp P                   &trans
+&trans  &mt LGUI A  &mt LALT S  &mt LS(LCTRL) D  &mt LCTRL F  &kp G                     &kp H   &mt LCTRL J  &kp K      &kp L    &mt LS(RALT) SEMICOLON  &trans
+&trans  &kp Z       &kp X       &kp C            &kp V        &kp B                     &kp N   &kp M        &kp COMMA  &kp DOT  &kp SLASH               &trans
                     &trans      &trans           &trans       &trans  &trans    &trans  &trans  &trans       &trans     &trans
             >;
 
@@ -546,9 +567,9 @@
 
         Navigation {
             bindings = <
-&trans  &kp LA(TAB)                 &kp LS(LA(LC(LG(TAB))))          &trans            &kp LS(LC(LA(LG(F1))))  &trans                    &kp GRAVE  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &kp LC(LEFT_BRACKET)        &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL               &trans                    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &mt LC(Z) LS(LEFT_BRACKET)  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(V))     &trans                    &trans     &trans    &none     &none      &trans  &trans
+&trans  &alt_tab                    &kp LS(LA(LC(LG(TAB))))          &trans            &kp LS(LC(LA(LG(F1))))  &trans                    &kp GRAVE  &kp HOME  &kp UP    &kp END    &trans       &trans
+&trans  &kp LC(LEFT_BRACKET)        &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL               &trans                    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &select_row  &trans
+&trans  &mt LC(Z) LS(LEFT_BRACKET)  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(V))     &trans                    &trans     &trans    &none     &none      &trans       &trans
                                     &trans                           &trans            &trans                  &trans  &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
