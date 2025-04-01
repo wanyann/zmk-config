@@ -284,7 +284,7 @@
         ru_at: ru_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lg_en &kp AT>, <&macro_pause_for_release>, <&lg_ru>;
+            bindings = <&lg_en>, <&macro_pause_for_release>, <&kp AT &lg_ru>;
 
             label = "RU_AT";
         };
