@@ -196,14 +196,16 @@
         os_ru: os_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_3))>;
+            bindings = <&kp LS(LG(NUMBER_3))>, <&macro_wait_time 30>;
+
             label = "OS_RU";
         };
 
         os_en: os_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_4))>;
+            bindings = <&kp LS(LG(NUMBER_4))>, <&macro_wait_time 30>;
+
             label = "OS_EN";
         };
 
@@ -234,7 +236,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_wait_time 30>,
