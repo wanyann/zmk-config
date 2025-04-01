@@ -276,11 +276,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_ru>,
+                <&os_ru>,
                 <&macro_wait_time 10>,
                 <&kp LS(N5)>,
                 <&macro_wait_time 10>,
-                <&lg_en>;
+                <&os_en>;
 
             label = "EN_NUMBER";
         };
@@ -288,7 +288,7 @@
         ru_at: ru_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lg_en &kp AT &lg_ru>;
+            bindings = <&os_en &kp AT &os_ru>;
             label = "RU_AT";
         };
 
@@ -296,11 +296,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp TILDE>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_TILDE";
         };
@@ -309,11 +309,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp CARET>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_CAP";
         };
@@ -322,11 +322,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp GRAVE>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_GRAVE";
         };
@@ -335,7 +335,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp GRAVE &kp GRAVE &kp GRAVE>,
                 <&macro_wait_time 10>,
@@ -345,7 +345,7 @@
                 <&macro_wait_time 10>,
                 <&kp UP_ARROW>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_CODE";
         };
@@ -354,11 +354,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp AMPERSAND>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_AND";
         };
@@ -367,11 +367,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_SINGLE_QUOTE";
         };
@@ -380,11 +380,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp LEFT_BRACKET>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_LEFT_BRACKET";
             tap-ms = <0>;
@@ -394,11 +394,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp RIGHT_BRACKET>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_RT_BRACKET";
         };
@@ -407,11 +407,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp LEFT_BRACE>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_LEFT_BRACE";
         };
@@ -420,11 +420,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp LEFT_BRACE>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_RIGHT_BRACE";
         };
@@ -433,11 +433,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp SEMICOLON>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_SEMICOLON";
         };
@@ -446,11 +446,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp HASH>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_HASH";
         };
@@ -459,11 +459,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp HASH>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_PIPE";
         };
@@ -472,11 +472,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp LESS_THAN>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_LESS";
         };
@@ -485,11 +485,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp GREATER_THAN>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_GREATER";
         };
@@ -498,11 +498,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&lg_en>,
+                <&os_en>,
                 <&macro_wait_time 10>,
                 <&kp GREATER_THAN>,
                 <&macro_wait_time 10>,
-                <&lg_ru>;
+                <&os_ru>;
 
             label = "RU_DOLLAR";
         };
