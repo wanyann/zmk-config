@@ -654,10 +654,10 @@
 
         Boot {
             bindings = <
-&trans  &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &trans
-&trans  &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &trans
-&trans  &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &trans
-                &sys_reset  &bootloader  &trans  &trans  &trans    &trans  &trans  &trans  &bootloader  &sys_reset
+&bootloader  &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &bootloader
+&trans       &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &trans
+&sys_reset   &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &sys_reset
+                     &sys_reset  &bootloader  &trans  &trans  &trans    &trans  &trans  &trans  &bootloader  &sys_reset
             >;
         };
 
