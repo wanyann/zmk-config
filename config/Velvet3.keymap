@@ -190,7 +190,7 @@
         lg_en: lg_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &os_en>, <&macro_wait_time 150>;
+            bindings = <&to 0 &os_en>, <&macro_wait_time 500>;
 
             label = "LG_EN";
             tap-ms = <30>;
