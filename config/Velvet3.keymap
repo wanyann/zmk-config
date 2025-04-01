@@ -285,6 +285,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap>,
                 <&lg_en>,
                 <&macro_wait_time 10>,
                 <&kp AT>,
