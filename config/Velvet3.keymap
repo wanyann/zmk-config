@@ -133,6 +133,7 @@
             bindings = <&kp UNDER>;
             key-positions = <16 19>;
             require-prior-idle-ms = <50>;
+            layers = <0 1>;
         };
 
         combo_caps_word {
