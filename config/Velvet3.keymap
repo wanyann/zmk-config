@@ -553,7 +553,7 @@
         Diktor {
             bindings = <
 &trans  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                              &kp P      &kp D         &kp R    &kp L          &kp X            &trans
-&none   &mlt LGUI E  &mlt LALT B             &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                                  &kp K      &mlt LCTRL Y  &lt 5 N  &kp C          &mlt RALT H      &trans
+&trans  &mlt LGUI E  &mlt LALT B             &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                                  &kp K      &mlt LCTRL Y  &lt 5 N  &kp C          &mlt RALT H      &trans
 &trans  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) DOT                    &kp COMMA  &kp V         &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
                      &trans                  &trans                  &trans               &trans                     &trans    &trans  &trans     &trans        &trans   &trans
             >;
