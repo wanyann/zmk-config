@@ -11,7 +11,10 @@
 
 &lt { flavor = "balanced"; };
 
-&caps_word { continue-list = <MINUS SEMICOLON UNDERSCORE SINGLE_QUOTE LEFT_BRACKET RIGHT_BRACKET COMMA DOT GRAVE BACKSPACE DELETE>; };
+&caps_word {
+    continue-list = <MINUS SEMICOLON UNDERSCORE SINGLE_QUOTE LEFT_BRACKET RIGHT_BRACKET COMMA DOT GRAVE BACKSPACE DELETE>;
+    mods = <(MOD_LSFT)>;
+};
 
 &sl { release-after-ms = <5000>; };
 
