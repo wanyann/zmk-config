@@ -142,7 +142,7 @@
         combo_caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <13 14>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
         };
 
         combo_osl_fn {
