@@ -214,7 +214,7 @@
             label = "OS_EN";
         };
 
-        mod_layer: mod_layer {
+        mlt: mlt {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings =
@@ -224,7 +224,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_2to2 &mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 2>;
 
-            label = "MOD_LAYER";
+            label = "MLT";
         };
 
         cw_off: capsword_off {
@@ -556,10 +556,10 @@
 
         Diktor {
             bindings = <
-&trans  &kp W              &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                              &kp P      &kp D               &kp R    &kp L          &kp X              &trans
-&trans  &mod_layer LGUI E  &mod_layer LALT B       &mod_layer LS(LCTRL) T  &mod_layer LCTRL J   &mt LC(F) F                                  &kp K      &mod_layer LCTRL Y  &lt 5 N  &kp C          &mod_layer RALT H  &trans
-&trans  &mt LC(Z) A        &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) DOT                    &kp COMMA  &kp V               &kp G    &kp SEMICOLON  &mt LC(SLASH) U    &trans
-                           &trans                  &trans                  &trans               &trans                     &trans    &trans  &trans     &trans              &trans   &trans
+&trans  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                              &kp P      &kp D         &kp R    &kp L          &kp X            &trans
+&trans  &mlt LGUI E  &mlt LALT B             &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                                  &kp K      &mlt LCTRL Y  &lt 5 N  &kp C          &mlt RALT H      &trans
+&trans  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) DOT                    &kp COMMA  &kp V         &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
+                     &trans                  &trans                  &trans               &trans                     &trans    &trans  &trans     &trans        &trans   &trans
             >;
 
             label = "Diktor";
