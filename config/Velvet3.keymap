@@ -156,30 +156,6 @@
             key-positions = <25 26>;
             require-prior-idle-ms = <50>;
         };
-
-        combo_flash_left {
-            bindings = <&bootloader>;
-            key-positions = <12 24 0>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        combo_flash_right {
-            bindings = <&bootloader>;
-            key-positions = <11 23 35>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        combo_left_reset {
-            bindings = <&sys_reset>;
-            key-positions = <36 37>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        combo_right_reset {
-            bindings = <&sys_reset>;
-            key-positions = <44 45>;
-            require-prior-idle-ms = <1000>;
-        };
     };
 
     macros {
