@@ -195,10 +195,10 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &macro_param_2to2 &ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 2>,
+                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 2>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &macro_param_2to2 &ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 2>;
+                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 2>;
 
             label = "MLT";
         };
@@ -496,23 +496,12 @@
 
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
+            label = "Home Row Mod";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
-        };
-
-        ht: ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold Tap";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-            hold-trigger-on-release;
         };
     };
 
@@ -543,10 +532,10 @@
 
         Mods {
             bindings = <
-&trans  &kp Q       &kp W       &kp E            &kp R        &kp T                     &kp Y   &kp U        &kp I      &kp O    &kp P                   &trans
-&trans  &mt LGUI A  &mt LALT S  &mt LS(LCTRL) D  &mt LCTRL F  &kp G                     &kp H   &mt LCTRL J  &kp K      &kp L    &mt LS(RALT) SEMICOLON  &trans
-&trans  &kp Z       &kp X       &kp C            &kp V        &kp B                     &kp N   &kp M        &kp COMMA  &kp DOT  &kp SLASH               &trans
-                    &trans      &trans           &trans       &trans  &trans    &trans  &trans  &trans       &trans     &trans
+&trans  &kp Q        &kp W        &kp E             &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P                    &trans
+&trans  &hrm LGUI A  &hrm LALT S  &hrm LS(LCTRL) D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &kp K      &kp L    &hrm LS(RALT) SEMICOLON  &trans
+&trans  &kp Z        &kp X        &kp C             &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH                &trans
+                     &trans       &trans            &trans        &trans  &trans    &trans  &trans  &trans        &trans     &trans
             >;
 
             label = "Mods";
