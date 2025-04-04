@@ -511,16 +511,6 @@
     };
 
     behaviors {
-        mlt: mlt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Mod Layer/Tap";
-            bindings = <&mod_layer>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-        };
-
         layer_off: layer_off {
             compatible = "zmk,behavior-toggle-layer";
             label = "LAYER_OFF";
@@ -536,6 +526,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
+        };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
         };
     };
 
