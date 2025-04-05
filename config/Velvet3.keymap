@@ -530,8 +530,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
-            hold-while-undecided;
-            hold-while-undecided-linger;
         };
 
         hrm_slow: hrm_slow {
@@ -542,8 +540,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-while-undecided-linger;
         };
     };
 
