@@ -525,17 +525,17 @@
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             label = "Home Row Mod";
-            bindings = <&lm>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
         hrm_slow: hrm_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM for slow fingers";
-            bindings = <&lm>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -560,7 +560,7 @@
         Diktor {
             bindings = <
 &trans  &kp W             &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                              &kp P      &kp D         &kp R    &kp L          &kp X             &trans
-&trans  &hrm_slow LGUI E  &hrm_slow LALT B        &hrm LS(LCTRL) T        &hrm LCTRL J         &mt LC(F) F                                  &kp K      &hrm LCTRL Y  &lt 5 N  &kp C          &hrm_slow RALT H  &trans
+&trans  &mlt_slow LGUI E  &mlt_slow LALT B        &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                                  &kp K      &mlt LCTRL Y  &lt 5 N  &kp C          &mlt_slow RALT H  &trans
 &trans  &mt LC(Z) A       &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LS(LA(LC(LG(V)))) DOT                    &kp COMMA  &kp V         &kp G    &kp SEMICOLON  &mt LC(SLASH) U   &trans
                           &trans                  &trans                  &trans               &trans                     &trans    &trans  &trans     &trans        &trans   &trans
             >;
