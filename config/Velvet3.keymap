@@ -692,19 +692,19 @@
 
         Mod_Ctrl {
             bindings = <
-&trans  &kp LC(Q)          &kp LC(W)          &kp LC(E)     &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)         &trans
-&trans  &ml_slow 15 LC(A)  &ml_slow 14 LC(S)  &ml 13 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 16 SEMI  &trans
-&trans  &kp LC(Z)          &kp LC(X)          &kp LC(C)     &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)      &trans
-                           &trans             &trans        &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
+&trans  &kp LC(Q)          &kp LC(W)          &kp LC(E)    &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)             &trans
+&trans  &ml_slow 15 LC(A)  &ml_slow 14 LC(S)  &ml 0 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 16 LC(SEMI)  &trans
+&trans  &kp LC(Z)          &kp LC(X)          &kp LC(C)    &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)          &trans
+                           &trans             &trans       &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
             >;
         };
 
         Mod_CtrlShift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LS(Q))          &kp LC(LS(W))          &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))                    &kp LC(LS(Y))  &kp LC(LS(U))  &kp LC(LS(I))      &kp LC(LS(O))    &kp LC(LS(P))             &trans
+&trans  &ml_slow 15 LC(LS(A))  &ml_slow 14 LC(LS(S))  &none          &kp LC(LS(F))  &kp LC(LS(G))                    &kp LC(LS(H))  &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 16 LS(LC(SEMI))  &trans
+&trans  &kp LC(LS(Z))          &kp LC(LS(X))          &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))                    &kp LC(LS(N))  &kp LC(LS(M))  &kp LC(LS(COMMA))  &kp LC(LS(DOT))  &kp LC(LS(FSLH))          &trans
+                               &trans                 &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans             &trans
             >;
         };
 
