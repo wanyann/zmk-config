@@ -716,5 +716,23 @@
                            &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
             >;
         };
+
+        Mod_Gui {
+            bindings = <
+&trans  &kp LG(Q)          &kp LG(W)  &kp LG(E)     &kp LG(R)     &kp LG(T)                    &kp LG(Y)  &kp LG(U)     &kp LG(I)      &kp LG(O)    &kp LG(P)             &trans
+&trans  &ml_slow 14 LG(A)  &kp LG(S)  &ml 13 LG(D)  &ml 12 LG(F)  &kp LG(G)                    &kp LG(H)  &ml 12 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 12 LG(SEMI)  &trans
+&trans  &kp LG(Z)          &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LG(B)                    &kp LG(N)  &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)          &trans
+                           &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
