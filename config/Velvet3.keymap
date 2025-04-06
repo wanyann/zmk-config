@@ -579,10 +579,10 @@
 
         Diktor {
             bindings = <
-&trans  &kp W             &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D                    &kp R    &kp L          &kp X             &trans
-&trans  &mlt_slow LGUI E  &mlt_slow LALT B        &ml 13 T                &ml 12 J             &mt LC(F) F                        &kp K      &mlt_deprecated LCTRL Y  &lt 5 N  &kp C          &mlt_slow RALT H  &trans
-&trans  &mt LC(Z) A       &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V                    &kp G    &kp SEMICOLON  &mt LC(SLASH) U   &trans
-                          &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans                   &trans   &trans
+&trans  &kp W          &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R    &kp L          &kp X            &trans
+&trans  &ml_slow 15 E  &ml_slow 14 B           &ml 13 T                &ml 12 J             &mt LC(F) F                        &kp K      &ml_slow 12 Y  &lt 5 N  &kp C          &ml 16 H         &trans
+&trans  &mt LC(Z) A    &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
+                       &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans         &trans   &trans
             >;
 
             label = "Diktor";
