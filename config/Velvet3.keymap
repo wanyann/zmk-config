@@ -692,46 +692,48 @@
 
         Mod_Ctrl {
             bindings = <
-&trans  &kp LC(Q)         &kp LC(W)         &kp LC(E)     &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)            &trans
-&trans  &ml_slow 0 LC(A)  &ml_slow 0 LC(S)  &ml 13 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 0 LC(SEMI)  &trans
-&trans  &kp LC(Z)         &kp LC(X)         &kp LC(C)     &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)         &trans
-                          &trans            &trans        &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
+&trans  &kp LC(Q)          &kp LC(W)          &kp LC(E)     &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)             &trans
+&trans  &ml_slow 15 LC(A)  &ml_slow 14 LC(S)  &ml 13 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 16 LC(SEMI)  &trans
+&trans  &kp LC(Z)          &kp LC(X)          &kp LC(C)     &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)          &trans
+                           &trans             &trans        &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
             >;
         };
 
         Mod_CtrlShift {
             bindings = <
-&trans  &kp LC(LS(Q))         &kp LC(LS(W))         &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))                    &kp LC(LS(Y))  &kp LC(LS(U))  &kp LC(LS(I))      &kp LC(LS(O))    &kp LC(LS(P))            &trans
-&trans  &ml_slow 0 LC(LS(A))  &ml_slow 0 LC(LS(S))  &none          &kp LC(LS(F))  &kp LC(LS(G))                    &kp LC(LS(H))  &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 0 LS(LC(SEMI))  &trans
-&trans  &kp LC(LS(Z))         &kp LC(LS(X))         &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))                    &kp LC(LS(N))  &kp LC(LS(M))  &kp LC(LS(COMMA))  &kp LC(LS(DOT))  &kp LC(LS(FSLH))         &trans
-                              &trans                &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans             &trans
+&trans  &kp LC(LS(Q))          &kp LC(LS(W))          &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))                    &kp LC(LS(Y))  &kp LC(LS(U))  &kp LC(LS(I))      &kp LC(LS(O))    &kp LC(LS(P))             &trans
+&trans  &ml_slow 15 LC(LS(A))  &ml_slow 14 LC(LS(S))  &none          &kp LC(LS(F))  &kp LC(LS(G))                    &kp LC(LS(H))  &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 16 LS(LC(SEMI))  &trans
+&trans  &kp LC(LS(Z))          &kp LC(LS(X))          &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))                    &kp LC(LS(N))  &kp LC(LS(M))  &kp LC(LS(COMMA))  &kp LC(LS(DOT))  &kp LC(LS(FSLH))          &trans
+                               &trans                 &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans             &trans
             >;
         };
 
         Mod_Lalt {
             bindings = <
 &trans  &kp LA(Q)          &kp LA(W)  &kp LA(E)     &kp LA(R)     &kp LA(T)                    &kp LA(Y)  &kp LA(U)     &kp LA(I)      &kp LA(O)    &kp LA(P)             &trans
-&trans  &ml_slow 14 LA(A)  &kp LA(S)  &ml 13 LA(D)  &ml 12 LA(F)  &kp LA(G)                    &kp LA(H)  &ml 12 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 12 LA(SEMI)  &trans
+&trans  &ml_slow 15 LA(A)  &none      &ml 13 LA(D)  &ml 12 LA(F)  &kp LA(G)                    &kp LA(H)  &ml 12 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 16 LA(SEMI)  &trans
 &trans  &kp LA(Z)          &kp LA(X)  &kp LA(C)     &kp LA(V)     &kp LA(B)                    &kp LA(N)  &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)          &trans
                            &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
             >;
+
+            label = "LAlt";
         };
 
         Mod_Gui {
             bindings = <
-&trans  &kp LG(Q)          &kp LG(W)  &kp LG(E)     &kp LG(R)     &kp LG(T)                    &kp LG(Y)  &kp LG(U)     &kp LG(I)      &kp LG(O)    &kp LG(P)             &trans
-&trans  &ml_slow 14 LG(A)  &kp LG(S)  &ml 13 LG(D)  &ml 12 LG(F)  &kp LG(G)                    &kp LG(H)  &ml 12 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 12 LG(SEMI)  &trans
-&trans  &kp LG(Z)          &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LG(B)                    &kp LG(N)  &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)          &trans
-                           &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
+&trans  &kp LG(Q)  &kp LG(W)     &kp LG(E)     &kp LG(R)     &kp LG(T)                    &kp LG(Y)  &kp LG(U)     &kp LG(I)      &kp LG(O)    &kp LG(P)             &trans
+&trans  &none      &ml 14 LG(S)  &ml 13 LG(D)  &ml 12 LG(F)  &kp LG(G)                    &kp LG(H)  &ml 12 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 16 LG(SEMI)  &trans
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)                    &kp LG(N)  &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)          &trans
+                   &trans        &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
             >;
         };
 
         Mod_RAlt {
             bindings = <
-&trans  &kp RA(Q)          &kp RA(W)  &kp RA(E)     &kp RA(R)     &kp RA(T)                    &kp RA(Y)  &kp RA(U)     &kp RA(I)      &kp RA(O)    &kp RA(P)             &trans
-&trans  &ml_slow 14 RA(A)  &kp RA(S)  &ml 13 RA(D)  &ml 12 RA(F)  &kp RA(G)                    &kp RA(H)  &ml 12 RA(J)  &kp RA(K)      &kp RA(L)    &ml_slow 12 RA(SEMI)  &trans
-&trans  &kp RA(Z)          &kp RA(X)  &kp RA(C)     &kp RA(V)     &kp RA(B)                    &kp RA(N)  &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)          &trans
-                           &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
+&trans  &kp RA(Q)          &kp RA(W)     &kp RA(E)     &kp RA(R)     &kp RA(T)                    &kp RA(Y)  &kp RA(U)     &kp RA(I)      &kp RA(O)    &kp RA(P)     &trans
+&trans  &ml_slow 15 RA(A)  &ml 14 RA(S)  &ml 13 RA(D)  &ml 12 RA(F)  &kp RA(G)                    &kp RA(H)  &ml 12 RA(J)  &kp RA(K)      &kp RA(L)    &none         &trans
+&trans  &kp RA(Z)          &kp RA(X)     &kp RA(C)     &kp RA(V)     &kp RA(B)                    &kp RA(N)  &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans
+                           &trans        &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
             >;
         };
 
