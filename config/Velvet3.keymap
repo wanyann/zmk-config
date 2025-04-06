@@ -192,7 +192,7 @@
             label = "OS_EN";
         };
 
-        mlt: mlt {
+        mlt_deprecated: mlt {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings =
@@ -500,7 +500,7 @@
             label = "MLT for pinkies";
         };
 
-        lm: lm {
+        lm_deprecated: lm {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -541,6 +541,26 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
         };
+
+        ml: ml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Mod Layer";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+        };
+
+        ml_slow: ml_slow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Mod Layer for slow fingers";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -559,10 +579,10 @@
 
         Diktor {
             bindings = <
-&trans  &kp W             &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D         &kp R    &kp L          &kp X             &trans
-&trans  &mlt_slow LGUI E  &mlt_slow LALT B        &mlt LS(LCTRL) T        &mlt LCTRL J         &mt LC(F) F                        &kp K      &mlt LCTRL Y  &lt 5 N  &kp C          &mlt_slow RALT H  &trans
-&trans  &mt LC(Z) A       &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V         &kp G    &kp SEMICOLON  &mt LC(SLASH) U   &trans
-                          &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans        &trans   &trans
+&trans  &kp W             &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D                    &kp R    &kp L          &kp X             &trans
+&trans  &mlt_slow LGUI E  &mlt_slow LALT B        &ml 13 T                &ml 12 J             &mt LC(F) F                        &kp K      &mlt_deprecated LCTRL Y  &lt 5 N  &kp C          &mlt_slow RALT H  &trans
+&trans  &mt LC(Z) A       &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V                    &kp G    &kp SEMICOLON  &mt LC(SLASH) U   &trans
+                          &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans                   &trans   &trans
             >;
 
             label = "Diktor";
@@ -614,10 +634,10 @@
 
         App {
             bindings = <
-&kp LS(LA(LC(LEFT_BRACKET)))   &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                  &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))          &bt BT_SEL 2
-&kp LS(LA(LC(N)))              &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))                  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))  &bt BT_SEL 1
-&kp LS(LA(LC(RIGHT_BRACKET)))  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(V)))  &kp LS(LA(LC(B)))                  &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))      &bt BT_CLR_ALL
-                                                  &trans             &trans             &layer_off 6       &none              &sl 6    &none  &none              &none              &trans                 &trans
+&kp LS(LA(LC(LEFT_BRACKET)))   &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                   &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))          &bt BT_SEL 2
+&kp LS(LA(LC(N)))              &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))                   &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))  &bt BT_SEL 1
+&kp LS(LA(LC(RIGHT_BRACKET)))  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(V)))  &kp LS(LA(LC(B)))                   &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))      &bt BT_CLR_ALL
+                                                  &trans             &trans             &layer_off 6       &none              &sl 6    &trans  &trans             &none              &trans                 &trans
             >;
 
             label = "User2";
@@ -636,10 +656,10 @@
 
         Fn {
             bindings = <
-&trans  &trans   &kp F7  &kp F8  &kp F9        &trans                        &trans  &trans     &trans         &trans    &trans        &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6        &kp F12                       &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3        &trans                        &trans  &trans     &trans         &trans    &trans        &trans
-                 &trans  &trans  &layer_off 8  &trans   &trans    &sk LSHFT  &trans  &trans     &trans         &trans
+&trans  &trans   &kp F7  &kp F8  &kp F9        &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6        &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3        &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+                 &trans  &trans  &layer_off 8  &trans   &trans    &trans  &trans  &trans     &trans         &trans
             >;
         };
 
@@ -670,25 +690,16 @@
             >;
         };
 
-        mod_ctrl {
+        Mod_Ctrl {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)     &trans
-&trans  &trans     &trans     &trans     &trans     &kp LC(G)                    &kp LC(H)  &trans     &kp LC(K)      &kp LC(L)    &kp SEMI      &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)  &trans
-                   &trans     &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
+&trans  &kp LC(Q)          &kp LC(W)          &kp LC(E)     &kp LC(R)  &kp LC(T)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)         &trans
+&trans  &ml_slow 15 LC(A)  &ml_slow 14 LC(S)  &ml 13 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 16 SEMI  &trans
+&trans  &kp LC(Z)          &kp LC(X)          &kp LC(C)     &kp LC(V)  &kp LC(B)                    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)      &trans
+                           &trans             &trans        &trans     &trans     &trans    &trans  &trans     &trans     &trans         &trans
             >;
         };
 
-        mod_ctrlshift {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_14 {
+        Mod_CtrlShift {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -697,7 +708,7 @@
             >;
         };
 
-        layer_15 {
+        Mod_LAlt {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -706,7 +717,16 @@
             >;
         };
 
-        layer_16 {
+        Mod_GUI {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Mod_RAlt {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
