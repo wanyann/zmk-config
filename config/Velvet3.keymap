@@ -726,6 +726,15 @@
             >;
         };
 
+        Mod_RAlt {
+            bindings = <
+&trans  &kp RA(Q)          &kp RA(W)  &kp RA(E)     &kp RA(R)     &kp RA(T)                    &kp RA(Y)  &kp RA(U)     &kp RA(I)      &kp RA(O)    &kp RA(P)             &trans
+&trans  &ml_slow 14 RA(A)  &kp RA(S)  &ml 13 RA(D)  &ml 12 RA(F)  &kp RA(G)                    &kp RA(H)  &ml 12 RA(J)  &kp RA(K)      &kp RA(L)    &ml_slow 12 RA(SEMI)  &trans
+&trans  &kp RA(Z)          &kp RA(X)  &kp RA(C)     &kp RA(V)     &kp RA(B)                    &kp RA(N)  &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)          &trans
+                           &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans        &trans         &trans
+            >;
+        };
+
         layer_15 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
