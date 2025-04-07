@@ -117,20 +117,20 @@
             bindings = <&kp Q>;
             key-positions = <21 20>;
             layers = <1>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
         };
 
         combo_she_ru {
             bindings = <&kp I>;
             key-positions = <32 33>;
             layers = <1>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
         };
 
         combo_scha_ru {
             bindings = <&kp O>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
             layers = <1>;
         };
 
@@ -170,21 +170,21 @@
         combo_yi_cw {
             bindings = <&kp LS(Q)>;
             key-positions = <21 20>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
             layers = <3>;
         };
 
         combo_she_cw {
             bindings = <&kp LS(I)>;
             key-positions = <32 33>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
             layers = <3>;
         };
 
         combo_scha_cw {
             bindings = <&kp LS(O)>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <70>;
             layers = <3>;
         };
     };
