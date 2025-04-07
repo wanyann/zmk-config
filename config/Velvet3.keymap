@@ -736,5 +736,15 @@
                            &trans        &trans        &trans        &trans     &trans    &trans  &kp RA(BACKSPACE)  &trans        &trans         &trans
             >;
         };
+
+        layer_17 {
+            label = "CapsWord qwerty";
+            bindings = <
+&none   &kp LS(Q)                 &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                           &kp LS(Y)        &kp LS(U)         &kp LS(I)    &kp LS(O)  &kp LS(P)            &none
+&mo 11  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                           &kp LS(H)        &hrm LCTRL LS(J)  &lt 5 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI  &mo 11
+&none   &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                           &kp LS(N)        &kp LS(M)         &kp COMMA    &kp DOT    &mt LC(SLASH) SLASH  &none
+                                  &none                     &none                      &cw_off           &lt 4 SPACE      &sl 6    &sk LEFT_SHIFT  &lt 5 BACKSPACE  &to 4             &none        &none
+            >;
+        };
     };
 };
