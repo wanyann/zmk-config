@@ -559,10 +559,9 @@
         };
 
         df: df {
-            compatible = "zmk,behavior-toggle-layer";
+            compatible = "zmk,behavior-to-layer";
             label = "Default Layer set";
             #binding-cells = <1>;
-            toggle-mode = "on";
             locking;
         };
     };
