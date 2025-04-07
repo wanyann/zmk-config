@@ -653,7 +653,7 @@
 &kp LS(LA(LC(LEFT_BRACKET)))   &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                   &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))          &bt BT_SEL 2
 &kp LS(LA(LC(N)))              &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))                   &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))  &bt BT_SEL 1
 &kp LS(LA(LC(RIGHT_BRACKET)))  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(V)))  &kp LS(LA(LC(B)))                   &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))      &bt BT_CLR_ALL
-                                                  &trans             &trans             &layer_off 8       &none              &sl 8    &trans  &trans             &none              &trans                 &trans
+                                                  &trans             &trans             &lg_en             &none              &sl 8    &trans  &trans             &none              &trans                 &trans
             >;
 
             label = "User2";
@@ -664,7 +664,7 @@
 &trans  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans    &trans
 &trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &en_number        &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
 &trans  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans    &trans
-                   &trans                &trans     &layer_off 9           &trans     &trans    &trans  &trans            &trans            &trans         &trans
+                   &trans                &trans     &to 0                  &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
 
             label = "EnSym";
@@ -672,10 +672,10 @@
 
         Fn {
             bindings = <
-&trans  &trans   &kp F7  &kp F8  &kp F9         &trans                     &trans  &trans     &trans         &trans    &trans        &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6         &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3         &trans                     &trans  &trans     &trans         &trans    &trans        &trans
-                 &trans  &trans  &layer_off 10  &trans   &trans    &trans  &trans  &trans     &trans         &trans
+&trans  &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+                 &trans  &trans  &lg_en  &trans   &trans    &trans  &trans  &trans     &trans         &trans
             >;
         };
 
@@ -684,16 +684,16 @@
 &studio_unlock  &trans        &trans          &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 0    &kp LC(LEFT)  &kp LC(RIGHT)   &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &trans  &soft_off
 &bt BT_SEL 1    &trans        &trans          &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans  &trans
-                              &bt BT_CLR_ALL  &trans            &layer_off 11         &trans                &trans    &trans  &trans  &trans  &trans  &trans
+                              &bt BT_CLR_ALL  &trans            &lg_en                &trans                &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         RuSym {
             bindings = <
-&trans  &trans     &ru_at                &kp UNDER  &kp LS(N6)     &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans    &trans
-&trans  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR       &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe  &trans
-&trans  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT    &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans    &trans
-                   &trans                &trans     &layer_off 12  &trans     &trans    &trans  &trans            &trans            &trans         &trans
+&trans  &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans    &trans
+&trans  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe  &trans
+&trans  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans    &trans
+                   &trans                &trans     &to 1        &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
         };
 
@@ -702,7 +702,7 @@
 &bootloader  &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &bootloader
 &trans       &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &trans
 &sys_reset   &trans  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans      &trans  &sys_reset
-                     &sys_reset  &bootloader  &trans  &trans  &trans    &trans  &trans  &trans  &bootloader  &sys_reset
+                     &sys_reset  &bootloader  &lg_en  &trans  &trans    &trans  &trans  &trans  &bootloader  &sys_reset
             >;
         };
 
