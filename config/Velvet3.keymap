@@ -562,8 +562,7 @@
             compatible = "zmk,behavior-to-layer";
             label = "Default Layer set";
             #binding-cells = <1>;
-
-            //locking;
+            locking;
         };
     };
 
