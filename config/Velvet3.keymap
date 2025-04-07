@@ -25,6 +25,8 @@
     quick-release;
 };
 
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -556,6 +558,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
+        };
+
+        df {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "Default Layer set";
+            #binding-cells = <1>;
+            toggle-mode = "on";
+            locking;
         };
     };
 
