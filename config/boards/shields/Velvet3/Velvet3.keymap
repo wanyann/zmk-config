@@ -5,7 +5,7 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap"; 
+                compatible = "zmk,keymap";
 
                 default_layer {
 // -------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T                   	&kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G                   	&kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B                   	&kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-            &kp LGUI &kp LALT &kp LCTRL &mo 1 &kp SPACE &kp RET &mo 2 &kp RCTRL &kp RALT  &out OUT_TOG 
+            &kp LGUI &kp LALT &kp LCTRL &mo 1 &kp SPACE &kp RET &mo 2 &kp RCTRL &kp RALT  &out OUT_TOG
                         >;
 
                 };
@@ -28,10 +28,10 @@
 // | SHFT | F1  | F2  | F3  | F4  | F5  |  boot  |  |        |  F6 | F7  | F8  | F9  | F10 |  F11 |
 //                    | GUI |     | SPC |                    | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &kp F12
-   &kp LSHFT  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                           &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp F11
-                           &trans    &trans       &bootloader  &kp SPACE  &trans    &trans &trans &trans  &trans   &trans
+   &studio_unlock &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp BSPC
+   &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &kp F12
+   &kp LSHFT      &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                           &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp F11
+                               &trans    &trans       &bootloader  &kp SPACE  &trans    &trans &trans &trans  &trans   &trans
                         >;
 
                 };
