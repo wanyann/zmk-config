@@ -477,14 +477,14 @@
         macro_qwerty_cw_off: qwerty_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
             label = "QWERTY_CW_OFF";
         };
 
         macro_diktor_cw_off: macro_diktor_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 1>;
             label = "MACRO_DIKTOR_CW_OFF";
         };
     };
@@ -562,6 +562,7 @@
             compatible = "zmk,behavior-to-layer";
             label = "Default Layer set";
             #binding-cells = <1>;
+
             //locking;
         };
     };
