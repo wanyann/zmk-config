@@ -474,18 +474,18 @@
             label = "RU_DOLLAR";
         };
 
-        macro_qwerty_cw_off: qwerty_cw_off {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
-            label = "QWERTY_CW_OFF";
-        };
-
         macro_diktor_cw_off: macro_diktor_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 1>;
             label = "MACRO_DIKTOR_CW_OFF";
+        };
+
+        macro_qwerty_cw_off: macro_qwerty_cw_off {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
+            label = "MACRO_QWERTY_CW_OFF";
         };
     };
 
@@ -537,16 +537,6 @@
             flavor = "balanced";
         };
 
-        qwerty_cw_off: qwerty_cw_off {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QWERTY_CW_OFF";
-            bindings = <&mo>, <&macro_qwerty_cw_off>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <180>;
-        };
-
         diktor_cw_off: diktor_cw_off {
             compatible = "zmk,behavior-hold-tap";
             label = "DIKTOR_CW_OFF";
@@ -557,12 +547,14 @@
             flavor = "balanced";
         };
 
-        df: df {
-            compatible = "zmk,behavior-to-layer";
-            label = "Default Layer set";
-            #binding-cells = <1>;
+        qwerty_cw_off: qwerty_cw_off {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QWERTY_CW_OFF";
+            bindings = <&mo>, <&macro_qwerty_cw_off>;
 
-            //locking;
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
         };
     };
 
