@@ -66,10 +66,10 @@
         };
 
         combo_osl_sym_en {
-            bindings = <&sl 8>;
+            bindings = <&sl 9>;
             key-positions = <20 19>;
             require-prior-idle-ms = <50>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         combo_question_en {
@@ -87,10 +87,10 @@
         };
 
         combo_osl_sym_ru {
-            bindings = <&sl 11>;
+            bindings = <&sl 12>;
             key-positions = <19 20>;
             require-prior-idle-ms = <50>;
-            layers = <1 5>;
+            layers = <1 6>;
         };
 
         combo_question_ru {
@@ -148,13 +148,13 @@
         };
 
         combo_osl_fn {
-            bindings = <&sl 9>;
+            bindings = <&sl 10>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
         };
 
         combo_osl_os {
-            bindings = <&sl 10>;
+            bindings = <&sl 11>;
             key-positions = <25 26>;
             require-prior-idle-ms = <50>;
         };
@@ -197,10 +197,10 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 3>,
+                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 3>;
+                <&macro_param_1to1 &macro_param_2to2 &hrm MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 4>;
 
             label = "MLT";
         };
@@ -492,10 +492,10 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &macro_param_2to2 &hrm_slow MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 3>,
+                <&macro_param_1to1 &macro_param_2to2 &hrm_slow MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &macro_param_2to2 &hrm_slow MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 3>;
+                <&macro_param_1to1 &macro_param_2to2 &hrm_slow MACRO_PLACEHOLDER MACRO_PLACEHOLDER &mo 4>;
 
             label = "MLT for pinkies";
         };
@@ -505,10 +505,10 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 3>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 3>;
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 4>;
 
             label = "Layer Mod";
         };
@@ -523,7 +523,7 @@
         macro_diktor_cw_off: macro_diktor_cw_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&layer_off 2 &kp SPACE>;
+            bindings = <&layer_off 3 &kp SPACE>;
             label = "MACRO_DIKTOR_CW_OFF";
         };
     };
@@ -590,7 +590,7 @@
         diktor_cw_off: diktor_cw_off {
             compatible = "zmk,behavior-hold-tap";
             label = "DIKTOR_CW_OFF";
-            bindings = <&mo>, <&macro_qwerty_cw_off>;
+            bindings = <&mo>, <&macro_diktor_cw_off>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -604,9 +604,9 @@
         Qwerty {
             bindings = <
 &none   &kp Q                 &mt LC(W) W           &kp E                  &mt LC(R) R   &mt LC(T) T                           &kp Y            &kp U         &kp I      &kp O    &kp P                &none
-&mo 12  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H            &hrm LCTRL J  &lt 6 K    &kp L    &hrm_slow RALT SEMI  &mo 12
+&mo 13  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H            &hrm LCTRL J  &lt 7 K    &kp L    &hrm_slow RALT SEMI  &mo 13
 &none   &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C            &mt LC(V) V   &mt LG(V) B                           &kp N            &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH  &none
-                              &none                 &none                  &cw_off       &lt 5 SPACE  &sl 7    &sk LEFT_SHIFT  &lt 6 BACKSPACE  &to 5         &none      &none
+                              &none                 &none                  &none         &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt 7 BACKSPACE  &to 6         &none      &none
             >;
 
             label = "Qwerty";
@@ -615,7 +615,7 @@
         Diktor {
             bindings = <
 &trans  &kp W          &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R    &kp L          &kp X            &trans
-&trans  &ml_slow 16 E  &ml_slow 15 B           &ml 14 T                &ml 13 J             &mt LC(F) F                        &kp K      &ml_slow 13 Y  &lt 6 N  &kp C          &ml 17 H         &trans
+&trans  &ml_slow 17 E  &ml_slow 16 B           &ml 15 T                &ml 14 J             &mt LC(F) F                        &kp K      &ml_slow 14 Y  &lt 7 N  &kp C          &ml 18 H         &trans
 &trans  &mt LC(Z) A    &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
                        &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans         &trans   &trans
             >;
@@ -626,10 +626,20 @@
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
-&none   &kp LS(Q)                 &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                              &kp LS(Y)        &kp LS(U)         &kp LS(I)    &kp LS(O)  &kp LS(P)            &none
-&mo 12  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                              &kp LS(H)        &hrm LCTRL LS(J)  &lt 6 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI  &mo 12
-&none   &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                              &kp LS(N)        &kp LS(M)         &kp COMMA    &kp DOT    &mt LC(SLASH) SLASH  &none
-                                  &none                     &none                      &layer_off 2      &qwerty_cw_off 5 0  &sl 7    &sk LEFT_SHIFT  &lt 6 BACKSPACE  &to 5             &none        &none
+&trans  &kp LS(Q)                 &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                       &kp LS(Y)  &kp LS(U)         &kp LS(I)    &kp LS(O)  &kp LS(P)            &trans
+&trans  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                       &kp LS(H)  &hrm LCTRL LS(J)  &lt 7 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI  &trans
+&trans  &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                       &kp LS(N)  &kp LS(M)         &kp COMMA    &kp DOT    &mt LC(SLASH) SLASH  &trans
+                                  &none                     &none                      &to 0             &qwerty_cw_off 6 0  &trans    &trans  &trans     &trans            &none        &none
+            >;
+        };
+
+        CW_Diktor {
+            label = "CW_Diktor";
+            bindings = <
+&trans  &kp LS(W)          &mt LC(W) LS(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                       &kp LS(P)      &kp LS(D)          &kp LS(R)    &kp LS(L)          &kp LS(X)            &trans
+&trans  &ml_slow 17 LS(E)  &ml_slow 16 LS(B)           &ml 15 LS(T)                &ml 14 LS(J)         &mt LC(F) LS(F)                       &kp LS(K)      &ml_slow 14 LS(Y)  &lt 7 LS(N)  &kp LS(C)          &ml 18 LS(H)         &trans
+&trans  &mt LC(Z) LS(A)    &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                     &kp LS(COMMA)  &kp LS(V)          &kp LS(G)    &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)  &trans
+                           &trans                      &trans                      &to 1                &diktor_cw_off 6 0  &trans    &trans  &trans         &trans             &trans       &trans
             >;
         };
 
@@ -682,7 +692,7 @@
 &kp LS(LA(LC(LEFT_BRACKET)))   &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                   &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))          &bt BT_SEL 2
 &kp LS(LA(LC(N)))              &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))                   &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))  &bt BT_SEL 1
 &kp LS(LA(LC(RIGHT_BRACKET)))  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(V)))  &kp LS(LA(LC(B)))                   &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))      &bt BT_CLR_ALL
-                                                  &trans             &trans             &layer_off 7       &none              &sl 7    &trans  &trans             &none              &trans                 &trans
+                                                  &trans             &trans             &layer_off 8       &none              &sl 8    &trans  &trans             &none              &trans                 &trans
             >;
 
             label = "User2";
@@ -693,7 +703,7 @@
 &trans  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans    &trans
 &trans  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &en_number        &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE  &trans
 &trans  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans    &trans
-                   &trans                &trans     &layer_off 8           &trans     &trans    &trans  &trans            &trans            &trans         &trans
+                   &trans                &trans     &layer_off 9           &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
 
             label = "EnSym";
@@ -701,10 +711,10 @@
 
         Fn {
             bindings = <
-&trans  &trans   &kp F7  &kp F8  &kp F9        &trans                     &trans  &trans     &trans         &trans    &trans        &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6        &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3        &trans                     &trans  &trans     &trans         &trans    &trans        &trans
-                 &trans  &trans  &layer_off 9  &trans   &trans    &trans  &trans  &trans     &trans         &trans
+&trans  &trans   &kp F7  &kp F8  &kp F9         &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6         &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3         &trans                     &trans  &trans     &trans         &trans    &trans        &trans
+                 &trans  &trans  &layer_off 10  &trans   &trans    &trans  &trans  &trans     &trans         &trans
             >;
         };
 
@@ -713,7 +723,7 @@
 &studio_unlock  &trans        &trans          &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 0    &kp LC(LEFT)  &kp LC(RIGHT)   &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &trans  &soft_off
 &bt BT_SEL 1    &trans        &trans          &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans  &trans
-                              &bt BT_CLR_ALL  &trans            &layer_off 10         &trans                &trans    &trans  &trans  &trans  &trans  &trans
+                              &bt BT_CLR_ALL  &trans            &layer_off 11         &trans                &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -722,7 +732,7 @@
 &trans  &trans     &ru_at                &kp UNDER  &kp LS(N6)     &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans    &trans
 &trans  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR       &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe  &trans
 &trans  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT    &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans    &trans
-                   &trans                &trans     &layer_off 11  &trans     &trans    &trans  &trans            &trans            &trans         &trans
+                   &trans                &trans     &layer_off 12  &trans     &trans    &trans  &trans            &trans            &trans         &trans
             >;
         };
 
@@ -738,7 +748,7 @@
         Mod_Ctrl {
             bindings = <
 &trans  &kp LC(Q)          &kp LC(W)          &kp LC(E)     &kp LC(R)  &kp LC(T)                    &kp LC(Y)          &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)             &trans
-&trans  &ml_slow 16 LC(A)  &ml_slow 15 LC(S)  &ml 14 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)          &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 17 LC(SEMI)  &trans
+&trans  &ml_slow 17 LC(A)  &ml_slow 16 LC(S)  &ml 15 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)          &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 18 LC(SEMI)  &trans
 &trans  &kp LC(Z)          &kp LC(X)          &kp LC(C)     &kp LC(V)  &kp LC(B)                    &kp LC(N)          &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)          &trans
                            &trans             &trans        &trans     &trans     &trans    &trans  &kp LC(BACKSPACE)  &trans     &trans         &trans
             >;
@@ -747,7 +757,7 @@
         Mod_CtrlShift {
             bindings = <
 &trans  &kp LC(LS(Q))          &kp LC(LS(W))          &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))                    &kp LC(LS(Y))     &kp LC(LS(U))  &kp LC(LS(I))      &kp LC(LS(O))    &kp LC(LS(P))             &trans
-&trans  &ml_slow 16 LC(LS(A))  &ml_slow 15 LC(LS(S))  &none          &kp LC(LS(F))  &kp LC(LS(G))                    &kp LC(LS(H))     &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 17 LS(LC(SEMI))  &trans
+&trans  &ml_slow 17 LC(LS(A))  &ml_slow 16 LC(LS(S))  &none          &kp LC(LS(F))  &kp LC(LS(G))                    &kp LC(LS(H))     &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 18 LS(LC(SEMI))  &trans
 &trans  &kp LC(LS(Z))          &kp LC(LS(X))          &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))                    &kp LC(LS(N))     &kp LC(LS(M))  &kp LC(LS(COMMA))  &kp LC(LS(DOT))  &kp LC(LS(FSLH))          &trans
                                &trans                 &trans         &trans         &trans         &trans    &trans  &kp LS(LC(BSPC))  &trans         &trans             &trans
             >;
@@ -756,7 +766,7 @@
         Mod_Lalt {
             bindings = <
 &trans  &kp LA(Q)          &kp LA(W)  &kp LA(E)     &kp LA(R)     &kp LA(T)                    &kp LA(Y)          &kp LA(U)     &kp LA(I)      &kp LA(O)    &kp LA(P)             &trans
-&trans  &ml_slow 16 LA(A)  &none      &ml 14 LA(D)  &ml 13 LA(F)  &kp LA(G)                    &kp LA(H)          &ml 13 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 17 LA(SEMI)  &trans
+&trans  &ml_slow 17 LA(A)  &none      &ml 15 LA(D)  &ml 14 LA(F)  &kp LA(G)                    &kp LA(H)          &ml 14 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 18 LA(SEMI)  &trans
 &trans  &kp LA(Z)          &kp LA(X)  &kp LA(C)     &kp LA(V)     &kp LA(B)                    &kp LA(N)          &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)          &trans
                            &trans     &trans        &trans        &trans     &trans    &trans  &kp LA(BACKSPACE)  &trans        &trans         &trans
             >;
@@ -767,7 +777,7 @@
         Mod_Gui {
             bindings = <
 &trans  &kp LG(Q)  &kp LG(W)     &kp LG(E)     &kp LG(R)     &kp LG(T)                    &kp LG(Y)          &kp LG(U)     &kp LG(I)      &kp LG(O)    &kp LG(P)             &trans
-&trans  &none      &ml 15 LG(S)  &ml 14 LG(D)  &ml 13 LG(F)  &kp LG(G)                    &kp LG(H)          &ml 13 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 17 LG(SEMI)  &trans
+&trans  &none      &ml 16 LG(S)  &ml 15 LG(D)  &ml 14 LG(F)  &kp LG(G)                    &kp LG(H)          &ml 14 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 18 LG(SEMI)  &trans
 &trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)                    &kp LG(N)          &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)          &trans
                    &trans        &trans        &trans        &trans     &trans    &trans  &kp LG(BACKSPACE)  &trans        &trans         &trans
             >;
@@ -776,7 +786,7 @@
         Mod_RAlt {
             bindings = <
 &trans  &kp RA(Q)          &kp RA(W)     &kp RA(E)     &kp RA(R)     &kp RA(T)                    &kp RA(Y)          &kp RA(U)     &kp RA(I)      &kp RA(O)    &kp RA(P)     &trans
-&trans  &ml_slow 16 RA(A)  &ml 15 RA(S)  &ml 14 RA(D)  &ml 13 RA(F)  &kp RA(G)                    &kp RA(H)          &ml 13 RA(J)  &kp RA(K)      &kp RA(L)    &none         &trans
+&trans  &ml_slow 17 RA(A)  &ml 16 RA(S)  &ml 15 RA(D)  &ml 14 RA(F)  &kp RA(G)                    &kp RA(H)          &ml 14 RA(J)  &kp RA(K)      &kp RA(L)    &none         &trans
 &trans  &kp RA(Z)          &kp RA(X)     &kp RA(C)     &kp RA(V)     &kp RA(B)                    &kp RA(N)          &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans
                            &trans        &trans        &trans        &trans     &trans    &trans  &kp RA(BACKSPACE)  &trans        &trans         &trans
             >;
