@@ -141,10 +141,11 @@
             layers = <0 1>;
         };
 
-        combo_caps {
-            bindings = <&kp CAPSLOCK>;
+        combo_cw_qwerty {
+            bindings = <&to 2>;
             key-positions = <13 14>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <50>;
+            layers = <0 2>;
         };
 
         combo_osl_fn {
@@ -157,6 +158,13 @@
             bindings = <&sl 11>;
             key-positions = <25 26>;
             require-prior-idle-ms = <50>;
+        };
+
+        combo_cw_diktor {
+            bindings = <&to 3>;
+            key-positions = <13 14>;
+            require-prior-idle-ms = <50>;
+            layers = <3 1>;
         };
     };
 
