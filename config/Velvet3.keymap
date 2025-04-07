@@ -69,7 +69,7 @@
             bindings = <&sl 9>;
             key-positions = <20 19>;
             require-prior-idle-ms = <50>;
-            layers = <0 6>;
+            layers = <0 6 2>;
         };
 
         combo_question_en {
@@ -90,7 +90,7 @@
             bindings = <&sl 12>;
             key-positions = <19 20>;
             require-prior-idle-ms = <50>;
-            layers = <1 6>;
+            layers = <1 3>;
         };
 
         combo_question_ru {
@@ -634,7 +634,7 @@
         };
 
         CW_Diktor {
-            label = "CW_Diktor";
+            label = "CapsWord Diktor";
             bindings = <
 &trans  &kp LS(W)          &mt LC(W) LS(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                       &kp LS(P)      &kp LS(D)          &kp LS(R)    &kp LS(L)          &kp LS(X)            &trans
 &trans  &ml_slow 17 LS(E)  &ml_slow 16 LS(B)           &ml 15 LS(T)                &ml 14 LS(J)         &mt LC(F) LS(F)                       &kp LS(K)      &ml_slow 14 LS(Y)  &lt 7 LS(N)  &kp LS(C)          &ml 18 LS(H)         &trans
