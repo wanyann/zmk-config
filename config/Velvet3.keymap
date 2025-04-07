@@ -25,8 +25,6 @@
     quick-release;
 };
 
-
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -560,7 +558,7 @@
             flavor = "balanced";
         };
 
-        df {
+        df: df {
             compatible = "zmk,behavior-toggle-layer";
             label = "Default Layer set";
             #binding-cells = <1>;
