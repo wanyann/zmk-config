@@ -117,7 +117,7 @@
             bindings = <&kp Q>;
             key-positions = <21 20>;
             layers = <1>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <90>;
         };
 
         combo_she_ru {
@@ -170,7 +170,7 @@
         combo_yi_cw {
             bindings = <&kp LS(Q)>;
             key-positions = <21 20>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <90>;
             layers = <3>;
         };
 
