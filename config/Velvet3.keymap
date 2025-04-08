@@ -5,7 +5,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <180>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
@@ -524,7 +524,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
 
@@ -545,7 +545,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
         };
 
         ml_slow: ml_slow {
