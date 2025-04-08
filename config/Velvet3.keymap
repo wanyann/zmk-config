@@ -577,6 +577,16 @@
             tapping-term-ms = <180>;
             flavor = "balanced";
         };
+
+        hrl: hrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Home Row Layer";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -585,7 +595,7 @@
         Qwerty {
             bindings = <
 &none   &kp Q                 &mt LC(W) W           &kp E                  &mt LC(R) R   &mt LC(T) T                           &kp Y            &kp U         &kp I      &kp O    &kp P                &none
-&mo 13  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H            &hrm LCTRL J  &lt 7 K    &kp L    &hrm_slow RALT SEMI  &mo 13
+&mo 13  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H            &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMI  &mo 13
 &none   &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C            &mt LC(V) V   &mt LG(V) B                           &kp N            &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH  &none
                               &none                 &none                  &none         &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt 7 BACKSPACE  &to 6         &none      &none
             >;
@@ -595,10 +605,10 @@
 
         Diktor {
             bindings = <
-&trans  &kp W          &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R    &kp L          &kp X            &trans
-&trans  &ml_slow 17 E  &ml_slow 16 B           &ml 15 T                &ml 14 J             &mt LC(F) F                        &kp K      &ml_slow 14 Y  &lt 7 N  &kp C          &ml 18 H         &trans
-&trans  &mt LC(Z) A    &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G    &kp SEMICOLON  &mt LC(SLASH) U  &trans
-                       &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans         &trans   &trans
+&trans  &kp W          &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R     &kp L          &kp X            &trans
+&trans  &ml_slow 17 E  &ml_slow 16 B           &ml 15 T                &ml 14 J             &mt LC(F) F                        &kp K      &ml_slow 14 Y  &hrl 7 N  &kp C          &ml 18 H         &trans
+&trans  &mt LC(Z) A    &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G     &kp SEMICOLON  &mt LC(SLASH) U  &trans
+                       &trans                  &trans                  &trans               &trans           &trans    &trans  &trans     &trans         &trans    &trans
             >;
 
             label = "Diktor";
@@ -607,20 +617,20 @@
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
-&trans  &kp LS(Q)                 &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                           &kp LS(Y)  &kp LS(U)         &kp LS(I)    &kp LS(O)  &kp LS(P)            &trans
-&trans  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                           &kp LS(H)  &hrm LCTRL LS(J)  &lt 7 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI  &trans
-&trans  &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                           &kp LS(N)  &kp LS(M)         &kp COMMA    &kp DOT    &mt LC(SLASH) SLASH  &trans
-                                  &none                     &none                      &to 0             &qwerty_cw_off 6 SPACE  &trans    &trans  &trans     &trans            &none        &none
+&trans  &kp LS(Q)                 &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                           &kp LS(Y)  &kp LS(U)         &kp LS(I)     &kp LS(O)  &kp LS(P)            &trans
+&trans  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                           &kp LS(H)  &hrm LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI  &trans
+&trans  &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                           &kp LS(N)  &kp LS(M)         &kp COMMA     &kp DOT    &mt LC(SLASH) SLASH  &trans
+                                  &none                     &none                      &to 0             &qwerty_cw_off 6 SPACE  &trans    &trans  &trans     &trans            &none         &none
             >;
         };
 
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-&trans  &kp LS(W)          &mt LC(W) LS(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)          &kp LS(R)    &kp LS(L)          &kp LS(X)            &trans
-&trans  &ml_slow 17 LS(E)  &ml_slow 16 LS(B)           &ml 15 LS(T)                &ml 14 LS(J)         &mt LC(F) LS(F)                           &kp LS(K)      &ml_slow 14 LS(Y)  &lt 7 LS(N)  &kp LS(C)          &ml 18 LS(H)         &trans
-&trans  &mt LC(Z) LS(A)    &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)          &kp LS(G)    &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)  &trans
-                           &trans                      &trans                      &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans             &trans       &trans
+&trans  &kp LS(W)          &mt LC(W) LS(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)          &kp LS(R)     &kp LS(L)          &kp LS(X)            &trans
+&trans  &ml_slow 17 LS(E)  &ml_slow 16 LS(B)           &ml 15 LS(T)                &ml 14 LS(J)         &mt LC(F) LS(F)                           &kp LS(K)      &ml_slow 14 LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &ml 18 LS(H)         &trans
+&trans  &mt LC(Z) LS(A)    &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)          &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)  &trans
+                           &trans                      &trans                      &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans             &trans        &trans
             >;
         };
 
