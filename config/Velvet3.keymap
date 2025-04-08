@@ -410,7 +410,7 @@
             bindings =
                 <&os_en>,
                 <&macro_wait_time 10>,
-                <&kp LEFT_BRACE>,
+                <&kp RIGHT_BRACE>,
                 <&macro_wait_time 10>,
                 <&os_ru>;
 
