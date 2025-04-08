@@ -648,10 +648,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp LA(TAB)                 &kp LS(LA(LC(LG(TAB))))          &trans            &kp LS(LC(LA(LG(F1))))  &trans                    &kp GRAVE  &kp HOME  &kp UP    &kp END    &trans       &trans
-&trans  &kp LC(LEFT_BRACKET)        &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL               &trans                    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &select_row  &trans
-&trans  &mt LC(Z) LS(LEFT_BRACKET)  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(V))     &trans                    &trans     &trans    &none     &none      &trans       &trans
-                                    &trans                           &trans            &trans                  &trans  &trans    &trans  &trans     &trans    &trans    &trans
+&trans  &kp LA(TAB)                     &kp LS(LA(LC(LG(TAB))))          &trans            &kp LS(LC(LA(LG(F1))))  &trans                    &kp GRAVE  &kp HOME  &kp UP    &kp END    &trans       &trans
+&trans  &kp LC(LEFT_BRACKET)            &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL               &trans                    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &select_row  &trans
+&trans  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(V))     &trans                    &trans     &trans    &none     &none      &trans       &trans
+                                        &trans                           &trans            &trans                  &trans  &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             label = "Navigation";
