@@ -69,7 +69,7 @@
             bindings = <&sl 9>;
             key-positions = <20 19>;
             require-prior-idle-ms = <50>;
-            layers = <0 6 2>;
+            layers = <0 6 2 9>;
         };
 
         combo_question_en {
@@ -90,7 +90,7 @@
             bindings = <&sl 12>;
             key-positions = <19 20>;
             require-prior-idle-ms = <50>;
-            layers = <1 3>;
+            layers = <1 3 12>;
         };
 
         combo_question_ru {
