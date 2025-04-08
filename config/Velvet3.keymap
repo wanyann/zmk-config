@@ -5,12 +5,12 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <180>;
 };
 
 &lt {
     flavor = "balanced";
-    quick-tap-ms = <125>;
+    tapping-term-ms = <150>;
 };
 
 &caps_word {
@@ -137,7 +137,7 @@
             layers = <1>;
         };
 
-                combo_yi_cw {
+        combo_yi_cw {
             bindings = <&kp LS(Q)>;
             timeout-ms = <30>;
             key-positions = <21 20>;
@@ -593,6 +593,17 @@
             tapping-term-ms = <150>;
             flavor = "balanced";
         };
+
+        lt_qt: lt_qt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT with quick tap";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <125>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -600,10 +611,10 @@
 
         Qwerty {
             bindings = <
-&none   &kp Q                 &mt LC(W) W           &kp E                  &mt LC(R) R   &mt LC(T) T                           &kp Y            &kp U         &kp I      &kp O    &kp P                &none
-&mo 13  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H            &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMI  &mo 13
-&none   &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C            &mt LC(V) V   &mt LG(V) B                           &kp N            &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH  &none
-                              &none                 &none                  &none         &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt 7 BACKSPACE  &to 6         &none      &none
+&none   &kp Q                 &mt LC(W) W           &kp E                  &mt LC(R) R   &mt LC(T) T                           &kp Y               &kp U         &kp I      &kp O    &kp P                &none
+&mo 13  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LC(LEFT_SHIFT) D  &hrm LCTRL F  &mt LC(F) G                           &kp H               &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMI  &mo 13
+&none   &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C            &mt LC(V) V   &mt LG(V) B                           &kp N               &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH  &none
+                              &none                 &none                  &none         &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_qt 7 BACKSPACE  &to 6         &none      &none
             >;
 
             label = "Qwerty";
@@ -675,10 +686,10 @@
 
         Numbers {
             bindings = <
-&trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                           &trans  &trans     &trans      &trans  &trans  &trans
-&trans  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                        &trans  &kp LCTRL  &kp LSHIFT  &trans  &trans  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                    &trans  &trans     &trans      &trans  &trans  &trans
-                      &trans        &trans        &trans        &kp LA(SPACE)  &trans    &trans  &trans  &trans     &trans      &trans
+&trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans  &trans  &trans
+&trans  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &trans  &trans  &trans
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                           &trans  &trans     &trans      &trans  &trans  &trans
+                      &trans        &trans        &trans        &kp LA(SPACE)  &kp LA(ENTER)    &trans  &trans  &trans     &trans      &trans
             >;
 
             label = "User1";
