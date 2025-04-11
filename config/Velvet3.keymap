@@ -494,7 +494,7 @@
             bindings =
                 <&os_en>,
                 <&macro_wait_time 10>,
-                <&kp GREATER_THAN>,
+                <&kp DOLLAR>,
                 <&macro_wait_time 10>,
                 <&os_ru>;
 
