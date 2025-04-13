@@ -1,7 +1,7 @@
 if SHIELD_VELVET3_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "ERGOHAVEN Velvet v3"
+    default "ERGOHAVEN Velvet"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
