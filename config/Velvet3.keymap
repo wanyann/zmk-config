@@ -18,7 +18,10 @@
     mods = <(MOD_LSFT)>;
 };
 
-&sl { release-after-ms = <5000>; };
+&sl {
+    release-after-ms = <5000>;
+    ignore-modifiers;
+};
 
 &sk {
     release-after-ms = <5000>;
