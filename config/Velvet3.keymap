@@ -684,10 +684,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp LA(TAB)                     &kp LS(LA(LC(LG(TAB))))          &zeros_macro      &kp LS(LC(LA(LG(F1))))   &trans                    &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans       &trans
-&trans  &kp LC(LEFT_BRACKET)            &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL                &trans                    &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &select_row  &trans
-&trans  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(LA(V)))  &trans                    &trans     &kp LC(T)  &none     &none      &trans       &trans
-                                        &trans                           &trans            &trans                   &trans  &trans    &trans  &trans     &trans     &trans    &trans
+&trans  &kp LA(TAB)                     &kp LS(LA(LC(LG(TAB))))          &kp LC(SLASH)     &kp LS(LC(LA(LG(F1))))   &trans                          &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans       &trans
+&trans  &kp LC(LEFT_BRACKET)            &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL                &zeros_macro                    &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &select_row  &trans
+&trans  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(LA(V)))  &trans                          &trans     &kp LC(T)  &none     &none      &trans       &trans
+                                        &trans                           &trans            &trans                   &trans        &trans    &trans  &trans     &trans     &trans    &trans
             >;
 
             label = "Navigation";
