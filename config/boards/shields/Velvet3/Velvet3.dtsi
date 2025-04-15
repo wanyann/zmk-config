@@ -31,11 +31,10 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                  RC(2,6) RC(2,7)
     };
 
     vbatt: vbatt {
-        // status = "okay";
-        compatible = "zmk,battery-nrf-vddh";
-        // io-channels = <&adc 7>;
-        // output-ohms = <2000000>;
-        // full-ohms = <(2000000 + 806000)>;
-        // power-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW)>;
+        status = "okay";
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 7>;
+        output-ohms = <1564000>;
+        full-ohms = <(806000 + 1564000)>;
     };
 };
