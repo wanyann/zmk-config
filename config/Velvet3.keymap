@@ -119,7 +119,6 @@
             timeout-ms = <30>;
             key-positions = <21 20>;
             layers = <1>;
-            require-prior-idle-ms = <50>;
         };
 
         combo_she_ru {
@@ -127,14 +126,12 @@
             timeout-ms = <30>;
             key-positions = <32 33>;
             layers = <1>;
-            require-prior-idle-ms = <70>;
         };
 
         combo_scha_ru {
             bindings = <&kp O>;
             timeout-ms = <30>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <50>;
             layers = <1>;
         };
 
@@ -142,7 +139,6 @@
             bindings = <&kp LS(Q)>;
             timeout-ms = <30>;
             key-positions = <21 20>;
-            require-prior-idle-ms = <50>;
             layers = <3>;
         };
 
@@ -150,7 +146,6 @@
             bindings = <&kp LS(I)>;
             timeout-ms = <30>;
             key-positions = <32 33>;
-            require-prior-idle-ms = <50>;
             layers = <3>;
         };
 
@@ -158,7 +153,6 @@
             bindings = <&kp LS(O)>;
             timeout-ms = <30>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <50>;
             layers = <3>;
         };
 
