@@ -168,7 +168,7 @@
 
         combo_cw_qwerty {
             bindings = <&to 2>;
-            key-positions = <13 14>;
+            key-positions = <13 15 14>;
             require-prior-idle-ms = <50>;
             layers = <0 2>;
         };
@@ -187,7 +187,7 @@
 
         combo_cw_diktor {
             bindings = <&to 3>;
-            key-positions = <13 14>;
+            key-positions = <13 14 15>;
             require-prior-idle-ms = <50>;
             layers = <3 1>;
         };
@@ -210,6 +210,28 @@
             key-positions = <14 16>;
             layers = <0>;
             timeout-ms = <30>;
+        };
+
+        combo_q {
+            bindings = <&kp Q>;
+            key-positions = <13 14>;
+            layers = <0 1>;
+        };
+
+        combo_p {
+            bindings = <&kp P>;
+            key-positions = <21 22>;
+            layers = <0 1>;
+        };
+
+        combo_q_cw {
+            bindings = <&kp LS(Q)>;
+            key-positions = <13 14>;
+        };
+
+        combo_p_cw {
+            bindings = <&kp LS(P)>;
+            key-positions = <21 22>;
         };
     };
 
