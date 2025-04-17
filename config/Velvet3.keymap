@@ -159,13 +159,6 @@
             layers = <3>;
         };
 
-        combo_underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <33 34>;
-            require-prior-idle-ms = <50>;
-            layers = <0 1 2 3>;
-        };
-
         combo_cw_qwerty {
             bindings = <&to 2>;
             key-positions = <13 15 14>;
@@ -232,6 +225,11 @@
         combo_p_cw {
             bindings = <&kp LS(P)>;
             key-positions = <21 22>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <14 15 16>;
         };
     };
 
