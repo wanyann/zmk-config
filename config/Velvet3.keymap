@@ -217,7 +217,7 @@
 
         combo_p_en {
             bindings = <&kp P>;
-            key-positions = <21 22>;
+            key-positions = <21 20 19>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -231,7 +231,7 @@
 
         combo_p_cw {
             bindings = <&kp LS(P)>;
-            key-positions = <21 22>;
+            key-positions = <21 20 19>;
             timeout-ms = <30>;
             layers = <2>;
         };
