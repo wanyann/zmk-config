@@ -218,7 +218,7 @@
         combo_p_en {
             bindings = <&kp P>;
             key-positions = <21 22>;
-            layers = <0 4>;
+            layers = <0>;
             timeout-ms = <30>;
         };
 
