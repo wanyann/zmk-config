@@ -239,14 +239,14 @@
         combo_tse_ru {
             bindings = <&kp W>;
             key-positions = <14 16 15>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         combo_tse_cw {
             bindings = <&kp LS(W)>;
             key-positions = <14 15 16>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <3>;
         };
 
@@ -254,14 +254,14 @@
             bindings = <&kp X>;
             key-positions = <19 20 21>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
             key-positions = <19 20 21>;
             layers = <3>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
     };
 
