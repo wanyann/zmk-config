@@ -34,7 +34,7 @@
 
         combo_ctrl_ent {
             bindings = <&kp LC(ENTER)>;
-            key-positions = <4 2>;
+            key-positions = <4 2 3>;
             require-prior-idle-ms = <50>;
         };
 
@@ -168,7 +168,7 @@
 
         combo_osl_fn {
             bindings = <&sl 15>;
-            key-positions = <26 28>;
+            key-positions = <26 28 27>;
             require-prior-idle-ms = <50>;
         };
 
@@ -180,27 +180,27 @@
 
         combo_cw_diktor {
             bindings = <&to 3>;
-            key-positions = <13 14 15>;
+            key-positions = <14 15 13>;
             require-prior-idle-ms = <50>;
             layers = <3 1>;
         };
 
         combo_yo_ru {
             bindings = <&kp GRAVE>;
-            key-positions = <14 16>;
+            key-positions = <19 21 20>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_yo_cw_ru {
             bindings = <&kp LS(GRAVE)>;
-            key-positions = <16 14>;
+            key-positions = <20 19 21>;
             layers = <3>;
         };
 
         combo_yo_en {
             bindings = <&en_yo_macro>;
-            key-positions = <14 16>;
+            key-positions = <19 20 21>;
             layers = <0>;
             timeout-ms = <30>;
         };
