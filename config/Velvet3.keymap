@@ -191,6 +191,26 @@
             require-prior-idle-ms = <50>;
             layers = <3 1>;
         };
+
+        combo_yo_ru {
+            bindings = <&kp GRAVE>;
+            key-positions = <14 16>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_yo_cw_ru {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <16 14>;
+            layers = <3>;
+        };
+
+        combo_yo_en {
+            bindings = <&en_yo_macro>;
+            key-positions = <14 16>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
     };
 
     macros {
@@ -520,6 +540,19 @@
             label = "ZEROS_MACRO";
             tap-ms = <30>;
         };
+
+        en_yo_macro: en_yo_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&os_ru>,
+                <&macro_wait_time 10>,
+                <&kp GRAVE>,
+                <&macro_wait_time 10>,
+                <&os_en>;
+
+            label = "EN_YO_MACRO";
+        };
     };
 
     behaviors {
@@ -681,10 +714,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp LA(TAB)                     &kp LS(LA(LC(LG(TAB))))          &kp LC(SLASH)     &kp LS(LC(LA(LG(F1))))   &trans                          &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans       &trans
-&trans  &kp LC(LEFT_BRACKET)            &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL                &zeros_macro                    &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &select_row  &trans
-&trans  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(LA(V)))  &trans                          &trans     &kp LC(T)  &none     &none      &trans       &trans
-                                        &trans                           &trans            &trans                   &trans        &trans    &trans  &trans     &trans     &trans    &trans
+&trans  &kp LA(TAB)                     &kp LS(LA(LC(LG(TAB))))          &kp LC(SLASH)     &kp LS(LC(LA(LG(F1))))   &trans                          &none   &kp HOME   &kp UP    &kp END    &trans       &trans
+&trans  &kp LC(LEFT_BRACKET)            &kp LC(RIGHT_BRACKET)            &kp LSHFT         &kp LCTRL                &zeros_macro                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &select_row  &trans
+&trans  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)  &mt LC(V) LS(LC(LA(V)))  &trans                          &trans  &kp LC(T)  &none     &none      &trans       &trans
+                                        &trans                           &trans            &trans                   &trans        &trans    &trans  &trans  &trans     &trans    &trans
             >;
 
             label = "Navigation";
