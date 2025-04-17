@@ -252,16 +252,16 @@
 
         combo_che_ru {
             bindings = <&kp X>;
-            key-positions = <21 20 19>;
-            timeout-ms = <30>;
+            key-positions = <19 20 21>;
             layers = <1>;
+            timeout-ms = <30>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
-            key-positions = <21 19 20>;
-            timeout-ms = <30>;
+            key-positions = <19 20 21>;
             layers = <3>;
+            timeout-ms = <30>;
         };
     };
 
