@@ -1,10 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "op36-layouts.dtsi"
+#include "op36_layout.dtsi"
 
 / {
     chosen {
       zmk,kscan = &kscan0;
-      zmk,physical-layout = &velvet3_physical_layout;
+      zmk,physical-layout = &op36_physical_layout;
       zmk,battery = &vbatt;
     };
 

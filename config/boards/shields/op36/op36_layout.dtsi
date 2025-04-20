@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    velvet3_physical_layout: velvet3_physical_layout {
+    op36_physical_layout: op36_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Velvet v3";
 
