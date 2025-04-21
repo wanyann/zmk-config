@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    op36_physical_layout: op36_physical_layout {
+    physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "op36";
 
