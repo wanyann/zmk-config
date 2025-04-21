@@ -1,7 +1,7 @@
 if SHIELD_VELVET_V3_UI_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Velvet v3 UI"
+    default "Velvet_v3_UI"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
