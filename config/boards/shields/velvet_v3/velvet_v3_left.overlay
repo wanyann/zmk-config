@@ -1,4 +1,4 @@
-#include "Velvet3.dtsi"
+#include "velvet_v3.dtsi"
 
 &kscan0 {
     col-gpios
@@ -19,4 +19,3 @@
         , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
-
