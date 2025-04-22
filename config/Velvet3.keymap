@@ -745,6 +745,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        q_morph: q_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_MORPH";
+            bindings = <&none>, <&kp Q>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -752,7 +762,7 @@
 
         Qwerty {
             bindings = <
-&none   &none                 &mt LC(W) W           &kp E              &mt LC(R) R   &mt LC(T) T                             &kp Y                  &kp U         &kp I      &kp O    &none                &none
+&none   &q_morph              &mt LC(W) W           &kp E              &mt LC(R) R   &mt LC(T) T                             &kp Y                  &kp U         &kp I      &kp O    &none                &none
 &mo 18  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &mt LC(F) G                             &kp H                  &hrm LCTRL J  &hrl 12 K  &kp L    &hrm_slow RALT SEMI  &mo 18
 &none   &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C        &mt LC(V) V   &mt LG(V) B                             &kp N                  &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH  &none
                               &none                 &none              &kp K_CANCEL  &lt 11 SPACE  &sl 13    &sk LEFT_SHIFT  &lt_bspc 12 BACKSPACE  &to 11        &none      &none
