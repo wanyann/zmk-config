@@ -654,6 +654,7 @@
             label = "LAYER_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
+            locking;
         };
 
         hrm: hrm {
