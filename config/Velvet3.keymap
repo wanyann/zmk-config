@@ -769,7 +769,7 @@
             label = "CapsWord Diktor";
             bindings = <
 &trans  &none             &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp LS(P)      &kp LS(D)         &kp LS(R)      &kp LS(L)          &none                &trans
-&trans  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &ml_ctrl 6 LS(T)            &ml_ctrl 5 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &ml_ctrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)    &trans
+&trans  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &ml_shift 6 LS(T)           &ml_ctrl 5 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &ml_ctrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)    &trans
 &trans  &mt LC(Z) LS(A)   &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                          &kp LS(COMMA)  &kp LS(V)         &kp LS(G)      &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)  &trans
                           &trans                      &trans                      &to 1                &diktor_cw_off 11 SPACE  &trans    &trans  &trans         &trans            &trans         &trans
             >;
@@ -777,10 +777,10 @@
 
         Mods {
             bindings = <
-&trans  &kp Q             &kp W             &kp E             &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P                         &trans
-&trans  &hrm_slow LGUI A  &hrm_slow LALT S  &hrm LS(LCTRL) D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &kp K      &kp L    &hrm_slow LS(RALT) SEMICOLON  &trans
-&trans  &kp Z             &kp X             &kp C             &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH                     &trans
-                          &trans            &trans            &trans        &trans  &trans    &trans  &trans  &trans        &trans     &trans
+&trans  &kp Q             &kp W             &kp E              &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P                     &trans
+&trans  &hrm_slow LGUI A  &hrm_slow LALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 12 K  &kp L    &hrm_slow RALT SEMICOLON  &trans
+&trans  &kp Z             &kp X             &kp C              &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH                 &trans
+                          &trans            &trans             &trans        &trans  &trans    &trans  &trans  &trans        &trans     &trans
             >;
 
             label = "Mods";
