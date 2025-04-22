@@ -256,10 +256,20 @@
             layers = <3>;
         };
 
-        combo_os_ctrl_shift {
+        combo_os_ctrl_shift_qwerty {
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <16 15>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <70>;
+            layers = <0 2>;
+        };
+
+        combo_os_ctrl_shift_diktor {
+            bindings = <&os_ctrl_shift_layer>;
+            key-positions = <16 15>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <25>;
+            layers = <1 3>;
         };
     };
 
@@ -628,6 +638,13 @@
                 <&macro_param_1to1 &macro_param_2to2 &ml MACRO_PLACEHOLDER MACRO_PLACEHOLDER &kp LEFT_SHIFT>;
 
             label = "ML_SHIFT";
+        };
+
+        os_ctrl_shift_layer: os_ctrl_shift_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LS(LCTRL) &sl 4>;
+            label = "OS_CTRL_SHIFT_LAYER";
         };
     };
 
