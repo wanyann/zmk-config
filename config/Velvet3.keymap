@@ -47,8 +47,8 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <14 15>;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <30>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <25>;
         };
 
         combo_esc {
