@@ -797,10 +797,10 @@
 
         Mod_Shift {
             bindings = <
-&trans  &kp LS(Q)         &kp LS(W)         &kp LS(E)  &kp LS(R)  &kp LS(T)                    &kp LC(LS(Y))     &kp LC(LS(U))  &kp LC(LS(I))      &kp LC(LS(O))    &kp LC(LS(P))             &trans
-&trans  &ml_slow 8 LS(A)  &ml_slow 7 LS(S)  &none      &kp LS(F)  &kp LS(G)                    &kp LC(LS(H))     &kp LC(LS(J))  &kp LC(LS(K))      &kp LC(LS(L))    &ml_slow 10 LS(LC(SEMI))  &trans
-&trans  &kp LS(Z)         &kp LS(X)         &kp LS(C)  &kp LS(V)  &kp LS(B)                    &kp LC(LS(N))     &kp LC(LS(M))  &kp LC(LS(COMMA))  &kp LC(LS(DOT))  &kp LC(LS(FSLH))          &trans
-                          &trans            &trans     &trans     &trans     &trans    &trans  &kp LS(LC(BSPC))  &trans         &trans             &trans
+&trans  &kp LS(Q)         &kp LS(W)         &kp LS(E)  &kp LS(R)  &kp LS(T)                    &kp LS(Y)         &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)             &trans
+&trans  &ml_slow 8 LS(A)  &ml_slow 7 LS(S)  &none      &kp LS(F)  &kp LS(G)                    &kp LS(H)         &kp LS(J)  &kp LS(K)      &kp LS(L)    &ml_slow 10 LS(SEMI)  &trans
+&trans  &kp LS(Z)         &kp LS(X)         &kp LS(C)  &kp LS(V)  &kp LS(B)                    &kp LS(N)         &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)          &trans
+                          &trans            &trans     &trans     &trans     &trans    &trans  &kp LS(LC(BSPC))  &trans     &trans         &trans
             >;
         };
 
