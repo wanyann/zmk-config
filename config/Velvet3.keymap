@@ -755,6 +755,12 @@
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
+
+        df: df {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "DF layer";
+            #binding-cells = <1>;
+        };
     };
 
     keymap {
