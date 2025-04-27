@@ -661,7 +661,6 @@
             label = "LAYER_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
-            locking;
         };
 
         hrm: hrm {
@@ -768,7 +767,6 @@
             compatible = "zmk,behavior-toggle-layer";
             label = "DF layer";
             #binding-cells = <1>;
-            locking;
         };
     };
 
