@@ -657,14 +657,22 @@
         ml_sh: ml_sh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &mo 4>;
+            bindings =
+                <&key_on LEFT_SHIFT &layer_on 4>,
+                <&macro_pause_for_release>,
+                <&kp LSHFT &layer_off 4>;
+
             label = "ML_SH";
         };
 
         ml_ct: ml_ct {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &mo 4>;
+            bindings =
+                <&key_on LCTRL &layer_on 4>,
+                <&macro_pause_for_release>,
+                <&key_off LCTRL &layer_off 4>;
+
             label = "ML_CT";
         };
     };
@@ -814,6 +822,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
+        };
+
+        layer_on: layer_on {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "LAYER_ON";
+            #binding-cells = <1>;
+            toggle-mode = "on";
         };
     };
 
