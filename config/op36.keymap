@@ -698,6 +698,8 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 4>;
             label = "MOD_LAYER_ON";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         mod_layer_off: mod_layer_off {
@@ -705,6 +707,8 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 4>;
             label = "MOD_LAYER_OFF";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
