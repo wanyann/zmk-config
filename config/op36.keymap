@@ -34,44 +34,44 @@
 
         combo_ctrl_ent {
             bindings = <&kp LC(ENTER)>;
-            key-positions = <4 2>;
+            key-positions = <1 3>;
             require-prior-idle-ms = <50>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
             require-prior-idle-ms = <50>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <14 15>;
+            key-positions = <11 12>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <26 27>;
+            key-positions = <21 22>;
             require-prior-idle-ms = <50>;
         };
 
         combo_ru {
             bindings = <&lg_ru>;
-            key-positions = <28 27>;
+            key-positions = <22 23>;
             require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&lg_en>;
-            key-positions = <31 32>;
+            key-positions = <26 27>;
             require-prior-idle-ms = <50>;
         };
 
         combo_osl_sym_en {
             bindings = <&sl 14>;
-            key-positions = <20 19>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <50>;
             layers = <0 11 2 14>;
         };
@@ -79,89 +79,89 @@
         combo_question_en {
             bindings = <&kp QUESTION>;
             require-prior-idle-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             layers = <0 2>;
         };
 
         combo_quote_en {
             bindings = <&kp DOUBLE_QUOTES>;
             require-prior-idle-ms = <50>;
-            key-positions = <31 33>;
+            key-positions = <26 28>;
             layers = <0 2>;
         };
 
         combo_osl_sym_ru {
             bindings = <&sl 17>;
-            key-positions = <19 20>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <50>;
             layers = <1 3 17>;
         };
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
-            key-positions = <4 3>;
+            key-positions = <2 3>;
             require-prior-idle-ms = <50>;
             layers = <1 3>;
         };
 
         combo_quote_ru {
             bindings = <&kp LS(NUMBER_2)>;
-            key-positions = <31 33>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <50>;
             layers = <1 3>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
-            key-positions = <19 21>;
+            key-positions = <16 18>;
             require-prior-idle-ms = <50>;
         };
 
         combo_yi_ru {
             bindings = <&kp Q>;
             timeout-ms = <30>;
-            key-positions = <21 20>;
+            key-positions = <17 18>;
             layers = <1>;
         };
 
         combo_she_ru {
             bindings = <&kp I>;
             timeout-ms = <30>;
-            key-positions = <32 33>;
+            key-positions = <27 28>;
             layers = <1>;
         };
 
         combo_scha_ru {
             bindings = <&kp O>;
             timeout-ms = <30>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             layers = <1>;
         };
 
         combo_yi_cw {
             bindings = <&kp LS(Q)>;
             timeout-ms = <30>;
-            key-positions = <21 20>;
+            key-positions = <17 18>;
             layers = <3>;
         };
 
         combo_she_cw {
             bindings = <&kp LS(I)>;
             timeout-ms = <30>;
-            key-positions = <32 33>;
+            key-positions = <27 28>;
             layers = <3>;
         };
 
         combo_scha_cw {
             bindings = <&kp LS(O)>;
             timeout-ms = <30>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             layers = <3>;
         };
 
         combo_capsword_qwerty {
             bindings = <&to 2>;
-            key-positions = <13 14>;
+            key-positions = <11 10>;
             require-prior-idle-ms = <50>;
             layers = <0 2>;
             timeout-ms = <30>;
@@ -169,19 +169,19 @@
 
         combo_osl_fn {
             bindings = <&sl 15>;
-            key-positions = <26 28>;
+            key-positions = <21 23>;
             require-prior-idle-ms = <50>;
         };
 
         combo_osl_os {
             bindings = <&sl 16>;
-            key-positions = <25 26>;
+            key-positions = <20 21>;
             require-prior-idle-ms = <50>;
         };
 
         combo_capsword_diktor {
             bindings = <&to 3>;
-            key-positions = <14 13>;
+            key-positions = <11 10>;
             require-prior-idle-ms = <50>;
             layers = <3 1>;
             timeout-ms = <30>;
@@ -189,76 +189,76 @@
 
         combo_yo_ru {
             bindings = <&kp GRAVE>;
-            key-positions = <7 8 9>;
+            key-positions = <7 8 6>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_yo_cw_ru {
             bindings = <&kp LS(GRAVE)>;
-            key-positions = <7 8 9>;
+            key-positions = <7 8 6>;
             layers = <3>;
             timeout-ms = <30>;
         };
 
         combo_yo_en {
             bindings = <&en_yo_macro>;
-            key-positions = <7 8 9>;
+            key-positions = <7 8 6>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_q_en {
             bindings = <&kp Q>;
-            key-positions = <14 16 15>;
+            key-positions = <11 12 13>;
             layers = <0 4>;
         };
 
         combo_p_en {
             bindings = <&kp P>;
-            key-positions = <21 20 19>;
+            key-positions = <16 17 18>;
             layers = <0>;
         };
 
         combo_q_cw {
             bindings = <&kp LS(Q)>;
-            key-positions = <14 16 15>;
+            key-positions = <11 12 13>;
             layers = <2>;
         };
 
         combo_p_cw {
             bindings = <&kp LS(P)>;
-            key-positions = <21 20 19>;
+            key-positions = <16 17 18>;
             layers = <2>;
         };
 
         combo_tse_ru {
             bindings = <&kp W>;
-            key-positions = <14 16 15>;
+            key-positions = <13 12 11>;
             layers = <1>;
         };
 
         combo_tse_cw {
             bindings = <&kp LS(W)>;
-            key-positions = <14 15 16>;
+            key-positions = <13 12 11>;
             layers = <3>;
         };
 
         combo_che_ru {
             bindings = <&kp X>;
-            key-positions = <19 20 21>;
+            key-positions = <16 17 18>;
             layers = <1>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
-            key-positions = <19 20 21>;
+            key-positions = <16 17 18>;
             layers = <3>;
         };
 
         combo_os_ctrl_shift_qwerty {
             bindings = <&sk LC(LEFT_SHIFT)>;
-            key-positions = <16 15>;
+            key-positions = <13 12>;
             timeout-ms = <30>;
             require-prior-idle-ms = <70>;
             layers = <0 2>;
@@ -266,7 +266,7 @@
 
         combo_os_ctrl_shift_diktor {
             bindings = <&os_ctrl_shift_layer>;
-            key-positions = <16 15>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
             layers = <1 3>;
@@ -775,114 +775,132 @@
 
         Qwerty {
             bindings = <
-  &q_morph              &mt LC(W) W           &kp E              &mt LC(R) R   &mt LC(T) T                             &kp Y                  &kp U         &kp I          &kp O    &none                
-  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &mt LC(F) G                             &kp H                  &hrm LCTRL J  &hrl 12 K      &kp L    &hrm_slow RALT SEMI  
-  &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C        &mt LC(V) V   &mt LG(V) B                             &kp N                  &kp M         &kp COMMA      &kp DOT  &mt LC(SLASH) SLASH  
-                                &kp K_CANCEL  &lt 11 SPACE  &sl 13    &sk LEFT_SHIFT  &lt_bspc 12 BACKSPACE  &to 11         
-      >;
-      label = "Qwerty";
-  };
-  Diktor {
-      bindings = <
-  &none         &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D         &kp R      &kp L          &none             
-  &ml_slow 8 E  &ml_slow 7 B            &ml_shift 6 T           &ml_ctrl 5 J         &mt LC(F) F                        &kp K      &ml_ctrl 5 Y  &hrl 12 N  &kp C          &ml_slow 10 H     
-  &mt LC(Z) A   &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V         &kp G      &kp SEMICOLON  &mt LC(SLASH) U   
-                         &trans               &trans           &trans    &trans  &trans     &trans         
-      >;
-      label = "Diktor";
-  };
-  CW_Qwerty {
-      label = "CapsWord qwerty";
-      bindings = <
-  &none                     &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                            &kp LS(Y)  &kp LS(U)         &kp LS(I)      &kp LS(O)  &none                 
-  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                            &kp LS(H)  &hrm LCTRL LS(J)  &hrl 12 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI   
-  &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                            &kp LS(N)  &kp LS(M)         &kp COMMA      &kp DOT    &mt LC(SLASH) SLASH   
-                                               &to 0             &qwerty_cw_off 11 SPACE  &trans    &trans  &trans     &trans           
-      >;
-  };
-  CW_Diktor {
-      label = "CapsWord Diktor";
-      bindings = <
-  &none             &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp LS(P)      &kp LS(D)         &kp LS(R)      &kp LS(L)          &none                 
-  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &ml_shift 6 LS(T)           &ml_ctrl 5 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &ml_ctrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)     
-  &mt LC(Z) LS(A)   &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                          &kp LS(COMMA)  &kp LS(V)         &kp LS(G)      &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)   
-                                       &to 1                &diktor_cw_off 11 SPACE  &trans    &trans  &trans         &trans             
-      >;
-  };
-  Mods {
-      bindings = <
-  &kp Q             &kp W             &kp E              &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P                      
-  &hrm_slow LGUI A  &hrm_slow LALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 12 K  &kp L    &hrm_slow RALT SEMICOLON   
-  &kp Z             &kp X             &kp C              &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH                  
-                           &kp K_CANCEL  &trans  &trans    &trans  &trans  &trans         
-      >;
-      label = "Mods";
-  };
-  Mod_Ctrl {
-      bindings = <
-  &kp LC(Q)         &kp LC(W)         &kp LC(E)         &kp LC(R)  &kp LC(T)                    &kp LC(Y)          &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)              
-  &ml_slow 8 LC(A)  &ml_slow 7 LC(S)  &ml_ctrl 6 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)          &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 10 LC(SEMI)   
-  &kp LC(Z)         &kp LC(X)         &kp LC(C)         &kp LC(V)  &kp LC(B)                    &kp LC(N)          &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)           
-                                &trans     &trans     &trans    &trans  &kp LC(BACKSPACE)  &trans     
-      >;
-  };
-  Mod_Shift {
-      bindings = <
-  &kp LS(Q)         &kp LS(W)         &kp LS(E)  &kp LS(R)  &kp LS(T)                    &kp LS(Y)         &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)              
-  &ml_slow 8 LS(A)  &ml_slow 7 LS(S)  &none      &kp LS(F)  &kp LS(G)                    &kp LS(H)         &kp LS(J)  &kp LS(K)      &kp LS(L)    &ml_slow 10 LS(SEMI)   
-  &kp LS(Z)         &kp LS(X)         &kp LS(C)  &kp LS(V)  &kp LS(B)                    &kp LS(N)         &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)           
-                       &trans     &trans     &trans    &trans  &kp LS(LC(BSPC))  &trans     
-      >;
-  };
-  Mod_Lalt {
-      bindings = <
-  &kp LA(Q)         &kp LA(W)  &kp LA(E)         &kp LA(R)         &kp LA(T)                    &kp LA(Y)          &kp LA(U)         &kp LA(I)      &kp LA(O)    &kp LA(P)             
-  &ml_slow 8 LA(A)  &none      &ml_ctrl 6 LA(D)  &ml_ctrl 5 LA(F)  &kp LA(G)                    &kp LA(H)          &ml_ctrl 5 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 10 LA(SEMI)  
-  &kp LA(Z)         &kp LA(X)  &kp LA(C)         &kp LA(V)         &kp LA(B)                    &kp LA(N)          &kp LA(M)         &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)          
-                             &trans            &trans     &trans    &trans  &kp LA(BACKSPACE)  &trans          
-      >;
-      label = "LAlt";
-  };
-  Mod_Gui {
-      bindings = <
-  &kp LG(Q)  &kp LG(W)         &kp LG(E)         &kp LG(R)         &kp LG(T)                    &kp LG(Y)          &kp LG(U)         &kp LG(I)      &kp LG(O)    &kp LG(P)              
-  &none      &ml_ctrl 7 LG(S)  &ml_ctrl 6 LG(D)  &ml_ctrl 5 LG(F)  &kp LG(G)                    &kp LG(H)          &ml_ctrl 5 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 10 LG(SEMI)   
-  &kp LG(Z)  &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                    &kp LG(N)          &kp LG(M)         &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)           
-                        &trans            &trans     &trans    &trans  &kp LG(BACKSPACE)  &trans            
-      >;
-  };
-  Mod_RAlt {
-      bindings = <
-  &kp RA(Q)         &kp RA(W)         &kp RA(E)         &kp RA(R)         &kp RA(T)                    &kp RA(Y)          &kp RA(U)         &kp RA(I)      &kp RA(O)    &kp RA(P)      
-  &ml_slow 8 RA(A)  &ml_ctrl 7 RA(S)  &ml_ctrl 6 RA(D)  &ml_ctrl 5 RA(F)  &kp RA(G)                    &kp RA(H)          &ml_ctrl 5 RA(J)  &kp RA(K)      &kp RA(L)    &none          
-  &kp RA(Z)         &kp RA(X)         &kp RA(C)         &kp RA(V)         &kp RA(B)                    &kp RA(N)          &kp RA(M)         &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)   
-                          &trans            &trans     &trans    &trans  &kp RA(BACKSPACE)  &trans             
-      >;
-  };
-  Mouse {
-      bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   
-             &trans  &trans  &trans    &trans  &trans  &trans   
-      >;
-      label = "Mouse";
-  };
-  Navigation {
-      bindings = <
-  &none                           &kp LA(TAB)                      &kp LC(LS(LA(LG(TAB))))  &kp LS(LC(LA(LG(F1))))   &trans                          &none   &kp HOME   &kp UP    &kp END    &trans        
-  &hrm LEFT_GUI LC(LEFT_BRACKET)  &hrm LALT LC(RIGHT_BRACKET)      &kp LSHFT                &kp LCTRL                &zeros_macro                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &select_row   
-  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)         &mt LC(V) LS(LC(LA(V)))  &trans                          &trans  &kp LC(T)  &none     &none      &trans        
-                                                  &trans                   &trans        &trans    &trans  &trans  &trans     
-      >;
-      label = "Navigation";
-  };
-  Numbers {
-      bindings = <
-  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans  &trans   
-  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &trans  &trans   
-  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                           &trans  &trans     &trans      &trans  &trans   
-                             &trans        &kp LA(SPACE)  &kp LA(ENTER)    &trans  &trans  &trans      
+  &q_morph              &mt LC(W) W           &kp E              &mt LC(R) R   &mt LC(T) T                             &kp Y                  &kp U         &kp I      &kp O    &none
+  &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &mt LC(F) G                             &kp H                  &hrm LCTRL J  &hrl 12 K  &kp L    &hrm_slow RALT SEMI
+  &mt LC(Z) Z           &mt LC(X) X           &mt LC(C) C        &mt LC(V) V   &mt LG(V) B                             &kp N                  &kp M         &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH
+                                                                 &kp K_CANCEL  &lt 11 SPACE  &sl 13    &sk LEFT_SHIFT  &lt_bspc 12 BACKSPACE  &to 11
+            >;
+
+            label = "Qwerty";
+        };
+
+        Diktor {
+            bindings = <
+  &none         &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D         &kp R      &kp L          &none
+  &ml_slow 8 E  &ml_slow 7 B            &ml_shift 6 T           &ml_ctrl 5 J         &mt LC(F) F                        &kp K      &ml_ctrl 5 Y  &hrl 12 N  &kp C          &ml_slow 10 H
+  &mt LC(Z) A   &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V         &kp G      &kp SEMICOLON  &mt LC(SLASH) U
+                                                                &trans               &trans           &trans    &trans  &trans     &trans
+            >;
+
+            label = "Diktor";
+        };
+
+        CW_Qwerty {
+            label = "CapsWord qwerty";
+            bindings = <
+  &none                     &mt LC(W) LS(W)           &kp LS(E)                  &mt LC(R) LS(R)   &mt LC(T) LS(T)                            &kp LS(Y)  &kp LS(U)         &kp LS(I)      &kp LS(O)  &none
+  &hrm_slow LEFT_GUI LS(A)  &hrm_slow LEFT_ALT LS(S)  &hrm LC(LEFT_SHIFT) LS(D)  &hrm LCTRL LS(F)  &mt LC(F) LS(G)                            &kp LS(H)  &hrm LCTRL LS(J)  &hrl 12 LS(K)  &kp LS(L)  &hrm_slow RALT SEMI
+  &mt LC(Z) LS(Z)           &mt LC(X) LS(X)           &mt LC(C) LS(C)            &mt LC(V) LS(V)   &mt LG(V) LS(B)                            &kp LS(N)  &kp LS(M)         &kp COMMA      &kp DOT    &mt LC(SLASH) SLASH
+                                                                                 &to 0             &qwerty_cw_off 11 SPACE  &trans    &trans  &trans     &trans
+            >;
+        };
+
+        CW_Diktor {
+            label = "CapsWord Diktor";
+            bindings = <
+  &none             &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp LS(P)      &kp LS(D)         &kp LS(R)      &kp LS(L)          &none
+  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &ml_shift 6 LS(T)           &ml_ctrl 5 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &ml_ctrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)
+  &mt LC(Z) LS(A)   &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                          &kp LS(COMMA)  &kp LS(V)         &kp LS(G)      &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
+                                                                            &to 1                &diktor_cw_off 11 SPACE  &trans    &trans  &trans         &trans
+            >;
+        };
+
+        Mods {
+            bindings = <
+  &kp Q             &kp W             &kp E              &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P
+  &hrm_slow LGUI A  &hrm_slow LALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 12 K  &kp L    &hrm_slow RALT SEMICOLON
+  &kp Z             &kp X             &kp C              &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH
+                                                         &kp K_CANCEL  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Mods";
+        };
+
+        Mod_Ctrl {
+            bindings = <
+  &kp LC(Q)         &kp LC(W)         &kp LC(E)         &kp LC(R)  &kp LC(T)                    &kp LC(Y)          &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
+  &ml_slow 8 LC(A)  &ml_slow 7 LC(S)  &ml_ctrl 6 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)          &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 10 LC(SEMI)
+  &kp LC(Z)         &kp LC(X)         &kp LC(C)         &kp LC(V)  &kp LC(B)                    &kp LC(N)          &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
+                                                        &trans     &trans     &trans    &trans  &kp LC(BACKSPACE)  &trans
+            >;
+        };
+
+        Mod_Shift {
+            bindings = <
+  &kp LS(Q)         &kp LS(W)         &kp LS(E)  &kp LS(R)  &kp LS(T)                    &kp LS(Y)         &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)
+  &ml_slow 8 LS(A)  &ml_slow 7 LS(S)  &none      &kp LS(F)  &kp LS(G)                    &kp LS(H)         &kp LS(J)  &kp LS(K)      &kp LS(L)    &ml_slow 10 LS(SEMI)
+  &kp LS(Z)         &kp LS(X)         &kp LS(C)  &kp LS(V)  &kp LS(B)                    &kp LS(N)         &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)
+                                                 &trans     &trans     &trans    &trans  &kp LS(LC(BSPC))  &trans
+            >;
+        };
+
+        Mod_Lalt {
+            bindings = <
+  &kp LA(Q)         &kp LA(W)  &kp LA(E)         &kp LA(R)         &kp LA(T)                    &kp LA(Y)          &kp LA(U)         &kp LA(I)      &kp LA(O)    &kp LA(P)
+  &ml_slow 8 LA(A)  &none      &ml_ctrl 6 LA(D)  &ml_ctrl 5 LA(F)  &kp LA(G)                    &kp LA(H)          &ml_ctrl 5 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 10 LA(SEMI)
+  &kp LA(Z)         &kp LA(X)  &kp LA(C)         &kp LA(V)         &kp LA(B)                    &kp LA(N)          &kp LA(M)         &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)
+                                                 &trans            &trans     &trans    &trans  &kp LA(BACKSPACE)  &trans
+            >;
+
+            label = "LAlt";
+        };
+
+        Mod_Gui {
+            bindings = <
+  &kp LG(Q)  &kp LG(W)         &kp LG(E)         &kp LG(R)         &kp LG(T)                    &kp LG(Y)          &kp LG(U)         &kp LG(I)      &kp LG(O)    &kp LG(P)
+  &none      &ml_ctrl 7 LG(S)  &ml_ctrl 6 LG(D)  &ml_ctrl 5 LG(F)  &kp LG(G)                    &kp LG(H)          &ml_ctrl 5 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 10 LG(SEMI)
+  &kp LG(Z)  &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                    &kp LG(N)          &kp LG(M)         &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)
+                                                 &trans            &trans     &trans    &trans  &kp LG(BACKSPACE)  &trans
+            >;
+        };
+
+        Mod_RAlt {
+            bindings = <
+  &kp RA(Q)         &kp RA(W)         &kp RA(E)         &kp RA(R)         &kp RA(T)                    &kp RA(Y)          &kp RA(U)         &kp RA(I)      &kp RA(O)    &kp RA(P)
+  &ml_slow 8 RA(A)  &ml_ctrl 7 RA(S)  &ml_ctrl 6 RA(D)  &ml_ctrl 5 RA(F)  &kp RA(G)                    &kp RA(H)          &ml_ctrl 5 RA(J)  &kp RA(K)      &kp RA(L)    &none
+  &kp RA(Z)         &kp RA(X)         &kp RA(C)         &kp RA(V)         &kp RA(B)                    &kp RA(N)          &kp RA(M)         &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)
+                                                        &trans            &trans     &trans    &trans  &kp RA(BACKSPACE)  &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Mouse";
+        };
+
+        Navigation {
+            bindings = <
+  &none                           &kp LA(TAB)                      &kp LC(LS(LA(LG(TAB))))  &kp LS(LC(LA(LG(F1))))   &trans                          &none   &kp HOME   &kp UP    &kp END    &trans
+  &hrm LEFT_GUI LC(LEFT_BRACKET)  &hrm LALT LC(RIGHT_BRACKET)      &kp LSHFT                &kp LCTRL                &zeros_macro                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &select_row
+  &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)         &mt LC(V) LS(LC(LA(V)))  &trans                          &trans  &kp LC(T)  &none     &none      &trans
+                                                                                            &trans                   &trans        &trans    &trans  &trans  &trans
+            >;
+
+            label = "Navigation";
+        };
+
+        Numbers {
+            bindings = <
+  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans  &trans
+  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &trans  &trans
+  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                           &trans  &trans     &trans      &trans  &trans
+                                            &trans        &kp LA(SPACE)  &kp LA(ENTER)    &trans  &trans  &trans
             >;
 
             label = "User1";
@@ -890,10 +908,10 @@
 
         App {
             bindings = <
-  &kp LA(LC(LS(P)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))      &kp LS(LA(LC(T)))                    &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))           
-  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))      &kp LS(LA(LC(G)))                    &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))   
-  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(LG(V))))  &kp LS(LA(LC(B)))                    &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))       
-                                                          &lg_en                 &none              &sl 13    &trans  &trans             &none               
+  &kp LA(LC(LS(P)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))      &kp LS(LA(LC(T)))                    &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))
+  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))      &kp LS(LA(LC(G)))                    &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))
+  &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(LG(V))))  &kp LS(LA(LC(B)))                    &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))
+                                                           &lg_en                 &none              &sl 13    &trans  &trans             &none
             >;
 
             label = "User2";
@@ -901,46 +919,48 @@
 
         EnSym {
             bindings = <
-  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans     
-  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &en_number        &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE   
-  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans     
-                   &to 0                  &trans     &trans    &trans  &trans            &trans             
-      >;
-      label = "EnSym";
-  };
-  Fn {
-      bindings = <
-  &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans         &trans    &trans         
-  &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI   
-  &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans         &trans    &trans         
-                 &lg_en  &trans   &trans    &trans  &trans  &trans      
+  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
+  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &en_number        &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
+  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
+                                              &to 0                  &trans     &trans    &trans  &trans            &trans
+            >;
+
+            label = "EnSym";
+        };
+
+        Fn {
+            bindings = <
+  &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans         &trans    &trans
+  &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI
+  &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans         &trans    &trans
+                           &lg_en  &trans   &trans    &trans  &trans  &trans
             >;
         };
 
         OS {
             bindings = <
-&bt BT_SEL 2   &trans          &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans   &trans
-&bt BT_SEL 0   &kp LC(RIGHT)   &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans   &soft_off
-&bt BT_SEL 1   &trans          &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans   &trans
-                            &bt BT_CLR_ALL  &trans            &lg_en                &trans                &trans    &trans  
+  &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans
+  &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
+  &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
+                                                 &bt BT_CLR_ALL        &trans                &lg_en    &trans  &trans  &trans
             >;
         };
 
         RuSym {
             bindings = <
-&trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans   
-&ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe 
-&trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans   
-                      &to 1        &trans     &trans    &trans  &trans            &trans           
+  &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans
+  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe
+  &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans
+                                              &to 1        &trans     &trans    &trans  &trans            &trans
             >;
         };
 
         Boot {
             bindings = <
-&bootloader  &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans       &bootloader
-&trans       &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans       &trans
-&sys_reset   &trans      &trans       &trans  &trans                    &trans  &trans  &trans       &trans       &sys_reset
-                      &lg_en  &trans  &trans    &trans  &trans  &trans  
+  &bootloader  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &bootloader
+  &trans       &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &sys_reset   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &sys_reset
+                               &lg_en  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
