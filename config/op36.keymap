@@ -660,7 +660,7 @@
             bindings =
                 <&key_on LEFT_SHIFT &layer_on 4>,
                 <&macro_pause_for_release>,
-                <&kp LSHFT &layer_off 4>;
+                <&key_off LSHFT &layer_off 4>;
 
             label = "ML_SH";
         };
