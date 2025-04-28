@@ -855,9 +855,9 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(W)         &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp LS(P)      &kp LS(D)         &kp LS(R)      &kp LS(L)          &kp LS(X)
-  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &ml_shift 6 LS(T)           &ml_ctrl 5 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &ml_ctrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)
-  &mt LC(Z) LS(A)   &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                          &kp LS(COMMA)  &kp LS(V)         &kp LS(G)      &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
+  &kp LS(W)         &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                            &kp LS(P)      &kp LS(D)     &kp LS(R)      &kp LS(L)          &kp LS(X)
+  &ml_slow 8 LS(E)  &ml_slow 7 LS(B)            &hr_sh 0 LS(T)              &hr_ctrl 0 LS(J)     &mt LC(F) LS(F)                            &kp LS(K)      &hrl 5 LS(Y)  &hrl 12 LS(N)  &kp LS(C)          &ml_slow 10 LS(H)
+  &mt LC(Z) LS(A)   &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                          &kp LS(COMMA)  &kp LS(V)     &kp LS(G)      &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
                                                                             &to 1                &diktor_cw_off 11 SPACE  &trans    &trans  &trans         &trans
             >;
         };
