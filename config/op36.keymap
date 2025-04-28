@@ -645,9 +645,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&key_on LCTRL &layer_on 4>,
+                <&mod_layer_on LCTRL>,
                 <&macro_pause_for_release>,
-                <&key_off LCTRL &layer_off 4>;
+                <&mod_layer_off LCTRL>;
 
             label = "ML_CTRL";
             wait-ms = <1>;
