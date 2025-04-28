@@ -637,6 +637,8 @@
                 <&key_off LSHFT &layer_off 4>;
 
             label = "ML_SHIFT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         ml_ctrl: ml_ctrl {
@@ -648,6 +650,8 @@
                 <&key_off LCTRL &layer_off 4>;
 
             label = "ML_CTRL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         ml_lalt: ml_lalt {
@@ -659,6 +663,8 @@
                 <&key_off LALT &layer_off 4>;
 
             label = "ML_LALT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         ml_ralt: ml_ralt {
@@ -670,6 +676,8 @@
                 <&key_off RALT &layer_off 4>;
 
             label = "ML_RALT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         ml_gui: ml_gui {
@@ -681,6 +689,22 @@
                 <&key_off LEFT_GUI &layer_off 4>;
 
             label = "ML_GUI";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        mod_layer_on: mod_layer_on {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 4>;
+            label = "MOD_LAYER_ON";
+        };
+
+        mod_layer_off: mod_layer_off {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 4>;
+            label = "MOD_LAYER_OFF";
         };
     };
 
