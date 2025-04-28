@@ -1015,52 +1015,5 @@
                                &lg_en  &trans  &trans    &trans  &trans  &trans
             >;
         };
-
-        Mod_Ctrl {
-            bindings = <
-  &kp LC(Q)          &kp LC(W)         &kp LC(E)         &kp LC(R)  &kp LC(T)                    &kp LC(Y)          &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
-  &ml_slow 17 LC(A)  &ml_slow 0 LC(S)  &ml_ctrl 6 LC(D)  &kp LC(F)  &kp LC(G)                    &kp LC(H)          &kp LC(J)  &kp LC(K)      &kp LC(L)    &ml_slow 5 LC(SEMI)
-  &kp LC(Z)          &kp LC(X)         &kp LC(C)         &kp LC(V)  &kp LC(B)                    &kp LC(N)          &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-                                                         &trans     &trans     &trans    &trans  &kp LC(BACKSPACE)  &trans
-            >;
-        };
-
-        Mod_Shift {
-            bindings = <
-  &kp LS(Q)          &kp LS(W)         &kp LS(E)  &kp LS(R)  &kp LS(T)                    &kp LS(Y)         &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)
-  &ml_slow 17 LS(A)  &ml_slow 0 LS(S)  &none      &kp LS(F)  &kp LS(G)                    &kp LS(H)         &kp LS(J)  &kp LS(K)      &kp LS(L)    &ml_slow 5 LS(SEMI)
-  &kp LS(Z)          &kp LS(X)         &kp LS(C)  &kp LS(V)  &kp LS(B)                    &kp LS(N)         &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)
-                                                  &trans     &trans     &trans    &trans  &kp LS(LC(BSPC))  &trans
-            >;
-        };
-
-        Mod_Lalt {
-            bindings = <
-  &kp LA(Q)          &kp LA(W)  &kp LA(E)         &kp LA(R)         &kp LA(T)                    &kp LA(Y)          &kp LA(U)         &kp LA(I)      &kp LA(O)    &kp LA(P)
-  &ml_slow 17 LA(A)  &none      &ml_ctrl 6 LA(D)  &ml_ctrl 5 LA(F)  &kp LA(G)                    &kp LA(H)          &ml_ctrl 5 LA(J)  &kp LA(K)      &kp LA(L)    &ml_slow 5 LA(SEMI)
-  &kp LA(Z)          &kp LA(X)  &kp LA(C)         &kp LA(V)         &kp LA(B)                    &kp LA(N)          &kp LA(M)         &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)
-                                                  &trans            &trans     &trans    &trans  &kp LA(BACKSPACE)  &trans
-            >;
-
-            label = "LAlt";
-        };
-
-        Mod_Gui {
-            bindings = <
-  &kp LG(Q)  &kp LG(W)         &kp LG(E)         &kp LG(R)         &kp LG(T)                    &kp LG(Y)          &kp LG(U)         &kp LG(I)      &kp LG(O)    &kp LG(P)
-  &none      &ml_ctrl 7 LG(S)  &ml_ctrl 6 LG(D)  &ml_ctrl 5 LG(F)  &kp LG(G)                    &kp LG(H)          &ml_ctrl 5 LG(J)  &kp LG(K)      &kp LG(L)    &ml_slow 5 LG(SEMI)
-  &kp LG(Z)  &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                    &kp LG(N)          &kp LG(M)         &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)
-                                                 &trans            &trans     &trans    &trans  &kp LG(BACKSPACE)  &trans
-            >;
-        };
-
-        Mod_RAlt {
-            bindings = <
-  &kp RA(Q)          &kp RA(W)         &kp RA(E)         &kp RA(R)         &kp RA(T)                    &kp RA(Y)          &kp RA(U)         &kp RA(I)      &kp RA(O)    &kp RA(P)
-  &ml_slow 17 RA(A)  &ml_ctrl 7 RA(S)  &ml_ctrl 6 RA(D)  &ml_ctrl 5 RA(F)  &kp RA(G)                    &kp RA(H)          &ml_ctrl 5 RA(J)  &kp RA(K)      &kp RA(L)    &none
-  &kp RA(Z)          &kp RA(X)         &kp RA(C)         &kp RA(V)         &kp RA(B)                    &kp RA(N)          &kp RA(M)         &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)
-                                                         &trans            &trans     &trans    &trans  &kp RA(BACKSPACE)  &trans
-            >;
-        };
     };
 };
