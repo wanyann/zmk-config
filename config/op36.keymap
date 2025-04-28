@@ -809,7 +809,7 @@
         hr_ctrl: hr_ctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HR_CTRL";
-            bindings = <&ml_ctrl>, <&kp>;
+            bindings = <&ml_ct>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -834,7 +834,7 @@
         Diktor {
             bindings = <
   &kp W         &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D     &kp R      &kp L          &kp X
-  &ml_slow 8 E  &ml_slow 7 B            &hr_sh 0 T              &none                &mt LC(F) F                        &kp K      &hrl 5 Y  &hrl 12 N  &kp C          &ml_slow 10 H
+  &ml_slow 8 E  &ml_slow 7 B            &hr_sh 0 T              &hr_ctrl 0 J         &mt LC(F) F                        &kp K      &hrl 5 Y  &hrl 12 N  &kp C          &ml_slow 10 H
   &mt LC(Z) A   &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V     &kp G      &kp SEMICOLON  &mt LC(SLASH) U
                                                                 &trans               &trans           &trans    &trans  &trans     &trans
             >;
