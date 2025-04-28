@@ -637,8 +637,8 @@
                 <&key_off LSHFT &layer_off 4>;
 
             label = "ML_SHIFT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         ml_ctrl: ml_ctrl {
@@ -650,8 +650,8 @@
                 <&mod_layer_off LCTRL>;
 
             label = "ML_CTRL";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         ml_lalt: ml_lalt {
@@ -663,8 +663,8 @@
                 <&key_off LALT &layer_off 4>;
 
             label = "ML_LALT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         ml_ralt: ml_ralt {
@@ -676,8 +676,8 @@
                 <&key_off RALT &layer_off 4>;
 
             label = "ML_RALT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         ml_gui: ml_gui {
@@ -689,8 +689,8 @@
                 <&key_off LEFT_GUI &layer_off 4>;
 
             label = "ML_GUI";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         mod_layer_on: mod_layer_on {
@@ -698,8 +698,8 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 4>;
             label = "MOD_LAYER_ON";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         mod_layer_off: mod_layer_off {
@@ -707,8 +707,8 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 4>;
             label = "MOD_LAYER_OFF";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 
