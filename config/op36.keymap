@@ -189,21 +189,21 @@
 
         combo_yo_ru {
             bindings = <&kp GRAVE>;
-            key-positions = <7 8 6>;
+            key-positions = <18 19>;
             layers = <2>;
             timeout-ms = <30>;
         };
 
         combo_yo_cw_ru {
             bindings = <&kp LS(GRAVE)>;
-            key-positions = <7 8 6>;
+            key-positions = <18 19>;
             layers = <3>;
             timeout-ms = <30>;
         };
 
         combo_yo_en {
             bindings = <&en_yo_macro>;
-            key-positions = <7 8 6>;
+            key-positions = <18 19>;
             layers = <0>;
             timeout-ms = <30>;
         };
