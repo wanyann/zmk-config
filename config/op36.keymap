@@ -73,7 +73,7 @@
             bindings = <&sl 9>;
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
-            layers = <0 6 1 9>;
+            layers = <0 1 9>;
         };
 
         combo_question_en {
@@ -94,21 +94,21 @@
             bindings = <&sl 10>;
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
-            layers = <3 4 10>;
+            layers = <3 10 2>;
         };
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
             key-positions = <2 3>;
             require-prior-idle-ms = <50>;
-            layers = <3 4>;
+            layers = <3 2>;
         };
 
         combo_quote_ru {
             bindings = <&kp LS(NUMBER_2)>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
-            layers = <3 4>;
+            layers = <3 2>;
         };
 
         combo_minus {
@@ -121,42 +121,42 @@
             bindings = <&kp Q>;
             timeout-ms = <30>;
             key-positions = <17 18>;
-            layers = <3>;
+            layers = <2 4>;
         };
 
         combo_she_ru {
             bindings = <&kp I>;
             timeout-ms = <30>;
             key-positions = <27 28>;
-            layers = <3>;
+            layers = <2 4>;
         };
 
         combo_scha_ru {
             bindings = <&kp O>;
             timeout-ms = <30>;
             key-positions = <7 8>;
-            layers = <3>;
+            layers = <2 4>;
         };
 
         combo_yi_cw {
             bindings = <&kp LS(Q)>;
             timeout-ms = <30>;
             key-positions = <17 18>;
-            layers = <4>;
+            layers = <3>;
         };
 
         combo_she_cw {
             bindings = <&kp LS(I)>;
             timeout-ms = <30>;
             key-positions = <27 28>;
-            layers = <4>;
+            layers = <3>;
         };
 
         combo_scha_cw {
             bindings = <&kp LS(O)>;
             timeout-ms = <30>;
             key-positions = <7 8>;
-            layers = <4>;
+            layers = <3>;
         };
 
         combo_capsword_qwerty {
@@ -183,21 +183,21 @@
             bindings = <&to 4>;
             key-positions = <11 10>;
             require-prior-idle-ms = <50>;
-            layers = <4 3>;
+            layers = <3 2>;
             timeout-ms = <30>;
         };
 
         combo_yo_ru {
             bindings = <&kp GRAVE>;
             key-positions = <7 8 6>;
-            layers = <3>;
+            layers = <2>;
             timeout-ms = <30>;
         };
 
         combo_yo_cw_ru {
             bindings = <&kp LS(GRAVE)>;
             key-positions = <7 8 6>;
-            layers = <4>;
+            layers = <3>;
             timeout-ms = <30>;
         };
 
@@ -211,49 +211,57 @@
         combo_q_en {
             bindings = <&kp Q>;
             key-positions = <11 12 13>;
-            layers = <0 4>;
+            layers = <0>;
+            timeout-ms = <30>;
         };
 
         combo_p_en {
             bindings = <&kp P>;
             key-positions = <16 17 18>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         combo_q_cw {
             bindings = <&kp LS(Q)>;
             key-positions = <11 12 13>;
             layers = <1>;
+            timeout-ms = <30>;
         };
 
         combo_p_cw {
             bindings = <&kp LS(P)>;
             key-positions = <16 17 18>;
             layers = <1>;
+            timeout-ms = <30>;
         };
 
         combo_tse_ru {
             bindings = <&kp W>;
             key-positions = <13 12 11>;
-            layers = <3>;
+            layers = <2>;
+            timeout-ms = <30>;
         };
 
         combo_tse_cw {
             bindings = <&kp LS(W)>;
             key-positions = <13 12 11>;
-            layers = <4>;
+            layers = <3>;
+            timeout-ms = <30>;
         };
 
         combo_che_ru {
             bindings = <&kp X>;
             key-positions = <16 17 18>;
-            layers = <3>;
+            layers = <2>;
+            timeout-ms = <30>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
             key-positions = <16 17 18>;
-            layers = <4>;
+            layers = <3>;
+            timeout-ms = <30>;
         };
 
         combo_os_ctrl_shift_qwerty {
