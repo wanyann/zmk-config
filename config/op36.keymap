@@ -91,10 +91,10 @@
         };
 
         combo_osl_sym_ru {
-            bindings = <&sl 12>;
+            bindings = <&sl 10>;
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
-            layers = <3 4 12>;
+            layers = <3 4 10>;
         };
 
         combo_question_ru {
@@ -168,13 +168,13 @@
         };
 
         combo_osl_fn {
-            bindings = <&sl 10>;
+            bindings = <&sl 11>;
             key-positions = <21 23>;
             require-prior-idle-ms = <50>;
         };
 
         combo_osl_os {
-            bindings = <&sl 11>;
+            bindings = <&sl 12>;
             key-positions = <20 21>;
             require-prior-idle-ms = <50>;
         };
@@ -838,9 +838,9 @@
 
         Numbers {
             bindings = <
-  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans  &trans
-  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &trans  &trans
-  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                           &trans  &trans     &trans      &trans  &trans
+  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans        &trans
+  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_GUI
+  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                           &trans  &trans     &trans      &trans        &trans
                                             &trans        &kp LA(SPACE)  &kp LA(ENTER)    &trans  &trans  &trans
             >;
 
@@ -869,30 +869,30 @@
             label = "EnSym";
         };
 
-        Fn {
-            bindings = <
-  &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans         &trans    &trans
-  &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LS(LCTRL)  &kp LALT  &kp LEFT_GUI
-  &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans         &trans    &trans
-                           &lg_en  &trans   &trans    &trans  &trans  &trans
-            >;
-        };
-
-        OS {
-            bindings = <
-  &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &trans
-  &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
-  &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
-                                                 &bt BT_CLR_ALL        &trans                &lg_en    &trans  &trans  &trans
-            >;
-        };
-
         RuSym {
             bindings = <
   &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans
   &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe
   &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans
                                               &to 3        &trans     &trans    &trans  &trans            &trans
+            >;
+        };
+
+        Fn {
+            bindings = <
+  &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans          &trans    &trans
+  &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI
+  &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans          &trans    &trans
+                           &lg_en  &trans   &trans    &trans  &trans  &trans
+            >;
+        };
+
+        OS {
+            bindings = <
+  &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+  &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
+  &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
+                                                 &lg_en                &trans                &lg_en    &trans  &trans  &trans
             >;
         };
 
