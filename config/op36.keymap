@@ -79,7 +79,7 @@
         combo_question_en {
             bindings = <&kp QUESTION>;
             require-prior-idle-ms = <50>;
-            key-positions = <3 2>;
+            key-positions = <14 13>;
             layers = <0 1>;
         };
 
@@ -99,7 +99,7 @@
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
-            key-positions = <2 3>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <50>;
             layers = <3 2>;
         };
@@ -210,56 +210,56 @@
 
         combo_q_en {
             bindings = <&kp Q>;
-            key-positions = <11 12 13>;
+            key-positions = <3 2>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_p_en {
             bindings = <&kp P>;
-            key-positions = <16 17 18>;
+            key-positions = <7 6>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_q_cw {
             bindings = <&kp LS(Q)>;
-            key-positions = <11 12 13>;
+            key-positions = <3 2>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_p_cw {
             bindings = <&kp LS(P)>;
-            key-positions = <16 17 18>;
+            key-positions = <6 7>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_tse_ru {
             bindings = <&kp W>;
-            key-positions = <13 12 11>;
+            key-positions = <2 3>;
             layers = <2>;
             timeout-ms = <30>;
         };
 
         combo_tse_cw {
             bindings = <&kp LS(W)>;
-            key-positions = <13 12 11>;
+            key-positions = <2 3>;
             layers = <3>;
             timeout-ms = <30>;
         };
 
         combo_che_ru {
             bindings = <&kp X>;
-            key-positions = <16 17 18>;
+            key-positions = <6 7>;
             layers = <2>;
             timeout-ms = <30>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
-            key-positions = <16 17 18>;
+            key-positions = <6 7>;
             layers = <3>;
             timeout-ms = <30>;
         };
