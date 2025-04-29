@@ -18,6 +18,7 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nrfmicro_13
+    snippet: zmk-usb-logging
     shield: velvet_v3_right
 
   - board: nrfmicro_13
