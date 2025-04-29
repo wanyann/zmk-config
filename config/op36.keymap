@@ -816,7 +816,7 @@
   &kp LS(W)                  &mt LC(W) LA(M)             &kp LS(Z)                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)          &kp LS(R)     &kp LS(L)          &kp LS(X)
   &hrml_slow LEFT_GUI LS(E)  &hrml_slow LEFT_ALT LS(B)   &hrml_slow LEFT_SHIFT LS(T)  &hrml LCTRL LS(J)    &mt LC(F) LS(F)                           &kp LS(K)      &hrml LCTRL LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &hrml_slow RALT LS(H)
   &mt LC(Z) LS(A)            &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)   &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)          &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
-                                                                                      &to 3                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
+                                                                                      &to 2                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
             >;
         };
 
