@@ -628,85 +628,15 @@
             label = "DF_MACRO";
         };
 
-        ml_shift: ml_shift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&key_on LEFT_SHIFT &layer_on 4>,
-                <&macro_pause_for_release>,
-                <&key_off LSHFT &layer_off 4>;
-
-            label = "ML_SHIFT";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        ml_ctrl: ml_ctrl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&mod_layer_on LCTRL>,
-                <&macro_pause_for_release>,
-                <&mod_layer_off LCTRL>;
-
-            label = "ML_CTRL";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        ml_lalt: ml_lalt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&key_on LALT &layer_on 4>,
-                <&macro_pause_for_release>,
-                <&key_off LALT &layer_off 4>;
-
-            label = "ML_LALT";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        ml_ralt: ml_ralt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&key_on RALT &layer_on 4>,
-                <&macro_press>,
-                <&key_off RALT &layer_off 4>;
-
-            label = "ML_RALT";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        ml_gui: ml_gui {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&key_on LGUI &layer_on 4>,
-                <&macro_press>,
-                <&key_off LEFT_GUI &layer_off 4>;
-
-            label = "ML_GUI";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        mod_layer_on: mod_layer_on {
+        ml: ml {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 4>;
-            label = "MOD_LAYER_ON";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
+            bindings =
+                <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 4>,
+                <&macro_pause_for_release>,
+                <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 4>;
 
-        mod_layer_off: mod_layer_off {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 4>;
-            label = "MOD_LAYER_OFF";
+            label = "ML";
             wait-ms = <0>;
             tap-ms = <0>;
         };
@@ -726,8 +656,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
+            require-prior-idle-ms = <20>;
         };
 
         hrm_slow: hrm_slow {
@@ -737,27 +668,8 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-        };
-
-        ml: ml {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Mod Layer";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-        };
-
-        ml_slow: ml_slow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Mod Layer for slow fingers";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
             tapping-term-ms = <180>;
-            flavor = "balanced";
+            require-prior-idle-ms = <20>;
         };
 
         diktor_cw_off: diktor_cw_off {
@@ -839,24 +751,15 @@
             toggle-mode = "off";
         };
 
-        hr_shift: hr_shift {
+        hrml: hrml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HR_SHIFT";
-            bindings = <&ml_shift>, <&kp>;
+            label = "Home Row Mod Layer";
+            bindings = <&ml>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
-        };
-
-        hr_ctrl: hr_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HR_CTRL";
-            bindings = <&ml_ctrl>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
+            require-prior-idle-ms = <20>;
         };
 
         layer_on: layer_on {
@@ -866,34 +769,15 @@
             toggle-mode = "on";
         };
 
-        hr_lalt: hr_lalt {
+        hrml_slow: hrml_slow {
             compatible = "zmk,behavior-hold-tap";
-            label = "HR_LALT";
-            bindings = <&ml_lalt>, <&kp>;
+            label = "HRML_SLOW";
+            bindings = <&ml>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hr_gui: hr_gui {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HR_GUI";
-            bindings = <&ml_gui>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hr_ralt: hr_ralt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HR_RALT";
-            bindings = <&ml_ralt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <20>;
         };
     };
 
@@ -913,9 +797,9 @@
 
         Diktor {
             bindings = <
-  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D         &kp R     &kp L          &kp X
-  &hr_gui 0 E  &hr_lalt 0 B            &hr_shift 0 T           &hr_ctrl 0 J         &mt LC(F) F                        &kp K      &hr_ctrl 0 Y  &hrl 7 N  &kp C          &hr_ralt 0 H
-  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V         &kp G     &kp SEMICOLON  &mt LC(SLASH) U
+  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D      &kp R     &kp L          &kp X
+  &none        &none                   &none                   &hrml 0 J            &mt LC(F) F                        &kp K      &hrml 0 Y  &hrl 7 N  &kp C          &none
+  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V      &kp G     &kp SEMICOLON  &mt LC(SLASH) U
                                                                &trans               &trans           &trans    &trans  &trans     &trans
             >;
 
@@ -935,9 +819,9 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(W)        &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)         &kp LS(R)     &kp LS(L)          &kp LS(X)
-  &hr_gui 0 LS(E)  &hr_lalt 0 LS(B)            &hr_shift 0 LS(T)           &hr_ctrl 0 LS(J)     &mt LC(F) LS(F)                           &kp LS(K)      &hr_ctrl 0 LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &hr_ralt 0 LS(H)
-  &mt LC(Z) LS(A)  &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)         &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
+  &kp LS(W)        &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)      &kp LS(R)     &kp LS(L)          &kp LS(X)
+  &none            &none                       &none                       &hrml 0 LS(J)        &mt LC(F) LS(F)                           &kp LS(K)      &hrml 0 LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &none
+  &mt LC(Z) LS(A)  &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)      &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
                                                                            &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
             >;
         };
