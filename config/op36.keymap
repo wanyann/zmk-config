@@ -162,7 +162,6 @@
         combo_capsword_qwerty {
             bindings = <&to 1>;
             key-positions = <11 10>;
-            require-prior-idle-ms = <20>;
             layers = <0 1>;
             timeout-ms = <30>;
         };
@@ -182,7 +181,6 @@
         combo_capsword_diktor {
             bindings = <&to 3>;
             key-positions = <11 10>;
-            require-prior-idle-ms = <20>;
             layers = <3 2>;
             timeout-ms = <30>;
         };
