@@ -797,10 +797,10 @@
 
         Diktor {
             bindings = <
-  &kp W        &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D      &kp R     &kp L          &kp X
-  &none        &none                   &none                   &hrml 0 J            &mt LC(F) F                        &kp K      &hrml 0 Y  &hrl 7 N  &kp C          &none
-  &mt LC(Z) A  &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V      &kp G     &kp SEMICOLON  &mt LC(SLASH) U
-                                                               &trans               &trans           &trans    &trans  &trans     &trans
+  &kp W                  &mt LC(W) M             &kp Z                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R     &kp L          &kp X
+  &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml LEFT_SHIFT E      &hrml LCTRL J        &mt LC(F) F                        &kp K      &hrml LCTRL Y  &hrl 7 N  &kp C          &hrml_slow RALT H
+  &mt LC(Z) A            &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET  &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G     &kp SEMICOLON  &mt LC(SLASH) U
+                                                                         &trans               &trans           &trans    &trans  &trans     &trans
             >;
 
             label = "Diktor";
@@ -819,10 +819,10 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(W)        &mt LC(W) LA(M)             &kp LS(Z)                   &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)      &kp LS(R)     &kp LS(L)          &kp LS(X)
-  &none            &none                       &none                       &hrml 0 LS(J)        &mt LC(F) LS(F)                           &kp LS(K)      &hrml 0 LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &none
-  &mt LC(Z) LS(A)  &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)  &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)      &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
-                                                                           &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
+  &kp LS(W)                  &mt LC(W) LA(M)             &kp LS(Z)                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)          &kp LS(R)     &kp LS(L)          &kp LS(X)
+  &hrml_slow LEFT_GUI LS(E)  &hrml_slow LEFT_ALT LS(B)   &hrml_slow LEFT_SHIFT LS(T)  &hrml LCTRL LS(J)    &mt LC(F) LS(F)                           &kp LS(K)      &hrml LCTRL LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &hrml_slow RALT LS(H)
+  &mt LC(Z) LS(A)            &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)   &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)          &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
+                                                                                      &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
             >;
         };
 
