@@ -73,42 +73,42 @@
             bindings = <&sl 9>;
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
-            layers = <0 6 2 9>;
+            layers = <0 6 1 9>;
         };
 
         combo_question_en {
             bindings = <&kp QUESTION>;
             require-prior-idle-ms = <50>;
             key-positions = <3 2>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         combo_quote_en {
             bindings = <&kp DOUBLE_QUOTES>;
             require-prior-idle-ms = <50>;
             key-positions = <26 28>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         combo_osl_sym_ru {
             bindings = <&sl 12>;
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
-            layers = <1 3 12>;
+            layers = <3 4 12>;
         };
 
         combo_question_ru {
             bindings = <&kp LS(N7)>;
             key-positions = <2 3>;
             require-prior-idle-ms = <50>;
-            layers = <1 3>;
+            layers = <3 4>;
         };
 
         combo_quote_ru {
             bindings = <&kp LS(NUMBER_2)>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
-            layers = <1 3>;
+            layers = <3 4>;
         };
 
         combo_minus {
@@ -121,49 +121,49 @@
             bindings = <&kp Q>;
             timeout-ms = <30>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_she_ru {
             bindings = <&kp I>;
             timeout-ms = <30>;
             key-positions = <27 28>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_scha_ru {
             bindings = <&kp O>;
             timeout-ms = <30>;
             key-positions = <7 8>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_yi_cw {
             bindings = <&kp LS(Q)>;
             timeout-ms = <30>;
             key-positions = <17 18>;
-            layers = <3>;
+            layers = <4>;
         };
 
         combo_she_cw {
             bindings = <&kp LS(I)>;
             timeout-ms = <30>;
             key-positions = <27 28>;
-            layers = <3>;
+            layers = <4>;
         };
 
         combo_scha_cw {
             bindings = <&kp LS(O)>;
             timeout-ms = <30>;
             key-positions = <7 8>;
-            layers = <3>;
+            layers = <4>;
         };
 
         combo_capsword_qwerty {
-            bindings = <&to 2>;
+            bindings = <&to 1>;
             key-positions = <11 10>;
             require-prior-idle-ms = <50>;
-            layers = <0 2>;
+            layers = <0 1>;
             timeout-ms = <30>;
         };
 
@@ -180,24 +180,24 @@
         };
 
         combo_capsword_diktor {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <11 10>;
             require-prior-idle-ms = <50>;
-            layers = <3 1>;
+            layers = <4 3>;
             timeout-ms = <30>;
         };
 
         combo_yo_ru {
             bindings = <&kp GRAVE>;
             key-positions = <7 8 6>;
-            layers = <1>;
+            layers = <3>;
             timeout-ms = <30>;
         };
 
         combo_yo_cw_ru {
             bindings = <&kp LS(GRAVE)>;
             key-positions = <7 8 6>;
-            layers = <3>;
+            layers = <4>;
             timeout-ms = <30>;
         };
 
@@ -223,37 +223,37 @@
         combo_q_cw {
             bindings = <&kp LS(Q)>;
             key-positions = <11 12 13>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_p_cw {
             bindings = <&kp LS(P)>;
             key-positions = <16 17 18>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_tse_ru {
             bindings = <&kp W>;
             key-positions = <13 12 11>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_tse_cw {
             bindings = <&kp LS(W)>;
             key-positions = <13 12 11>;
-            layers = <3>;
+            layers = <4>;
         };
 
         combo_che_ru {
             bindings = <&kp X>;
             key-positions = <16 17 18>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_che_cw {
             bindings = <&kp LS(X)>;
             key-positions = <16 17 18>;
-            layers = <3>;
+            layers = <4>;
         };
 
         combo_os_ctrl_shift_qwerty {
@@ -261,7 +261,7 @@
             key-positions = <13 12>;
             timeout-ms = <30>;
             require-prior-idle-ms = <70>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         combo_os_ctrl_shift_diktor {
@@ -269,7 +269,7 @@
             key-positions = <12 13>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
-            layers = <1 3>;
+            layers = <3 4>;
         };
     };
 
@@ -277,7 +277,7 @@
         lg_ru: lg_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &os_ru>;
+            bindings = <&to 3 &os_ru>;
             label = "LG_RU";
             tap-ms = <30>;
         };
@@ -582,7 +582,7 @@
         macro_diktor_cw_off: macro_diktor_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 3>;
             label = "MACRO_DIKTOR_CW_OFF";
         };
 
@@ -772,17 +772,6 @@
             label = "Qwerty";
         };
 
-        Diktor {
-            bindings = <
-  &kp W                  &mt LC(W) M             &kp Z                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R     &kp L          &kp X
-  &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml_slow LEFT_SHIFT E  &hrml LCTRL J        &mt LC(F) F                        &kp K      &hrml LCTRL Y  &hrl 7 N  &kp C          &hrml_slow RALT H
-  &mt LC(Z) A            &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET   &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G     &kp SEMICOLON  &mt LC(SLASH) U
-                                                                          &trans               &trans           &trans    &trans  &trans     &trans
-            >;
-
-            label = "Diktor";
-        };
-
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
@@ -793,13 +782,24 @@
             >;
         };
 
+        Diktor {
+            bindings = <
+  &kp W                  &mt LC(W) M             &kp Z                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R     &kp L          &kp X
+  &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml_slow LEFT_SHIFT T  &hrml LCTRL J        &mt LC(F) F                        &kp K      &hrml LCTRL Y  &hrl 7 N  &kp C          &hrml_slow RALT H
+  &mt LC(Z) A            &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET   &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G     &kp SEMICOLON  &mt LC(SLASH) U
+                                                                          &trans               &trans           &trans    &trans  &trans     &trans
+            >;
+
+            label = "Diktor";
+        };
+
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
   &kp LS(W)                  &mt LC(W) LA(M)             &kp LS(Z)                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)      &kp LS(D)          &kp LS(R)     &kp LS(L)          &kp LS(X)
   &hrml_slow LEFT_GUI LS(E)  &hrml_slow LEFT_ALT LS(B)   &hrml_slow LEFT_SHIFT LS(T)  &hrml LCTRL LS(J)    &mt LC(F) LS(F)                           &kp LS(K)      &hrml LCTRL LS(Y)  &hrl 7 LS(N)  &kp LS(C)          &hrml_slow RALT LS(H)
   &mt LC(Z) LS(A)            &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)   &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)  &kp LS(V)          &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
-                                                                                      &to 1                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
+                                                                                      &to 3                &diktor_cw_off 6 SPACE  &trans    &trans  &trans         &trans
             >;
         };
 
@@ -892,7 +892,7 @@
   &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans
   &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe
   &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans
-                                              &to 1        &trans     &trans    &trans  &trans            &trans
+                                              &to 3        &trans     &trans    &trans  &trans            &trans
             >;
         };
 
