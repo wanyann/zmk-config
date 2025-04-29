@@ -825,7 +825,7 @@
   &q_morph          &kp W             &kp E                   &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &p_morph
   &hrm_slow LGUI A  &hrm_slow LALT S  &hrm_slow LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMICOLON
   &kp Z             &kp X             &kp C                   &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH
-                                                              &kp K_CANCEL  &trans  &trans    &trans  &trans  &trans
+                                                              &lg_en        &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Mods";
