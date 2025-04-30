@@ -630,7 +630,7 @@
 
             label = "Mod Layer";
             wait-ms = <0>;
-            tap-ms = <1>;
+            tap-ms = <0>;
         };
     };
 
