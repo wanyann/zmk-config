@@ -294,14 +294,15 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(NUMBER_3))>;
             label = "OS_RU";
+            tap-ms = <30>;
         };
 
         os_en: os_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_4))>, <&macro_wait_time 30>;
-
+            bindings = <&kp LS(LC(NUMBER_4))>;
             label = "OS_EN";
+            tap-ms = <30>;
         };
 
         alt_tab: alt_tab {
