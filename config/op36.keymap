@@ -277,6 +277,7 @@
             bindings = <&to 2 &os_ru>;
             label = "LG_RU";
             tap-ms = <30>;
+            wait-ms = <0>;
         };
 
         lg_en: lg_en {
@@ -285,6 +286,7 @@
             bindings = <&to 0 &os_en>;
             label = "LG_EN";
             tap-ms = <30>;
+            wait-ms = <0>;
         };
 
         os_ru: os_ru {
