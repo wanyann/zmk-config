@@ -619,6 +619,7 @@
             #binding-cells = <0>;
             bindings = <&sk LS(LCTRL) &sl 4>;
             label = "OS_CTRL_SHIFT";
+            wait-ms = <0>;
         };
 
         ml: ml {
