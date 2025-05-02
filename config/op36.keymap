@@ -262,11 +262,12 @@
             timeout-ms = <30>;
         };
 
-        combo_os_ctrl_shift_diktor {
+        combo_os_ctrl_shift {
             bindings = <&os_ctrl_shift>;
             key-positions = <12 13>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
+            layers = <0 2 1 3>;
         };
     };
 
