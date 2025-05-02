@@ -24,7 +24,6 @@ include:
   - board: nrfmicro_13
     shield: velvet_v3_ui_left
     snippet: zmk-usb-logging
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nrfmicro_13
     snippet: zmk-usb-logging
     shield: velvet_v3_ui_right
