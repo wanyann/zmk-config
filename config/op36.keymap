@@ -351,7 +351,7 @@
             bindings =
                 <&os_ru>,
                 <&macro_wait_time 10>,
-                <&kp LS(N5)>,
+                <&kp LS(NUMBER_3)>,
                 <&macro_wait_time 10>,
                 <&os_en>;
 
@@ -892,7 +892,7 @@
         RuSym {
             bindings = <
   &trans     &ru_at                &kp UNDER  &kp LS(N6)   &ru_grave                    &ru_single_quote  &ru_left_bracket  &ru_hash       &ru_right_bracket  &trans
-  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(N5)        &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe
+  &ru_tilde  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(NUMBER_3)  &ru_left_brace    &ru_semicolon  &ru_right_brace    &ru_pipe
   &trans     &kp ASTERISK          &ru_caret  &kp PERCENT  &ru_code                     &ru_and           &ru_less          &ru_dollar     &ru_greater        &trans
                                               &to 3        &trans     &trans    &trans  &trans            &trans
             >;
