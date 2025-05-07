@@ -649,6 +649,20 @@
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
             label = "DBL_QUOTE_EN";
         };
+
+        curly_en: curly_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "CURLY_EN";
+        };
+
+        curly_ru: curly_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "CURLY_RU";
+        };
     };
 
     behaviors {
