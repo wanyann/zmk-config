@@ -636,32 +636,53 @@
             tap-ms = <0>;
         };
 
-        dbl_quote_ru: dbl_quote {
+        quotes_ru: dbl_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT>;
             label = "DBL_QUOTE";
         };
 
-        dbl_quote_en: dbl_quote_en {
+        quotes_en: quotes_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
-            label = "DBL_QUOTE_EN";
+            label = "QUOTES_EN";
         };
 
-        curly_en: curly_en {
+        braces_en: braces_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "CURLY_EN";
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "BRACES_EN";
         };
 
-        curly_ru: curly_ru {
+        braces_ru: braces_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "CURLY_RU";
+            bindings = <&os_en &braces_en &os_ru>;
+            label = "BRACES_RU";
+        };
+
+        brackets_en: brackets_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "BRACKETS_EN";
+        };
+
+        brackets_ru: brackets_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&os_en &brackets_en &os_ru>;
+            label = "BRACKETS_RU";
+        };
+
+        parentheses: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "PARENTHESES";
         };
     };
 
