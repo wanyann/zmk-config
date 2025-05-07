@@ -635,6 +635,20 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        dbl_quote_ru: dbl_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT>;
+            label = "DBL_QUOTE";
+        };
+
+        dbl_quote_en: dbl_quote_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            label = "DBL_QUOTE_EN";
+        };
     };
 
     behaviors {
@@ -786,7 +800,7 @@
   &kp Q                  &mt LC(W) W            &kp E                    &mt LC(R) R    &mt LC(T) T                           &kp Y                 &kp U          &kp I      &kp O    &kp P
   &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                           &kp H                 &hrml LCTRL J  &hrl 7 K   &kp L    &hrml_slow RALT SEMI
   &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                           &kp N                 &kp M          &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH
-                                                                         &kp K_CANCEL   &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
+                                                                         &key_repeat    &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
             >;
 
             label = "Qwerty";
