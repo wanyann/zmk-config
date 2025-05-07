@@ -844,7 +844,7 @@
         Diktor {
             bindings = <
   &kp W                  &mt LC(W) M             &kp Z                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P      &kp D          &kp R     &kp L          &kp X
-  &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml_slow LEFT_SHIFT T  &hrml LCTRL J        &mt LC(F) F                        &kp K      &hrml LCTRL Y  &hrl 7 N  &kp C          &hrml_slow RALT H
+  &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml_slow LEFT_SHIFT T  &hrml LCTRL J        &mt LC(F) F                        &rt 0 K    &hrml LCTRL Y  &hrl 7 N  &kp C          &hrml_slow RALT H
   &mt LC(Z) A            &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET   &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA  &kp V          &kp G     &kp SEMICOLON  &mt LC(SLASH) U
                                                                           &trans               &trans           &trans    &trans  &trans     &trans
             >;
