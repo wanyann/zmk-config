@@ -684,6 +684,20 @@
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "PARENTHESES";
         };
+
+        less_greater_en: less_greater_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            label = "LESS_GREATER_EN";
+        };
+
+        less_greater_ru: less_greater_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&os_en &less_greater_en &os_ru>;
+            label = "LESS_GREATER_RU";
+        };
     };
 
     behaviors {
