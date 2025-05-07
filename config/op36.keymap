@@ -725,10 +725,10 @@
         bspc_morph: bspc_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "BSPC_MORPH";
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         key_on: key_on {
