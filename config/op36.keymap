@@ -83,8 +83,8 @@
             layers = <0 1>;
         };
 
-        combo_quote_en {
-            bindings = <&kp DOUBLE_QUOTES>;
+        combo_quotes_en {
+            bindings = <&quotes_en>;
             require-prior-idle-ms = <50>;
             key-positions = <26 28>;
             layers = <0 1>;
@@ -104,17 +104,18 @@
             layers = <3 2>;
         };
 
-        combo_quote_ru {
-            bindings = <&kp LS(NUMBER_2)>;
+        combo_quotes_ru {
+            bindings = <&quotes_ru>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
             layers = <3 2>;
         };
 
-        combo_minus {
-            bindings = <&kp MINUS>;
+        combo_braces_en {
+            bindings = <&braces_en>;
             key-positions = <16 18>;
             require-prior-idle-ms = <50>;
+            layers = <0 1>;
         };
 
         combo_yi_ru {
@@ -273,6 +274,30 @@
         parentheses {
             bindings = <&parentheses>;
             key-positions = <11 13>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <25>;
+        };
+
+        combo_braces_ru {
+            bindings = <&braces_ru>;
+            key-positions = <16 18>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <25>;
+            layers = <2 3>;
+        };
+
+        combo_brackets_en {
+            bindings = <&brackets_en>;
+            key-positions = <6 8>;
+            layers = <0 1>;
+            timeout-ms = <30>;
+        };
+
+        combo_brackets_ru {
+            bindings = <&brackets_ru>;
+            key-positions = <6 8>;
+            layers = <2 3>;
+            timeout-ms = <30>;
         };
     };
 
