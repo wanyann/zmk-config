@@ -669,14 +669,14 @@
         quotes_ru: dbl_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(NUMBER_2)>;
+            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT_ARROW>;
             label = "DBL_QUOTE";
         };
 
         quotes_en: quotes_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
             label = "QUOTES_EN";
         };
 
@@ -697,7 +697,7 @@
         brackets_en: brackets_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "BRACKETS_EN";
         };
 
@@ -711,14 +711,14 @@
         parentheses: parentheses {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "PARENTHESES";
         };
 
         less_greater_en: less_greater_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
             label = "LESS_GREATER_EN";
         };
 
