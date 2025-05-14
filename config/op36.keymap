@@ -367,7 +367,7 @@
         os_ru: os_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(N8))>;
+            bindings = <&kp LS(LC(N8))>;
             label = "OS_RU";
             tap-ms = <30>;
         };
@@ -375,7 +375,7 @@
         os_en: os_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(N9))>;
+            bindings = <&kp LS(LC(N9))>;
             label = "OS_EN";
             tap-ms = <30>;
         };
