@@ -916,14 +916,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES_RU";
             #binding-cells = <0>;
-            bindings = <&kp LS(NUMBER_2)>, <&quotes_ru>;
+            bindings = <&quotes_ru>, <&kp LS(NUMBER_2)>;
         };
 
         td_quotes_en: td_quotes_en {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES_EN";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES>, <&quotes_en>;
+            bindings = <&quotes_en>, <&kp DOUBLE_QUOTES>;
         };
 
         td_parentheses: td_parentheses {
