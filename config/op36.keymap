@@ -307,7 +307,7 @@
 
         combo_repeat {
             bindings = <&key_repeat>;
-            key-positions = <5 6>;
+            key-positions = <25 26>;
         };
 
         combo_quote_ru {
@@ -328,7 +328,7 @@
 
         combo_exclamation {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <25 26>;
+            key-positions = <5 6>;
         };
     };
 
