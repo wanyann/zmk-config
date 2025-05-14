@@ -272,7 +272,7 @@
         };
 
         parentheses {
-            bindings = <&td_parentheses>;
+            bindings = <&parentheses>;
             key-positions = <11 13>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
@@ -926,18 +926,6 @@
             label = "TD_QUOTES_EN";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES>, <&quotes_en>;
-
-            tapping-term-ms = <300>;
-        };
-
-        td_parentheses: td_parentheses {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_PARENTHESES";
-            #binding-cells = <0>;
-            bindings =
-                <&parentheses>,
-                <&kp LEFT_PARENTHESIS>,
-                <&kp RIGHT_PARENTHESIS>;
 
             tapping-term-ms = <300>;
         };
