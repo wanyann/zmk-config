@@ -917,6 +917,8 @@
             label = "TD_QUOTES_RU";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_2)>, <&quotes_ru>;
+
+            tapping-term-ms = <500>;
         };
 
         td_quotes_en: td_quotes_en {
@@ -924,6 +926,8 @@
             label = "TD_QUOTES_EN";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES>, <&quotes_en>;
+
+            tapping-term-ms = <500>;
         };
     };
 
