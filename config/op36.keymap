@@ -84,7 +84,7 @@
         };
 
         combo_quotes_en {
-            bindings = <&quotes_en>;
+            bindings = <&td_quotes_en>;
             require-prior-idle-ms = <50>;
             key-positions = <26 28>;
             layers = <0 1>;
@@ -105,7 +105,7 @@
         };
 
         combo_quotes_ru {
-            bindings = <&quotes_ru>;
+            bindings = <&td_quotes_ru>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
             layers = <3 2>;
@@ -310,17 +310,6 @@
             key-positions = <25 26>;
         };
 
-        combo_quote_ru {
-            bindings = <&kp LS(NUMBER_2)>;
-            key-positions = <16 15>;
-            layers = <2 3>;
-        };
-
-        combo_quote_en {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 16>;
-        };
-
         combo_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <23 24>;
@@ -329,6 +318,30 @@
         combo_exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <5 6>;
+        };
+
+        combo_semi_ru {
+            bindings = <&kp LS(NUMBER_4)>;
+            key-positions = <25 26>;
+            layers = <2 3>;
+        };
+
+        combo_semi_en {
+            bindings = <&kp SEMI>;
+            key-positions = <25 26>;
+            layers = <0 1>;
+        };
+
+        combo_colon_en {
+            bindings = <&kp COLON>;
+            key-positions = <15 16>;
+            layers = <1 0>;
+        };
+
+        combo_colon_ru {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <15 16>;
+            layers = <2 3>;
         };
     };
 
@@ -898,6 +911,20 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <20>;
         };
+
+        td_quotes_ru: td_quotes_ru {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUOTES_RU";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2)>, <&quotes_ru>;
+        };
+
+        td_quotes_en: td_quotes_en {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUOTES_EN";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&quotes_en>;
+        };
     };
 
     keymap {
@@ -969,7 +996,7 @@
 
         Navigation {
             bindings = <
-  &none                           &kp LA(TAB)                      &kp LC(LS(LA(LG(TAB))))  &kp LS(LC(LA(LG(F1))))   &trans                          &none   &kp HOME   &kp UP    &kp END    &trans
+  &none                           &kp LA(TAB)                      &kp LC(LS(LA(LG(TAB))))  &kp LS(LC(LA(LG(F1))))   &key_repeat                     &none   &kp HOME   &kp UP    &kp END    &trans
   &hrm LEFT_GUI LC(LEFT_BRACKET)  &hrm LALT LC(RIGHT_BRACKET)      &kp LSHFT                &kp LCTRL                &zeros_macro                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &select_row
   &mt LC(Z) LS(LG(LEFT_BRACKET))  &mt LC(X) LS(LG(RIGHT_BRACKET))  &mt LC(C) LS(F6)         &mt LC(V) LS(LC(LA(V)))  &trans                          &trans  &kp LC(T)  &none     &none      &trans
                                                                                             &trans                   &trans        &trans    &trans  &trans  &trans
