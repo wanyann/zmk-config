@@ -339,7 +339,7 @@
         };
 
         combo_colon_ru {
-            bindings = <&kp NUMBER_6>;
+            bindings = <&kp LS(NUMBER_6)>;
             key-positions = <15 16>;
             layers = <2 3>;
         };
