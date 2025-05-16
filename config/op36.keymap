@@ -728,9 +728,9 @@
             bindings = <&quotes_en>, <&kp DOUBLE_QUOTES>;
         };
 
-        soft_hard_sign: soft_hard_sign {
+        soft_sign: soft_sign {
             compatible = "zmk,behavior-mod-morph";
-            label = "SOFT_HARD_SIGN";
+            label = "SOFT_SIGN";
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
@@ -764,7 +764,7 @@
 
         Diktor {
             bindings = <
-  &kp W                  &mt LC(W) M             &kp Z                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P               &kp D               &kp R     &kp L          &kp X
+  &kp W                  &soft_sign              &kp Z                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                    &kp P               &kp D               &kp R     &kp L          &kp X
   &hrml_slow LEFT_GUI E  &hrml_slow LEFT_ALT B   &hrml_slow LEFT_SHIFT T  &hrml LCTRL J        &mt LC(F) F                        &mt LS(NUMBER_6) K  &hrml LCTRL Y       &hrl 7 N  &kp C          &hrml_slow RALT H
   &mt LC(Z) A            &mt LC(X) SINGLE_QUOTE  &mt LC(C) LEFT_BRACKET   &mt LC(V) S          &mt LG(V) DOT                      &kp COMMA           &mt LS(NUMBER_4) V  &kp G     &kp SEMICOLON  &mt LC(SLASH) U
                                                                           &trans               &trans           &trans    &trans  &trans              &trans
@@ -776,7 +776,7 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(W)                  &mt LC(W) LA(M)             &kp LS(Z)                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)               &kp LS(D)               &kp LS(R)     &kp LS(L)          &kp LS(X)
+  &kp LS(W)                  &kp LS(M)                   &kp LS(Z)                    &mt LC(R) LS(SLASH)  &mt LC(T) SLASH                           &kp LS(P)               &kp LS(D)               &kp LS(R)     &kp LS(L)          &kp LS(X)
   &hrml_slow LEFT_GUI LS(E)  &hrml_slow LEFT_ALT LS(B)   &hrml_slow LEFT_SHIFT LS(T)  &hrml LCTRL LS(J)    &mt LC(F) LS(F)                           &mt LS(NUMBER_6) LS(K)  &hrml LCTRL LS(Y)       &hrl 7 LS(N)  &kp LS(C)          &hrml_slow RALT LS(H)
   &mt LC(Z) LS(A)            &mt LC(X) LS(SINGLE_QUOTE)  &mt LC(C) LS(LEFT_BRACKET)   &mt LC(V) LS(S)      &mt LG(V) LS(DOT)                         &kp LS(COMMA)           &mt LS(NUMBER_4) LS(V)  &kp LS(G)     &kp LS(SEMICOLON)  &mt LC(SLASH) LS(U)
                                                                                       &to 2                &diktor_cw_off 6 SPACE  &trans    &trans  &trans                  &trans
