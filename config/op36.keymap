@@ -305,11 +305,6 @@
             key-positions = <13 14>;
         };
 
-        combo_repeat {
-            bindings = <&key_repeat>;
-            key-positions = <25 26>;
-        };
-
         combo_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <23 24>;
