@@ -727,6 +727,15 @@
             #binding-cells = <0>;
             bindings = <&quotes_en>, <&kp DOUBLE_QUOTES>;
         };
+
+        soft_hard_sign: soft_hard_sign {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SOFT_HARD_SIGN";
+            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
