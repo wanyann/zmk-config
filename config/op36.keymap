@@ -99,7 +99,7 @@
         };
 
         combo_question_ru {
-            bindings = <&kp LS(N7)>;
+            bindings = <&kp RU_QUESTION>;
             key-positions = <3 4>;
             require-prior-idle-ms = <50>;
             layers = <3 2>;
@@ -265,7 +265,7 @@
         };
 
         combo_os_ctrl_shift {
-            bindings = <&os_ctrl_shift>;
+            bindings = <&osm_ctrl_shift>;
             key-positions = <12 13>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
@@ -303,12 +303,12 @@
 
         combo_osctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <13 14>;
+            key-positions = <23 24>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
-            key-positions = <23 24>;
+            key-positions = <13 14>;
         };
 
         combo_exclamation {
@@ -317,7 +317,7 @@
         };
 
         combo_semi_ru {
-            bindings = <&kp LS(NUMBER_4)>;
+            bindings = <&kp RU_SEMICOLON>;
             key-positions = <25 26>;
             layers = <2 3>;
         };
@@ -335,7 +335,7 @@
         };
 
         combo_colon_ru {
-            bindings = <&kp LS(NUMBER_6)>;
+            bindings = <&kp RU_COLON>;
             key-positions = <15 16>;
             layers = <2 3>;
         };
@@ -464,12 +464,13 @@
             tap-ms = <30>;
         };
 
-        os_ctrl_shift: os_ctrl_shift {
+        osm_ctrl_shift: osm_ctrl_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sk LS(LCTRL) &sl 4>;
-            label = "OS_CTRL_SHIFT";
+            label = "OSM_CTRL_SHIFT";
             wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         ml: ml {
@@ -560,6 +561,15 @@
             #binding-cells = <1>;
             bindings = <&os_ru &macro_param_1to1 &kp MACRO_PLACEHOLDER &os_en>;
             label = "RU";
+        };
+
+        osm_ctrl: osm_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &sl 4>;
+            label = "OSM_CTRL";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 
@@ -841,7 +851,7 @@
         EnSym {
             bindings = <
   &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
-  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
+  &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
   &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
                                               &to 0                  &trans     &trans    &trans  &trans            &trans
             >;
@@ -851,10 +861,10 @@
 
         RuSym {
             bindings = <
-  &trans     &en AT                &kp UNDER  &kp LS(N6)   &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
-  &en TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp LS(NUMBER_4)  &en RIGHT_BRACE    &en PIPE
-  &trans     &kp ASTERISK          &en CARET  &kp PERCENT  &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
-                                              &to 3        &trans     &trans    &trans  &trans            &trans
+  &trans     &en AT                &kp UNDER     &kp RU_COLON  &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
+  &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR      &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
+  &trans     &kp ASTERISK          &en CARET     &kp PERCENT   &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
+                                                 &to 3         &trans     &trans    &trans  &trans            &trans
             >;
         };
 
