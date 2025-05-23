@@ -753,10 +753,10 @@
 
         Qwerty {
             bindings = <
-  &kp Q                  &kp W                  &kp E                    &mt LC(R) COMMA  &mt LC(T) DOT                           &kp Y                 &kp U          &kp I     &kp O  &kp P
-  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F    &mt LC(F) G                             &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
-  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V      &mt LG(V) B                             &kp N                 &kp M          &kp T     &kp R  &mt LC(SLASH) SLASH
-                                                                         &kp K_CANCEL     &lt 6 SPACE    &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
+  &kp Q                  &kp W                  &kp E                    &kp COMMA      &kp DOT                               &kp Y                 &kp U          &kp I     &kp O  &kp P
+  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                           &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
+  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                           &kp N                 &kp M          &kp T     &kp R  &mt LC(SLASH) SLASH
+                                                                         &kp K_CANCEL   &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
             >;
 
             label = "Qwerty";
@@ -765,16 +765,16 @@
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
-  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &mt LC(R) LS(R)    &mt LC(T) LS(T)                             &kp LS(Y)  &kp LS(U)          &kp LS(I)         &kp LS(O)       &kp LS(P)
-  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)      &kp LS(L)       &hrml_slow RALT SEMI
-  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &en_cw_off COMMA  &en_cw_off DOT  &mt LC(SLASH) SLASH
+  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_cw_off COMMA   &en_cw_off DOT                              &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
+  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
+  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &kp LS(T)     &kp LS(R)  &mt LC(SLASH) SLASH
                                                                                      &to 0              &layer_en_cw_off 6 SPACE  &trans    &trans  &trans     &trans
             >;
         };
 
         Diktor {
             bindings = <
-  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &mt LC(R) RU_COMMA          &mt LC(T) RU_DOT                            &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
+  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &kp RU_COMMA                &kp RU_DOT                                  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
   &hrml_slow LEFT_GUI RU_CYRILLIC_U  &hrml_slow LEFT_ALT RU_CYRILLIC_I  &hrml_slow LEFT_SHIFT RU_CYRILLIC_IE  &hrml LCTRL RU_CYRILLIC_O   &mt LC(F) RU_CYRILLIC_A                     &kp RU_CYRILLIC_EL  &hrml LCTRL RU_CYRILLIC_EN  &hrl 7 RU_CYRILLIC_TE  &kp RU_CYRILLIC_ES   &hrml_slow RALT RU_CYRILLIC_ER
   &mt LC(Z) RU_CYRILLIC_EF           &mt LC(X) RU_CYRILLIC_E            &mt LC(C) RU_CYRILLIC_HA              &mt LC(V) RU_CYRILLIC_YERU  &mt LG(V) RU_CYRILLIC_YU                    &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_EM          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_ZHE  &mt LC(SLASH) RU_CYRILLIC_GHE
                                                                                                               &trans                      &trans                    &trans    &trans  &trans              &trans
@@ -786,7 +786,7 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_cw_off LC(RU_COMMA)         &ru_cw_off LC(RU_DOT)                           &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
+  &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_cw_off RU_COMMA             &ru_cw_off RU_DOT                               &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
   &hrml_slow LEFT_GUI LS(RU_CYRILLIC_U)  &hrml_slow LEFT_ALT LS(RU_CYRILLIC_I)  &hrml_slow LEFT_SHIFT LS(RU_CYRILLIC_IE)  &hrml LCTRL LS(RU_CYRILLIC_O)   &mt LC(F) LS(RU_CYRILLIC_A)                     &kp LS(RU_CYRILLIC_EL)  &hrml LCTRL LS(RU_CYRILLIC_EN)  &hrl 7 LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_ES)   &hrml_slow RALT LS(RU_CYRILLIC_ER)
   &mt LC(Z) LS(RU_CYRILLIC_EF)           &mt LC(X) LS(RU_CYRILLIC_E)            &mt LC(C) LS(RU_CYRILLIC_HA)              &mt LC(V) LS(RU_CYRILLIC_YERU)  &mt LG(V) LS(RU_CYRILLIC_YU)                    &kp LS(RU_CYRILLIC_BE)  &kp LS(RU_CYRILLIC_EM)          &kp LS(RU_CYRILLIC_PE)     &kp LS(RU_CYRILLIC_ZHE)  &mt LC(SLASH) LS(RU_CYRILLIC_GHE)
                                                                                                                           &to 2                           &layer_ru_cw_off 6 SPACE      &trans    &trans  &trans                  &trans
