@@ -301,13 +301,13 @@
             timeout-ms = <30>;
         };
 
-        combo_minus {
-            bindings = <&kp MINUS>;
+        combo_osctrl {
+            bindings = <&sk LCTRL>;
             key-positions = <13 14>;
         };
 
-        combo_underscore {
-            bindings = <&kp UNDERSCORE>;
+        combo_minus {
+            bindings = <&kp MINUS>;
             key-positions = <23 24>;
         };
 
@@ -438,18 +438,22 @@
             label = "RU_CODE";
         };
 
-        macro_diktor_cw_off: macro_diktor_cw_off {
+        ru_cw_off: ru_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 2>;
-            label = "MACRO_DIKTOR_CW_OFF";
+            label = "RU_CW_OFF";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
-        macro_qwerty_cw_off: macro_qwerty_cw_off {
+        en_cw_off: en_cw_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
-            label = "MACRO_QWERTY_CW_OFF";
+            label = "EN_CW_OFF";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         zeros_macro: zeros_macro {
@@ -592,7 +596,7 @@
         diktor_cw_off: diktor_cw_off {
             compatible = "zmk,behavior-hold-tap";
             label = "DIKTOR_CW_OFF";
-            bindings = <&mo>, <&macro_diktor_cw_off>;
+            bindings = <&mo>, <&ru_cw_off>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -602,7 +606,7 @@
         qwerty_cw_off: qwerty_cw_off {
             compatible = "zmk,behavior-hold-tap";
             label = "QWERTY_CW_OFF";
-            bindings = <&mo>, <&macro_qwerty_cw_off>;
+            bindings = <&mo>, <&en_cw_off>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -751,9 +755,9 @@
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
-  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &mt LC(R) LS(R)    &mt LC(T) LS(T)                           &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
-  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                           &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
-  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                           &kp LS(N)  &kp LS(M)          &kp COMMA     &kp DOT    &mt LC(SLASH) SLASH
+  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &mt LC(R) LS(R)    &mt LC(T) LS(T)                           &kp LS(Y)  &kp LS(U)          &kp LS(I)         &kp LS(O)       &kp LS(P)
+  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                           &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)      &kp LS(L)       &hrml_slow RALT SEMI
+  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                           &kp LS(N)  &kp LS(M)          &en_cw_off COMMA  &en_cw_off DOT  &mt LC(SLASH) SLASH
                                                                                      &to 0              &qwerty_cw_off 6 SPACE  &trans    &trans  &trans     &trans
             >;
         };
@@ -772,7 +776,7 @@
         CW_Diktor {
             label = "CapsWord Diktor";
             bindings = <
-  &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &mt LC(R) RU_COMMA              &mt LC(T) RU_DOT                                &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
+  &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_cw_off LC(RU_COMMA)         &ru_cw_off LC(RU_DOT)                           &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
   &hrml_slow LEFT_GUI LS(RU_CYRILLIC_U)  &hrml_slow LEFT_ALT LS(RU_CYRILLIC_I)  &hrml_slow LEFT_SHIFT LS(RU_CYRILLIC_IE)  &hrml LCTRL LS(RU_CYRILLIC_O)   &mt LC(F) LS(RU_CYRILLIC_A)                     &kp LS(RU_CYRILLIC_EL)  &hrml LCTRL LS(RU_CYRILLIC_EN)  &hrl 7 LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_ES)   &hrml_slow RALT LS(RU_CYRILLIC_ER)
   &mt LC(Z) LS(RU_CYRILLIC_EF)           &mt LC(X) LS(RU_CYRILLIC_E)            &mt LC(C) LS(RU_CYRILLIC_HA)              &mt LC(V) LS(RU_CYRILLIC_YERU)  &mt LG(V) LS(RU_CYRILLIC_YU)                    &kp LS(RU_CYRILLIC_BE)  &kp LS(RU_CYRILLIC_EM)          &kp LS(RU_CYRILLIC_PE)     &kp LS(RU_CYRILLIC_ZHE)  &mt LC(SLASH) LS(RU_CYRILLIC_GHE)
                                                                                                                           &to 2                           &diktor_cw_off 6 SPACE        &trans    &trans  &trans                  &trans
