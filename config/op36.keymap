@@ -841,7 +841,7 @@
         EnSym {
             bindings = <
   &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
-  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru LS(NUMBER_3)  &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
+  &kp TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
   &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
                                               &to 0                  &trans     &trans    &trans  &trans            &trans
             >;
@@ -852,7 +852,7 @@
         RuSym {
             bindings = <
   &trans     &en AT                &kp UNDER  &kp LS(N6)   &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
-  &en TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp LS(NUMBER_3)  &en LEFT_BRACE    &kp LS(NUMBER_4)  &en RIGHT_BRACE    &en PIPE
+  &en TILDE  &kp LEFT_PARENTHESIS  &kp EXCL   &kp RPAR     &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp LS(NUMBER_4)  &en RIGHT_BRACE    &en PIPE
   &trans     &kp ASTERISK          &en CARET  &kp PERCENT  &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
                                               &to 3        &trans     &trans    &trans  &trans            &trans
             >;
