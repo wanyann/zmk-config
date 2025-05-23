@@ -328,14 +328,14 @@
             layers = <0 1>;
         };
 
-        combo_colon_en {
-            bindings = <&kp COLON>;
+        combo_under_en {
+            bindings = <&kp UNDER>;
             key-positions = <15 16>;
             layers = <1 0>;
         };
 
-        combo_colon_ru {
-            bindings = <&kp RU_COLON>;
+        combo_unde_ru {
+            bindings = <&kp UNDER>;
             key-positions = <15 16>;
             layers = <2 3>;
         };
