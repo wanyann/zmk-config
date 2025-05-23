@@ -264,7 +264,7 @@
             timeout-ms = <30>;
         };
 
-        combo_os_ctrl_shift {
+        combo_osm_ctrl_shift {
             bindings = <&osm_ctrl_shift>;
             key-positions = <12 13>;
             require-prior-idle-ms = <70>;
@@ -302,7 +302,7 @@
         };
 
         combo_osctrl {
-            bindings = <&sk LCTRL>;
+            bindings = <&osm_ctrl>;
             key-positions = <23 24>;
         };
 
