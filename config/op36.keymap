@@ -297,15 +297,15 @@
             key-positions = <3 4>;
         };
 
-        combo_semi_ru {
-            bindings = <&kp RU_SEMICOLON>;
-            key-positions = <25 26>;
+        combo_grave_ru {
+            bindings = <&en GRAVE>;
+            key-positions = <15 16>;
             layers = <2 3>;
         };
 
-        combo_semi_en {
-            bindings = <&kp SEMI>;
-            key-positions = <25 26>;
+        combo_grave_en {
+            bindings = <&kp GRAVE>;
+            key-positions = <15 16>;
             layers = <0 1>;
         };
 
@@ -315,7 +315,7 @@
             layers = <1 0>;
         };
 
-        combo_unde_ru {
+        combo_under_ru {
             bindings = <&kp UNDER>;
             key-positions = <5 6>;
             layers = <2 3>;
@@ -856,10 +856,10 @@
 
         EnSym {
             bindings = <
-  &trans     &kp AT                &kp UNDER  &kp DOUBLE_QUOTES      &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
-  &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
-  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
-                                              &to 0                  &trans     &trans    &trans  &trans            &trans
+  &trans     &kp AT                &kp UNDER  &kp DOUBLE_QUOTES      &trans                      &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
+  &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                    &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
+  &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                    &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
+                                              &to 0                  &trans    &trans    &trans  &trans            &trans
             >;
 
             label = "EnSym";
@@ -867,10 +867,10 @@
 
         RuSym {
             bindings = <
-  &trans     &en AT                &kp UNDER     &kp RU_DOUBLE_QUOTES  &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
-  &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR              &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
-  &trans     &kp ASTERISK          &en CARET     &kp PERCENT           &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
-                                                 &to 3                 &trans     &trans    &trans  &trans            &trans
+  &trans     &en AT                &kp UNDER     &kp RU_DOUBLE_QUOTES  &trans                      &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
+  &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR              &kp PLUS                    &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
+  &trans     &kp ASTERISK          &en CARET     &kp PERCENT           &ru_code                    &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
+                                                 &to 3                 &trans    &trans    &trans  &trans            &trans
             >;
         };
 
