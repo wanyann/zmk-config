@@ -77,13 +77,6 @@
             layers = <0 1 9>;
         };
 
-        combo_question_en {
-            bindings = <&kp QUESTION>;
-            require-prior-idle-ms = <50>;
-            key-positions = <3 4>;
-            layers = <0 1>;
-        };
-
         combo_quotes_en {
             bindings = <&td_quotes_en>;
             require-prior-idle-ms = <50>;
@@ -96,13 +89,6 @@
             key-positions = <16 17>;
             require-prior-idle-ms = <50>;
             layers = <3 10 2>;
-        };
-
-        combo_question_ru {
-            bindings = <&kp RU_QUESTION>;
-            key-positions = <3 4>;
-            require-prior-idle-ms = <50>;
-            layers = <3 2>;
         };
 
         combo_quotes_ru {
@@ -266,7 +252,7 @@
 
         combo_osm_ctrl_shift {
             bindings = <&osm_ctrl_shift>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
             layers = <0 2 1 3>;
@@ -301,19 +287,14 @@
             timeout-ms = <30>;
         };
 
-        combo_osctrl {
+        combo_osm_ctrl {
             bindings = <&osm_ctrl>;
-            key-positions = <23 24>;
+            key-positions = <12 13>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
-            key-positions = <13 14>;
-        };
-
-        combo_exclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <5 6>;
+            key-positions = <3 4>;
         };
 
         combo_semi_ru {
@@ -330,13 +311,13 @@
 
         combo_under_en {
             bindings = <&kp UNDER>;
-            key-positions = <15 16>;
+            key-positions = <6 5>;
             layers = <1 0>;
         };
 
         combo_unde_ru {
             bindings = <&kp UNDER>;
-            key-positions = <15 16>;
+            key-positions = <5 6>;
             layers = <2 3>;
         };
     };
@@ -713,17 +694,6 @@
             mods = <(MOD_RALT)>;
         };
 
-        rt: rt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Repeat on Hold";
-            bindings = <&key_repeat>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <20>;
-        };
-
         td_quotes_ru: td_quotes_ru {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES_RU";
@@ -746,6 +716,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        ru_dot_excl: ru_dot_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_DOT_EXCL";
+            bindings = <&kp RU_DOT>, <&kp RU_EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        ru_com_ques: ru_com_ques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_COM_QUES";
+            bindings = <&kp RU_COMMA>, <&kp RU_QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        en_dot_excl: en_dot_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EN_DOT_EXCL";
+            bindings = <&kp DOT>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        en_com_ques: en_com_ques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EN_COM_QUES";
+            bindings = <&kp COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -753,10 +759,10 @@
 
         Qwerty {
             bindings = <
-  &kp Q                  &kp W                  &kp E                    &kp R          &kp T                                 &kp Y                 &kp U          &kp I      &kp O    &kp P
-  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                           &kp H                 &hrml LCTRL J  &hrl 7 K   &kp L    &hrml_slow RALT SEMI
-  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                           &kp N                 &kp M          &kp COMMA  &kp DOT  &mt LC(SLASH) SLASH
-                                                                         &kp K_CANCEL   &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
+  &kp Q                  &kp W                  &kp E                    &en_com_ques   &en_dot_excl                           &kp Y                 &kp U          &kp I     &kp O  &kp P
+  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                            &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
+  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                            &kp N                 &kp M          &kp T     &kp R  &mt LC(SLASH) SLASH
+                                                                         &kp K_CANCEL   &lt 6 SPACE   &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
             >;
 
             label = "Qwerty";
@@ -765,16 +771,16 @@
         CW_Qwerty {
             label = "CapsWord qwerty";
             bindings = <
-  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &kp LS(R)          &kp LS(T)                                   &kp LS(Y)  &kp LS(U)          &kp LS(I)             &kp LS(O)           &kp LS(P)
-  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)          &kp LS(L)           &hrml_slow RALT SEMI
-  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &en_cw_off LS(COMMA)  &en_cw_off LS(DOT)  &mt LC(SLASH) SLASH
+  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_cw_off COMMA   &en_cw_off DOT                              &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
+  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
+  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &kp LS(T)     &kp LS(R)  &mt LC(SLASH) SLASH
                                                                                      &to 0              &layer_en_cw_off 6 SPACE  &trans    &trans  &trans     &trans
             >;
         };
 
         Diktor {
             bindings = <
-  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &kp RU_COMMA                &kp RU_DOT                                  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
+  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &ru_com_ques                &ru_dot_excl                                &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
   &hrml_slow LEFT_GUI RU_CYRILLIC_U  &hrml_slow LEFT_ALT RU_CYRILLIC_I  &hrml_slow LEFT_SHIFT RU_CYRILLIC_IE  &hrml LCTRL RU_CYRILLIC_O   &mt LC(F) RU_CYRILLIC_A                     &kp RU_CYRILLIC_EL  &hrml LCTRL RU_CYRILLIC_EN  &hrl 7 RU_CYRILLIC_TE  &kp RU_CYRILLIC_ES   &hrml_slow RALT RU_CYRILLIC_ER
   &mt LC(Z) RU_CYRILLIC_EF           &mt LC(X) RU_CYRILLIC_E            &mt LC(C) RU_CYRILLIC_HA              &mt LC(V) RU_CYRILLIC_YERU  &mt LG(V) RU_CYRILLIC_YU                    &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_EM          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_ZHE  &mt LC(SLASH) RU_CYRILLIC_GHE
                                                                                                               &trans                      &trans                    &trans    &trans  &trans              &trans
@@ -850,7 +856,7 @@
 
         EnSym {
             bindings = <
-  &trans     &kp AT                &kp UNDER  &kp COLON              &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
+  &trans     &kp AT                &kp UNDER  &kp DOUBLE_QUOTES      &kp GRAVE                    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
   &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                     &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
   &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                     &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
                                               &to 0                  &trans     &trans    &trans  &trans            &trans
@@ -861,10 +867,10 @@
 
         RuSym {
             bindings = <
-  &trans     &en AT                &kp UNDER     &kp RU_COLON  &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
-  &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR      &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
-  &trans     &kp ASTERISK          &en CARET     &kp PERCENT   &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
-                                                 &to 3         &trans     &trans    &trans  &trans            &trans
+  &trans     &en AT                &kp UNDER     &kp RU_DOUBLE_QUOTES  &en GRAVE                    &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
+  &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR              &kp PLUS                     &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
+  &trans     &kp ASTERISK          &en CARET     &kp PERCENT           &ru_code                     &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
+                                                 &to 3                 &trans     &trans    &trans  &trans            &trans
             >;
         };
 
