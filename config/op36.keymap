@@ -725,7 +725,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Qwerty {
+        En {
             bindings = <
   &kp Q                  &kp W                  &kp E                    &en_com_ques   &en_dot_excl                           &kp Y                 &kp U          &kp I     &kp O  &kp P
   &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                            &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
@@ -733,11 +733,11 @@
                                                                          &kp K_CANCEL   &lt 6 SPACE   &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
             >;
 
-            label = "Qwerty";
+            label = "English";
         };
 
-        CW_Qwerty {
-            label = "CapsWord qwerty";
+        En_CW {
+            label = "English CapsWord  ";
             bindings = <
   &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_com_ques       &en_dot_excl                                &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
   &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
@@ -746,7 +746,7 @@
             >;
         };
 
-        Diktor {
+        Ru {
             bindings = <
   &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &ru_com_ques                &ru_dot_excl                                &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
   &hrml_slow LEFT_GUI RU_CYRILLIC_U  &hrml_slow LEFT_ALT RU_CYRILLIC_I  &hrml_slow LEFT_SHIFT RU_CYRILLIC_IE  &hrml LCTRL RU_CYRILLIC_O   &mt LC(F) RU_CYRILLIC_A                     &kp RU_CYRILLIC_EL  &hrml LCTRL RU_CYRILLIC_EN  &hrl 7 RU_CYRILLIC_TE  &kp RU_CYRILLIC_ES   &hrml_slow RALT RU_CYRILLIC_ER
@@ -754,11 +754,11 @@
                                                                                                               &trans                      &trans                    &trans    &trans  &trans              &trans
             >;
 
-            label = "Diktor";
+            label = "Russian";
         };
 
-        CW_Diktor {
-            label = "CapsWord Diktor";
+        Ru_CW {
+            label = "Russian CapsWord ";
             bindings = <
   &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_com_ques                    &ru_dot_excl                                    &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
   &hrml_slow LEFT_GUI LS(RU_CYRILLIC_U)  &hrml_slow LEFT_ALT LS(RU_CYRILLIC_I)  &hrml_slow LEFT_SHIFT LS(RU_CYRILLIC_IE)  &hrml LCTRL LS(RU_CYRILLIC_O)   &mt LC(F) LS(RU_CYRILLIC_A)                     &kp LS(RU_CYRILLIC_EL)  &hrml LCTRL LS(RU_CYRILLIC_EN)  &hrl 7 LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_ES)   &hrml_slow RALT LS(RU_CYRILLIC_ER)
@@ -775,7 +775,7 @@
                                                               &trans        &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Mods";
+            label = "Modifiers";
         };
 
         Mouse {
@@ -789,7 +789,7 @@
             label = "Mouse";
         };
 
-        Navigation {
+        Nav {
             bindings = <
   &none                           &kp LA(TAB)                      &kp LC(LS(LA(LG(TAB))))  &kp LS(LC(LA(LG(F1))))   &key_repeat                     &none   &kp HOME   &kp UP    &kp END    &trans
   &hrm LEFT_GUI LC(LEFT_BRACKET)  &hrm LALT LC(RIGHT_BRACKET)      &kp LSHFT                &kp LCTRL                &zeros_macro                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &select_row
@@ -800,7 +800,7 @@
             label = "Navigation";
         };
 
-        Numbers {
+        Num {
             bindings = <
   &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans  &trans     &trans      &trans        &trans
   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                               &trans  &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_GUI
@@ -808,7 +808,7 @@
                                             &trans        &kp LA(SPACE)  &kp LA(ENTER)    &trans  &trans  &trans
             >;
 
-            label = "User1";
+            label = "Numbers";
         };
 
         App {
@@ -819,10 +819,10 @@
                                                            &trans                 &none              &sl 8    &trans  &trans             &none
             >;
 
-            label = "User2";
+            label = "Applications";
         };
 
-        EnSym {
+        En_Sym {
             bindings = <
   &trans     &kp AT                &kp UNDER  &kp DOUBLE_QUOTES      &trans                      &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
   &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                    &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
@@ -830,7 +830,7 @@
                                               &trans                 &trans    &trans    &trans  &trans            &trans
             >;
 
-            label = "EnSym";
+            label = "English Symbols";
         };
 
         RuSym {
@@ -840,6 +840,8 @@
   &trans     &kp ASTERISK          &en CARET     &kp PERCENT           &ru_code                    &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
                                                  &trans                &trans    &trans    &trans  &trans            &trans
             >;
+
+            label = "Russian Symbols";
         };
 
         Fn {
@@ -849,6 +851,8 @@
   &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans          &trans    &trans
                            &trans  &trans   &trans    &trans  &trans  &trans
             >;
+
+            label = "Function";
         };
 
         OS {
@@ -858,6 +862,8 @@
   &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
                                                  &trans                &trans                &lg_en    &trans  &trans  &trans
             >;
+
+            label = "OS";
         };
     };
 };
