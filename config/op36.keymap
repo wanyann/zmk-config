@@ -78,7 +78,7 @@
         };
 
         combo_quotes_en {
-            bindings = <&td_quotes_en>;
+            bindings = <&quotes_en>;
             require-prior-idle-ms = <50>;
             key-positions = <26 28>;
             layers = <0 1>;
@@ -92,7 +92,7 @@
         };
 
         combo_quotes_ru {
-            bindings = <&td_quotes_ru>;
+            bindings = <&quotes_ru>;
             key-positions = <26 28>;
             require-prior-idle-ms = <50>;
             layers = <3 2>;
@@ -676,38 +676,6 @@
             require-prior-idle-ms = <20>;
         };
 
-        q_morph: q_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Q_MORPH";
-            bindings = <&kp Q>, <&bootloader>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        p_morph: p_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "P_MORPH";
-            bindings = <&kp P>, <&bootloader>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        td_quotes_ru: td_quotes_ru {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_QUOTES_RU";
-            #binding-cells = <0>;
-            bindings = <&quotes_ru>, <&kp LS(NUMBER_2)>;
-        };
-
-        td_quotes_en: td_quotes_en {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_QUOTES_EN";
-            #binding-cells = <0>;
-            bindings = <&quotes_en>, <&kp DOUBLE_QUOTES>;
-        };
-
         soft_sign: soft_sign {
             compatible = "zmk,behavior-mod-morph";
             label = "SOFT_SIGN";
@@ -837,7 +805,7 @@
 
         Mods {
             bindings = <
-  &q_morph          &kp W             &kp E                   &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &p_morph
+  &none             &kp W             &kp E                   &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &none
   &hrm_slow LGUI A  &hrm_slow LALT S  &hrm_slow LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMICOLON
   &kp Z             &kp X             &kp C                   &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH
                                                               &lg_en        &trans  &trans    &trans  &trans  &trans
@@ -925,15 +893,6 @@
   &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
   &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
                                                  &lg_en                &trans                &lg_en    &trans  &trans  &trans
-            >;
-        };
-
-        Boot {
-            bindings = <
-  &bootloader  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &bootloader
-  &trans       &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &sys_reset   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &sys_reset
-                               &lg_en  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
