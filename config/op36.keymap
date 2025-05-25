@@ -727,10 +727,10 @@
 
         Qwerty {
             bindings = <
-  &kp Q                  &kp W                  &kp E                    &none          &none                                 &kp Y                 &kp U          &kp I     &kp O  &kp P
-  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                           &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
-  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                           &kp N                 &kp M          &kp R     &kp T  &mt LC(SLASH) SLASH
-                                                                         &kp K_CANCEL   &lt 6 SPACE  &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
+  &kp Q                  &kp W                  &kp E                    &en_com_ques   &en_dot_excl                           &kp Y                 &kp U          &kp I     &kp O  &kp P
+  &hrml_slow LEFT_GUI A  &hrml_slow LEFT_ALT S  &hrml_slow LEFT_SHIFT D  &hrml LCTRL F  &mt LC(F) G                            &kp H                 &hrml LCTRL J  &hrl 7 K  &kp L  &hrml_slow RALT SEMI
+  &mt LC(Z) Z            &mt LC(X) X            &mt LC(C) C              &mt LC(V) V    &mt LG(V) B                            &kp N                 &kp M          &kp R     &kp T  &mt LC(SLASH) SLASH
+                                                                         &kp K_CANCEL   &lt 6 SPACE   &sl 8    &sk LEFT_SHIFT  &lt_bspc 7 BACKSPACE  &to 6
             >;
 
             label = "Qwerty";
@@ -742,13 +742,13 @@
   &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_com_ques       &en_dot_excl                                &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
   &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
   &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &kp LS(R)     &kp LS(T)  &mt LC(SLASH) SLASH
-                                                                                     &to 0              &layer_en_cw_off 6 SPACE  &trans    &trans  &trans     &trans
+                                                                                     &lg_en             &layer_en_cw_off 6 SPACE  &trans    &trans  &trans     &trans
             >;
         };
 
         Diktor {
             bindings = <
-  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &none                       &none                                       &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
+  &kp RU_CYRILLIC_TSE                &soft_sign                         &kp RU_CYRILLIC_YA                    &ru_com_ques                &ru_dot_excl                                &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_VE          &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_DE   &kp RU_CYRILLIC_CHE
   &hrml_slow LEFT_GUI RU_CYRILLIC_U  &hrml_slow LEFT_ALT RU_CYRILLIC_I  &hrml_slow LEFT_SHIFT RU_CYRILLIC_IE  &hrml LCTRL RU_CYRILLIC_O   &mt LC(F) RU_CYRILLIC_A                     &kp RU_CYRILLIC_EL  &hrml LCTRL RU_CYRILLIC_EN  &hrl 7 RU_CYRILLIC_TE  &kp RU_CYRILLIC_ES   &hrml_slow RALT RU_CYRILLIC_ER
   &mt LC(Z) RU_CYRILLIC_EF           &mt LC(X) RU_CYRILLIC_E            &mt LC(C) RU_CYRILLIC_HA              &mt LC(V) RU_CYRILLIC_YERU  &mt LG(V) RU_CYRILLIC_YU                    &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_EM          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_ZHE  &mt LC(SLASH) RU_CYRILLIC_GHE
                                                                                                               &trans                      &trans                    &trans    &trans  &trans              &trans
@@ -763,16 +763,16 @@
   &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_com_ques                    &ru_dot_excl                                    &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
   &hrml_slow LEFT_GUI LS(RU_CYRILLIC_U)  &hrml_slow LEFT_ALT LS(RU_CYRILLIC_I)  &hrml_slow LEFT_SHIFT LS(RU_CYRILLIC_IE)  &hrml LCTRL LS(RU_CYRILLIC_O)   &mt LC(F) LS(RU_CYRILLIC_A)                     &kp LS(RU_CYRILLIC_EL)  &hrml LCTRL LS(RU_CYRILLIC_EN)  &hrl 7 LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_ES)   &hrml_slow RALT LS(RU_CYRILLIC_ER)
   &mt LC(Z) LS(RU_CYRILLIC_EF)           &mt LC(X) LS(RU_CYRILLIC_E)            &mt LC(C) LS(RU_CYRILLIC_HA)              &mt LC(V) LS(RU_CYRILLIC_YERU)  &mt LG(V) LS(RU_CYRILLIC_YU)                    &kp LS(RU_CYRILLIC_BE)  &kp LS(RU_CYRILLIC_EM)          &kp LS(RU_CYRILLIC_PE)     &kp LS(RU_CYRILLIC_ZHE)  &mt LC(SLASH) LS(RU_CYRILLIC_GHE)
-                                                                                                                          &to 2                           &layer_ru_cw_off 6 SPACE      &trans    &trans  &trans                  &trans
+                                                                                                                          &lg_ru                          &layer_ru_cw_off 6 SPACE      &trans    &trans  &trans                  &trans
             >;
         };
 
         Mods {
             bindings = <
-  &none             &kp W             &kp E                   &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &none
+  &kp Q             &kp W             &kp E                   &kp R         &kp T                     &kp Y   &kp U         &kp I      &kp O    &kp P
   &hrm_slow LGUI A  &hrm_slow LALT S  &hrm_slow LEFT_SHIFT D  &hrm LCTRL F  &kp G                     &kp H   &hrm LCTRL J  &hrl 7 K   &kp L    &hrm_slow RALT SEMICOLON
   &kp Z             &kp X             &kp C                   &kp V         &kp B                     &kp N   &kp M         &kp COMMA  &kp DOT  &kp SLASH
-                                                              &lg_en        &trans  &trans    &trans  &trans  &trans
+                                                              &trans        &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Mods";
@@ -816,7 +816,7 @@
   &kp LA(LC(LS(P)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))      &kp LS(LA(LC(T)))                   &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))
   &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))      &kp LS(LA(LC(G)))                   &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))
   &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(LG(V))))  &kp LS(LA(LC(B)))                   &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))
-                                                           &lg_en                 &none              &sl 8    &trans  &trans             &none
+                                                           &trans                 &none              &sl 8    &trans  &trans             &none
             >;
 
             label = "User2";
@@ -827,7 +827,7 @@
   &trans     &kp AT                &kp UNDER  &kp DOUBLE_QUOTES      &trans                      &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp HASH       &kp RIGHT_BRACKET  &trans
   &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp RIGHT_PARENTHESIS  &kp PLUS                    &ru RU_NUMERO     &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp PIPE
   &trans     &kp ASTRK             &kp CARET  &kp PERCENT            &en_code                    &kp AMPERSAND     &kp LESS_THAN     &kp DOLLAR     &kp GREATER_THAN   &trans
-                                              &to 0                  &trans    &trans    &trans  &trans            &trans
+                                              &trans                 &trans    &trans    &trans  &trans            &trans
             >;
 
             label = "EnSym";
@@ -838,7 +838,7 @@
   &trans     &en AT                &kp UNDER     &kp RU_DOUBLE_QUOTES  &trans                      &en SINGLE_QUOTE  &en LEFT_BRACKET  &en HASH          &en RIGHT_BRACKET  &trans
   &en TILDE  &kp LEFT_PARENTHESIS  &kp RU_COLON  &kp RPAR              &kp PLUS                    &kp RU_NUMERO     &en LEFT_BRACE    &kp RU_SEMICOLON  &en RIGHT_BRACE    &en PIPE
   &trans     &kp ASTERISK          &en CARET     &kp PERCENT           &ru_code                    &en AMPERSAND     &en LESS_THAN     &en DOLLAR        &en GREATER_THAN   &trans
-                                                 &to 3                 &trans    &trans    &trans  &trans            &trans
+                                                 &trans                &trans    &trans    &trans  &trans            &trans
             >;
         };
 
@@ -847,7 +847,7 @@
   &trans   &kp F7  &kp F8  &kp F9  &trans                     &trans  &trans     &trans          &trans    &trans
   &kp F11  &kp F4  &kp F5  &kp F6  &kp F12                    &trans  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI
   &kp F10  &kp F1  &kp F2  &kp F3  &trans                     &trans  &trans     &trans          &trans    &trans
-                           &lg_en  &trans   &trans    &trans  &trans  &trans
+                           &trans  &trans   &trans    &trans  &trans  &trans
             >;
         };
 
@@ -856,7 +856,7 @@
   &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &bt BT_CLR
   &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
   &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
-                                                 &lg_en                &trans                &lg_en    &trans  &trans  &trans
+                                                 &trans                &trans                &lg_en    &trans  &trans  &trans
             >;
         };
     };
