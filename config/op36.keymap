@@ -584,9 +584,9 @@
             require-prior-idle-ms = <20>;
         };
 
-        layer_ru_cw_off: layer_ru_cw_off {
+        ru_lt_cw_off: ru_lt_cw_off {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_RU_CW_OFF";
+            label = "RU_LT_CW_OFF";
             bindings = <&mo>, <&ru_cw_off>;
 
             #binding-cells = <2>;
@@ -594,9 +594,9 @@
             flavor = "balanced";
         };
 
-        layer_en_cw_off: layer_en_cw_off {
+        en_lt_cw_off: en_lt_cw_off {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_EN_CW_OFF";
+            label = "EN_LT_CW_OFF";
             bindings = <&mo>, <&en_cw_off>;
 
             #binding-cells = <2>;
@@ -739,10 +739,10 @@
         En_CW {
             label = "English CapsWord  ";
             bindings = <
-  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_com_ques       &en_dot_excl                                &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
-  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                             &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
-  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                             &kp LS(N)  &kp LS(M)          &kp LS(R)     &kp LS(T)  &mt LC(SLASH) SLASH
-                                                                                     &lg_en             &layer_en_cw_off 6 SPACE  &trans    &trans  &trans     &trans
+  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_com_ques       &en_dot_excl                             &kp LS(Y)  &kp LS(U)          &kp LS(I)     &kp LS(O)  &kp LS(P)
+  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(S)  &hrml_slow LEFT_SHIFT LS(D)  &hrml LCTRL LS(F)  &mt LC(F) LS(G)                          &kp LS(H)  &hrml LCTRL LS(J)  &hrl 7 LS(K)  &kp LS(L)  &hrml_slow RALT SEMI
+  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(V)    &mt LG(V) LS(B)                          &kp LS(N)  &kp LS(M)          &kp LS(R)     &kp LS(T)  &mt LC(SLASH) SLASH
+                                                                                     &lg_en             &en_lt_cw_off 6 SPACE  &trans    &trans  &trans     &trans
             >;
         };
 
@@ -763,7 +763,7 @@
   &kp LS(RU_CYRILLIC_TSE)                &kp LS(RU_CYRILLIC_SOFT_SIGN)          &kp LS(RU_CYRILLIC_YA)                    &ru_com_ques                    &ru_dot_excl                                    &kp LS(RU_CYRILLIC_ZE)  &kp LS(RU_CYRILLIC_VE)          &kp LS(RU_CYRILLIC_KA)     &kp LS(RU_CYRILLIC_DE)   &kp LS(RU_CYRILLIC_CHE)
   &hrml_slow LEFT_GUI LS(RU_CYRILLIC_U)  &hrml_slow LEFT_ALT LS(RU_CYRILLIC_I)  &hrml_slow LEFT_SHIFT LS(RU_CYRILLIC_IE)  &hrml LCTRL LS(RU_CYRILLIC_O)   &mt LC(F) LS(RU_CYRILLIC_A)                     &kp LS(RU_CYRILLIC_EL)  &hrml LCTRL LS(RU_CYRILLIC_EN)  &hrl 7 LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_ES)   &hrml_slow RALT LS(RU_CYRILLIC_ER)
   &mt LC(Z) LS(RU_CYRILLIC_EF)           &mt LC(X) LS(RU_CYRILLIC_E)            &mt LC(C) LS(RU_CYRILLIC_HA)              &mt LC(V) LS(RU_CYRILLIC_YERU)  &mt LG(V) LS(RU_CYRILLIC_YU)                    &kp LS(RU_CYRILLIC_BE)  &kp LS(RU_CYRILLIC_EM)          &kp LS(RU_CYRILLIC_PE)     &kp LS(RU_CYRILLIC_ZHE)  &mt LC(SLASH) LS(RU_CYRILLIC_GHE)
-                                                                                                                          &lg_ru                          &layer_ru_cw_off 6 SPACE      &trans    &trans  &trans                  &trans
+                                                                                                                          &lg_ru                          &ru_lt_cw_off 6 SPACE         &trans    &trans  &trans                  &trans
             >;
         };
 
@@ -816,7 +816,7 @@
   &kp LA(LC(LS(P)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))      &kp LS(LA(LC(T)))                   &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))
   &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))      &kp LS(LA(LC(G)))                   &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMICOLON)))
   &kp LS(LC(LA(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LA(LS(LC(LG(V))))  &kp LS(LA(LC(B)))                   &kp LS(LA(LC(N)))  &kp LS(LC(LA(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LC(LA(SLASH)))
-                                                           &trans                 &none              &sl 8    &trans  &trans             &none
+                                                           &trans                 &none              &sl 8    &trans  &trans             &trans
             >;
 
             label = "Applications";
@@ -860,7 +860,7 @@
   &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &bt BT_CLR
   &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
   &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
-                                                 &trans                &trans                &lg_en    &trans  &trans  &trans
+                                                 &trans                &trans                &trans    &trans  &trans  &trans
             >;
 
             label = "OS";
