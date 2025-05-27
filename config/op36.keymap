@@ -757,10 +757,10 @@
 
         Colemak-CW {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &kp LS(Q)                  &kp LS(W)                  &kp LS(E)                    &en_com_ques       &en_dot_excl                             &kp LS(J)  &kp LS(L)          &kp LS(U)     &kp LS(Y)  &kp LG(LS(SEMI))
+  &hrml_slow LEFT_GUI LS(A)  &hrml_slow LEFT_ALT LS(R)  &hrml_slow LEFT_SHIFT LS(S)  &hrml LCTRL LS(T)  &mt LS(F) G                              &kp LS(M)  &hrml LCTRL LS(N)  &hrl 9 LS(E)  &kp LS(I)  &hrml_slow RALT LS(O)
+  &mt LC(Z) LS(Z)            &mt LC(X) LS(X)            &mt LC(C) LS(C)              &mt LC(V) LS(D)    &mt LG(V) LS(V)                          &kp LS(K)  &kp LS(H)          &kp LS(P)     &kp LS(B)  &mt LC(SLASH) LS(SLASH)
+                                                                                     &lg_en             &en_lt_cw_off 8 SPACE  &trans    &trans  &trans     &trans
             >;
         };
 
