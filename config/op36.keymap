@@ -752,7 +752,7 @@
             >;
         };
 
-        Colemak-DH {
+        Colemak {
             bindings = <
   &kp Q                 &kp W                 &kp F                    &en_com_ques   &en_dot_excl                    &kp J   &kp L          &kp Y     &kp B  &kp SEMI
   &hrm_slow LEFT_GUI A  &hrm_slow LEFT_ALT R  &hrml_slow LEFT_SHIFT S  &hrml LCTRL T  &mt LC(F) G                     &kp M   &hrml LCTRL N  &hrl 9 E  &kp I  &hrml_slow RALT O
