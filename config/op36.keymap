@@ -332,7 +332,7 @@
         lg_ru: lg_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4 &os_ru>;
+            bindings = <&to 4 &kp LC(SPACE)>;
             label = "LG_RU";
             tap-ms = <0>;
             wait-ms = <0>;
@@ -341,7 +341,7 @@
         lg_en: lg_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &os_en>;
+            bindings = <&to 0 &kp LC(SPACE)>;
             label = "LG_EN";
             tap-ms = <0>;
             wait-ms = <0>;
@@ -557,6 +557,13 @@
             label = "OSM_CTRL";
             wait-ms = <0>;
             tap-ms = <0>;
+        };
+
+        sync_lg: sync_lg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 4>;
+            label = "SYNC_LG";
         };
     };
 
@@ -883,7 +890,7 @@
             bindings = <
   &bt BT_SEL 2  &trans         &kp LA(LC(N2))    &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))                    &trans  &trans  &trans  &trans  &bt BT_CLR
   &bt BT_SEL 0  &kp LC(RIGHT)  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP       &kp C_BRI_UP                            &trans  &trans  &trans  &trans  &soft_off
-  &bt BT_SEL 1  &trans         &trans            &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
+  &bt BT_SEL 1  &trans         &sync_lg          &kp C_VOL_DN          &kp C_BRI_DN                            &trans  &trans  &trans  &trans  &trans
                                                  &trans                &trans                &trans    &trans  &trans  &trans
             >;
 
