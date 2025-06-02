@@ -255,7 +255,7 @@
             key-positions = <13 14>;
             require-prior-idle-ms = <70>;
             timeout-ms = <25>;
-            layers = <0 4 1 5>;
+            layers = <0 4 1 5 2 3>;
         };
 
         parentheses {
@@ -290,6 +290,7 @@
         combo_osm_ctrl {
             bindings = <&osm_ctrl>;
             key-positions = <12 13>;
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_minus {
