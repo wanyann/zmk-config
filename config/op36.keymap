@@ -746,6 +746,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        f_morph: f_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_MORPH";
+            bindings = <&kp F>, <&kp E>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -825,7 +835,7 @@
         Cmk_Mods {
             label = "Colemak_Mods";
             bindings = <
-  &kp Q             &kp W             &kp F                   &kp COMMA     &kp DOT                    &kp J   &kp L         &kp Y      &kp B  &kp SEMI
+  &kp Q             &kp W             &f_morph                &kp COMMA     &kp DOT                    &kp J   &kp L         &kp Y      &kp B  &kp SEMI
   &hrm_slow LGUI A  &hrm_slow LALT R  &hrm_slow LEFT_SHIFT S  &hrm LCTRL T  &kp G                      &kp M   &hrm LCTRL N  &hrl 10 E  &kp I  &hrm_slow RALT O
   &kp Z             &kp X             &kp C                   &kp D         &kp V                      &kp K   &kp H         &kp U      &kp P  &kp SLASH
                                                               &trans        &trans   &trans    &trans  &trans  &trans
